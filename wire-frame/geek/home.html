@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<!-- STYLES REST -->
+		<link rel="stylesheet" href="css/reset.css" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC|Josefin+Slab' rel='stylesheet' type='text/css'>
+		<link rel="icon" type="image/png" href="http://www.wildfiregames.com/0ad/favicon.png">
+	</head>	
+	<style>
+		/*-------------------------------------------- fonts start --------------------------------------------*/
+		
+		@font-face {
+		  font-family: 'Josefin Slab';
+		  font-style: normal;
+		  font-weight: 300;
+		  src: local('Josefin Slab Light'), local('JosefinSlab-Light'), url('http://themes.googleusercontent.com/static/fonts/josefinslab/v2/NbE6ykYuM2IyEwxQxOIi2GB7wJ9CoPCp9n30ZBThZ1I.woff') format('woff');
+		}
+		@font-face {
+		  font-family: 'IM Fell DW Pica SC';
+		  font-style: normal;
+		  font-weight: normal;
+		  src: local('IM FELL DW Pica SC'), local('IM_FELL_DW_Pica_SC'), url('http://themes.googleusercontent.com/static/fonts/imfelldwpicasc/v2/xBKKJV4z2KsrtQnmjGO17N53Gl4ViFi9Z2HSjeIl6bI.woff') format('woff');
+		}
+		/*-------------------------------------------- fonts end --------------------------------------------*/
+		/*-------------------------------------------- BODY start --------------------------------------------*/
+		body {
+		  	background-repeat: repeat;
+		  	background-image: url(images/body.jpg);
+		  	height: auto;
+		  	width: auto;
+			color: #bebebe;
+			font-family: 'Josefin Slab', serif;
+		}
+		#content {
+		  	width: 1000px;
+		  	height: 1250px;
+		  	margin-top: 0px;
+		  	margin-left: auto;
+		  	margin-right: auto;
+		}
+		/*-------------------------------------------- top NAV start --------------------------------------------*/
+		#unav {
+		  width: 1000px;
+		  height: 25px;
+		  color: #363636;
+		  background-color: #1e1e1e;
+		}
+		#unav ul {
+		  list-style: none;
+		  display: block;
+		  font-size: 15px;
+		  padding-top: 5px;
+		  padding-bottom: 5px;
+		}
+		#unav li.left {
+		  list-style: none;
+		  display: block;
+		  float: left;
+		  width: auto;
+		  padding-left: 5px;
+		  height:15px;
+		}
+		
+		#unav li.right {
+		  list-style: none;
+		  display: block;
+		  width: auto;
+		  float: right;
+		  padding-right: 5px;
+		  height:15px;
+		}
+		
+		/*-------------------------------------------- top NAV end --------------------------------------------*/
+		
+		header {
+		  	width: 1000px;
+		  	height: 200px;
+			background-image: url(images/header.png);
+		}
+		
+		/*-------------------------------------------- NAV start --------------------------------------------*/
+		nav {
+		  	width: 1000px;
+		  	height: 50px;
+		  	font-family: 'IM Fell DW Pica SC', serif;
+		  	color: #aaaa00;
+			background-color: #780000;
+		}
+		
+		nav ul {
+		  list-style:none;
+		}
+		
+		nav li {
+		  list-style: none;
+		  display: block;
+		  float: left;
+		  width: 200px;
+		  height: 30px;
+		  padding: 10px 25px 10px 25px;
+		  height: 30px;
+		  font-size: 20px;
+		  text-align: center;
+		}
+		
+		/*-------------------------------------------- NAV end --------------------------------------------*/
+		/*-------------------------------------------- ARTICLE start --------------------------------------------*/
+		
+		article {
+		 	width: 750px;
+		  	height: 800px;
+		  	float: right;
+		  	color: #363636;
+		  	background-color: #C0AA7D;
+		}
+		
+		#slideshow {
+			width: 700px;
+			height: 350px;
+			padding: 25px;
+			margin: 0px 25px 25px 0px;
+			background-color: black;
+		}
+		
+		section.most {
+			background-color: #aa9678;
+			width: 480px;
+			height: 180px;
+			margin: 25px 25px 25px 0px;
+			padding: 10px;
+			float: left;
+		}
+		
+		section.next {
+			background-color: #aa9678;
+			width: 480px;
+			height: 80px;
+			margin: 0px 25px 25px 0px;
+			padding: 10px;
+			float: left;
+		}
+		
+		section.twitter {
+			background-color: #aa9678;
+			width: 200px;
+			height: 325px;
+			margin: 25px 25px 25px 0px;
+			float: right;
+		}
+		/*-------------------------------------------- ARTICLE end --------------------------------------------*/
+		/*-------------------------------------------- ASIDE start --------------------------------------------*/
+		
+		aside {
+		  	width: 250px;
+		  	height: 800px;
+		  	float: left;
+		  	background-color: #C0AA7D;
+		  	color: #363636;
+		}
+		
+		#sidenav {
+		  	background-color: #aa9678;
+		  	height: 300px;
+		  	width: 200px;
+		    margin-bottom: 25px;
+			margin-left: 25px;
+			margin-right: 25px;
+		} 
+		
+		#share {
+		  	background-color: #aa9678;
+		  	height: 75px;
+		  	width: 200px;
+		  	margin-bottom: 25px;
+			margin-left: 25px;
+			margin-right: 25px;
+		}
+		
+		#download {
+			background-color: #aa9678;
+		  	height: 100px;
+		  	width: 200px;
+			margin: 25px;
+		}
+		
+		#donate {
+			background-color: #aa9678;
+			height: 200px;
+		  	width: 200px;
+		    margin-bottom: 25px;
+			margin-left: 25px;
+			margin-right: 25px;
+		}
+		/*-------------------------------------------- ASIDE end --------------------------------------------*/
+		/*-------------------------------------------- FOOTER start --------------------------------------------*/
+		
+		.footerbar {
+		  width: 180px;
+		  height: 130px;
+		  float: left;
+		  padding-left: 10px;
+		  padding-right: 10px;
+		  padding-top: 10px;
+		  padding-bottom: 10px;
+		  background-color: #bebebe;
+		  color: #363636;
+		}
+		
+		footer {
+		  	color: white;
+		 	background-color: #1e1e1e;
+		 	width: 1000px;
+		 	height: 25px;
+		  	text-align: center;
+		  	font-size: 10px;
+		  	padding-top: 10px;
+		  	padding-bottom: 10px;
+		}
+		
+		/*-------------------------------------------- FOOTER end --------------------------------------------*/
+		/*-------------------------------------------- MISC start --------------------------------------------*/
+		
+		h1	{font-family: 'IM Fell DW Pica SC', serif;	}
+		h2	{font-family: 'IM Fell DW Pica SC', serif;	}
+		h3	{font-family: 'IM Fell DW Pica SC', serif;	}
+		h4	{font-family: 'IM Fell DW Pica SC', serif;	}
+		h5	{font-family: 'IM Fell DW Pica SC', serif;	}
+		h6	{font-family: 'IM Fell DW Pica SC', serif;	}
+		
+		body a:link		{text-decoration: none;color: inherit;}
+		body a:hover   	{text-decoration: none;color: inherit;}
+		body a:visited  {text-decoration: none;color: inherit;} 
+	</style>
+	
+	
+	<body>
+		<div id="content">	
+			
+			<div id="unav">
+				<ul>
+					<li class="left"><a href="http://wildfiregames.com">Wildfire Games</a></li>
+					<li class="right"><a href="home.html">Home</a></li>
+					<li class="right"><a href="http://trac.wildfiregames.com/">Wiki</a></li>
+					<li class="right"><a href="http://www.wildfiregames.com/forum/index.php">Forums</a></li>
+				</ul>
+			</div>
+			
+			<header>
+			</header>
+			
+			<nav>
+				<ul>
+					<li><a href="game/features.html">Features</a></li>
+					<li><a href="game/factions.html">Factions</a></li>
+					<li><a href="game/manual.html">Game Manual</a></li>
+					<li><a href="game/history.html">Historical Articles</a></li>
+				</ul>
+			</nav>
+		
+			<aside>
+				<div id="download">
+					<p>Download Button --> make it pretty and appealing to the eye, pop out amongst other elements</p>
+				</div>
+				<div id="share"><p>Share Buttons (most likely huge share button w/ little custom popup window) </p>
+				</div>
+				<div id="sidenav">
+					<p>Universal Navigation; possibly use Game UI buttons (Pureon)</p><br>
+					<ul>
+						<li>Game</li>
+						<li>Media</li>
+						<li>Making Of</li>
+					</ul>
+					<br>
+					<p>Community</p>
+					<ul>
+						<li>Forums</li>
+						<li>Contact</li>
+						<li>Spread the word</li>
+						<li></li>
+					</ul>
+					<p>Developers Area (possible button?)</p>
+				</div>
+				<div id="donate">
+					<p>Donate Section</p><br>
+					<p>Covers PayPal & Pledgie, gives little explanation (a little slogan?) </p>
+				</div>
+			</aside>
+			
+			<article>
+				<div id="slideshow">
+					<img src="images/3.png">
+				</div>
+				<section class="twitter">
+					<p>Possible twitter feeds go here. Most likely via Twitter embed API.</p>
+				</section>
+				<section class="most">
+					<h2>Update Title</h2>
+					<p>Last updated on 12/26/2011</p>
+				</section>
+				<section class="next">
+					<h3>Alpha 8 Released</h3>
+					<p>Unveiling the next chapter in the game... read more!</p>
+				</section>
+			</article>
+		
+			<div class="footerbar">
+				<b>Game Info</b><hr>	
+				<a href="features.hmtl">Features</a><br>
+				<a href="factions.hmtl">Factions</a><br>
+				<a href="manual.hmtl">Game Manual</a><br>
+				<a href="history.hmtl">Historical Reports</a>
+			</div>
+			<div class="footerbar">
+				<b>News</b><hr>
+				<a href="archive.hmtl">News Archive</a><br>
+				<a href="patch.hmtl">Patch Info</a><br>
+				<a href="pr.hmtl">Press Releases</a>
+			</div>
+			<div class="footerbar">
+				<b>Media</b><hr>
+				<a href="screens.hmtl">Screenshots</a><br>
+				<a href="videos.hmtl">Videos</a><br>
+				<a href="music.hmtl">Music</a><br>
+				<a href="wallpaper.hmtl">Wallpapers</a><br>
+				<a href="concepts.hmtl">Concept Art</a>
+			</div>
+			<div class="footerbar">
+				<b>Community</b><hr>
+				<a href="involved.hmtl">Get Involved</a><br>
+				<a href="http://trac.wildfiregames.com/">Wiki</a><br>
+				<a href="http://www.wildfiregames.com/forum/index.php">Forum</a><br>
+				<a href="bugreport.hmtl">Report A Bug</a><br>	
+				<a href="donate.hmtl">Donate</a>
+			</div>
+			<div class="footerbar">
+				<p>Tigers Rating</p>
+				<p>Open Source (GNU + CC logos)</p>
+				<p>Cross platform (Win + Linux + Mac logos)</p>
+				<p>Privacy Policy</p>
+				<p>RSS, Facebook, Youtube, ModDB, etc logos</p>
+			</div>
+			
+			<footer>
+				Whats up? Testing new footer style.
+			</footer>
+		</div>
+	</body>
+</html>
+
