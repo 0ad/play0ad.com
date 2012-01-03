@@ -4,7 +4,7 @@
 		<title>Home</title>
 		<!-- STYLES REST -->
 		<link rel="stylesheet" href="css/reset.css" type="text/css">
-		<link href='http://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC|Josefin+Slab' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC|Josefin+Slab:400,700' rel='stylesheet' type='text/css'>
 		<link rel="icon" type="image/png" href="http://www.wildfiregames.com/0ad/favicon.png">
 	</head>	
 	<style>
@@ -28,7 +28,7 @@
 		#unav {
 		  width: 1000px;
 		  height: 25px;
-		  color: #363636;
+		  color: white;
 		  background-color: #1e1e1e;
 		}
 		#unav ul {
@@ -43,52 +43,50 @@
 		  display: block;
 		  float: left;
 		  width: auto;
-		  padding-left: 5px;
+		  padding-left: 10px;
 		  height:15px;
 		}
-		
 		#unav li.right {
 		  list-style: none;
 		  display: block;
 		  width: auto;
 		  float: right;
-		  padding-right: 5px;
+		  padding-right: 10px;
 		  height:15px;
 		}
 		
+		#unav li a:hover{
+			color: yellow;
+		}
 		/*-------------------------------------------- top NAV end --------------------------------------------*/
-		
 		header {
 		  	width: 1000px;
 		  	height: 200px;
-			background-image: url(images/header.png);
+			background-color: #500000;
 		}
-		
 		/*-------------------------------------------- NAV start --------------------------------------------*/
 		nav {
 		  	width: 1000px;
 		  	height: 50px;
 		  	font-family: 'IM Fell DW Pica SC', serif;
 		  	color: #aaaa00;
-			background-color: #780000;
+			background-color: #3c0000;
 		}
-		
-		nav ul {
-		  list-style:none;
-		}
-		
 		nav li {
 		  list-style: none;
 		  display: block;
 		  float: left;
-		  width: 200px;
+		  width: 130px;
 		  height: 30px;
-		  padding: 10px 25px 10px 25px;
-		  height: 30px;
+		  padding: 10px;
 		  font-size: 20px;
+		  line-height:30px;
 		  text-align: center;
 		}
 		
+		nav li:hover {
+			color: white;
+		}
 		/*-------------------------------------------- NAV end --------------------------------------------*/
 		/*-------------------------------------------- ARTICLE start --------------------------------------------*/
 		
@@ -97,37 +95,37 @@
 		  	height: 800px;
 		  	float: right;
 		  	color: #363636;
-		  	background-color: #C0AA7D;
+		  	background-color: #c0aa7d;
 		}
 		
-		#slideshow {
-			width: 700px;
-			height: 350px;
-			padding: 25px;
-			margin: 0px 25px 25px 0px;
-			background-color: black;
+		#slider {
+			width: 725px;
+			height: 290px;
+			margin: 25px 25px 10px 0px;
+			background-color: #aa9678;
 		}
 		
-		section.most {
+		section.title {
+			font-family: 'IM Fell DW Pica SC', serif;
+			margin-top: 35px;
+			font-size: 20px;
+			background-color: #aa9678;
+			height: 25px;
+			width: 480px;
+			padding-left: 20px;
+			padding-top: 5px;
+		}
+		
+		section.body{
 			background-color: #aa9678;
 			width: 480px;
-			height: 180px;
-			margin: 25px 25px 25px 0px;
+			height: 380px;
+			margin: 0px 25px 25px 0px;
 			padding: 10px;
 			float: left;
 		}
 		
-		section.next {
-			background-color: #aa9678;
-			width: 480px;
-			height: 80px;
-			margin: 0px 25px 25px 0px;
-			padding: 10px;
-			float: left;
-		}
-		
-		section.twitter {
-			background-color: #aa9678;
+		#tweet {
 			width: 200px;
 			height: 325px;
 			margin: 25px 25px 25px 0px;
@@ -140,13 +138,13 @@
 		  	width: 250px;
 		  	height: 800px;
 		  	float: left;
-		  	background-color: #C0AA7D;
+		  	background-color: #c0aa7d;
 		  	color: #363636;
 		}
 		
 		#sidenav {
 		  	background-color: #aa9678;
-		  	height: 300px;
+		  	height: 100px;
 		  	width: 200px;
 		    margin-bottom: 25px;
 			margin-left: 25px;
@@ -155,7 +153,7 @@
 		
 		#share {
 		  	background-color: #aa9678;
-		  	height: 75px;
+		  	height: 50px;
 		  	width: 200px;
 		  	margin-bottom: 25px;
 			margin-left: 25px;
@@ -198,9 +196,10 @@
 		 	width: 1000px;
 		 	height: 25px;
 		  	text-align: center;
-		  	font-size: 10px;
 		  	padding-top: 10px;
 		  	padding-bottom: 10px;
+		  	line-height:15px;
+		  	font-variant: small-caps;
 		}
 		
 		/*-------------------------------------------- FOOTER end --------------------------------------------*/
@@ -215,10 +214,11 @@
 		
 		body a:link		{text-decoration: none;color: inherit;}
 		body a:hover   	{text-decoration: none;color: inherit;}
-		body a:visited  {text-decoration: none;color: inherit;} 
+		body a:visited  {text-decoration: none;color: inherit;}
+		body b			{font-family: 'Josefin Slab', serif; font-weight: 700;}
+		}
+		} 
 	</style>
-	
-	
 	<body>
 		<div id="content">	
 			
@@ -232,39 +232,29 @@
 			</div>
 			
 			<header>
+				<img src="images/header.png" width="1000" height="200">
 			</header>
 			
 			<nav>
 				<ul>
-					<li><a href="game/features.html">Features</a></li>
-					<li><a href="game/factions.html">Factions</a></li>
-					<li><a href="game/manual.html">Game Manual</a></li>
-					<li><a href="game/history.html">Historical Articles</a></li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Media</a></li>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">Game Manual</a></li>
+					<li><a href="#">Support</a></li>
 				</ul>
 			</nav>
-		
+
 			<aside>
 				<div id="download">
-					<p>Download Button --> make it pretty and appealing to the eye, pop out amongst other elements</p>
+					<p>Download Button -> make it pretty and appealing to the eye, pop out amongst other elements</p>
 				</div>
-				<div id="share"><p>Share Buttons (most likely huge share button w/ little custom popup window) </p>
+				<div id="share"><p>Share Button (most likely huge share button w/ little custom popup window) </p>
 				</div>
 				<div id="sidenav">
-					<p>Universal Navigation; possibly use Game UI buttons (Pureon)</p><br>
-					<ul>
-						<li>Game</li>
-						<li>Media</li>
-						<li>Making Of</li>
-					</ul>
-					<br>
-					<p>Community</p>
-					<ul>
-						<li>Forums</li>
-						<li>Contact</li>
-						<li>Spread the word</li>
-						<li></li>
-					</ul>
-					<p>Developers Area (possible button?)</p>
+					<p>About</p><br>
+					<p>Revision Log</p>
 				</div>
 				<div id="donate">
 					<p>Donate Section</p><br>
@@ -273,28 +263,49 @@
 			</aside>
 			
 			<article>
-				<div id="slideshow">
-					<img src="images/3.png">
+				<div id="slider" align="center">
+					<p><br>Slideshow. Image size: 725*290. A ratio of 2.5<br>Best to use simple fade effect, no need to make it too flashy</p>	
 				</div>
-				<section class="twitter">
-					<p>Possible twitter feeds go here. Most likely via Twitter embed API.</p>
-				</section>
-				<section class="most">
-					<h2>Update Title</h2>
-					<p>Last updated on 12/26/2011</p>
-				</section>
-				<section class="next">
-					<h3>Alpha 8 Released</h3>
-					<p>Unveiling the next chapter in the game... read more!</p>
-				</section>
+				<div id="tweet">
+					<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+					<script>
+					new TWTR.Widget({
+					  version: 2,
+					  type: 'profile',
+					  rpp: 4,
+					  interval: 30000,
+					  width: 200,
+					  height: 325,
+					  theme: {
+					    shell: {
+					      background: '#333333',
+					      color: '#ffffff'
+					    },
+					    tweets: {
+					      background: '#aa9678',
+					      color: '#363636',
+					      links: '#363636'
+					    }
+					  },
+					  features: {
+					    scrollbar: true,
+					    loop: false,
+					    live: false,
+					    behavior: 'all'
+					  }
+					}).render().setUser('play0ad').start();
+					</script>
+				</div>
+				<section class="title">Alpha 9 Imperium Released</section>
+				<section class="body">Happy New Year! Last updated on 1/02/2012.</section>
 			</article>
 		
 			<div class="footerbar">
 				<b>Game Info</b><hr>	
-				<a href="features.hmtl">Features</a><br>
-				<a href="factions.hmtl">Factions</a><br>
-				<a href="manual.hmtl">Game Manual</a><br>
-				<a href="history.hmtl">Historical Reports</a>
+				<a href="game/features.hmtl">Features</a><br>
+				<a href="game/factions.hmtl">Factions</a><br>
+				<a href="game/manual.hmtl">Game Manual</a><br>
+				<a href="game/history.hmtl">Historical Reports</a>
 			</div>
 			<div class="footerbar">
 				<b>News</b><hr>
@@ -327,9 +338,8 @@
 			</div>
 			
 			<footer>
-				Whats up? Testing new footer style.
+				&copy; 2012 Wildfire Games | Released under CC-BY-SA
 			</footer>
 		</div>
 	</body>
 </html>
-
