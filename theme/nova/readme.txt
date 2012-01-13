@@ -1,5 +1,5 @@
-= TWENTY ELEVEN =
+Based off of default WP theme.
 
-* by the WordPress team, http://wordpress.org/
-
-== ABOUT TWENTY ELEVEN ==
+Todo:
+Define new styles
+Rebuild php pages
