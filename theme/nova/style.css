@@ -2225,17 +2225,18 @@ p.comment-form-comment {
 /* Site Generator Line */
 #site-generator {
     background-color: #1E1E1E;
-    color: white;
+    color: #555;
     font-size: 10px;
     font-variant: small-caps;
     line-height: 25px;
     padding: 5px;
     text-align: center;
-    width: 1000px;  
+    width: 990px;  
 }
 #site-generator a {
-	color: #555;
+	color: white;
 	font-weight: bold;
+	text-decoration: none;
 }
 #site-generator .sep {
 	background: url(images/wordpress.png) center left no-repeat;
