@@ -1,8 +1,6 @@
 <?php
 ?>
-
 	</div><!-- #main -->
-
 	<footer id="colophon" role="contentinfo">
 			<div id="site-generator">
 				<?php do_action( 'twentyeleven_credits' ); ?>
@@ -10,8 +8,6 @@
 			</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
-
 <?php wp_footer(); ?>
-
 </body>
 </html>
