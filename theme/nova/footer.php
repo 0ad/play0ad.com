@@ -20,7 +20,8 @@
 				<?php wp_nav_menu( array('menu' => 'Community', 'container' => '' , 'menu_class' => 'Community', 'menu_id' =>'' )); ?>
 			</div>
 			<div id="fifth" class="widget-area" role="complementary">
-				<p>Content coming soon...</p>
+			<h2>Connect With Us</h2>
+			<a href="http://www.tigrs.org/rating.php?data=20003200000000"><img src="http://f.cl.ly/items/1V1q3H022K0T201Y0h19/rating.png"/></a>
 			</div>
 		</div>
 		<div id="site-generator">
@@ -32,3 +33,4 @@
 <?php wp_footer(); ?>
 </body>
 </html>
+

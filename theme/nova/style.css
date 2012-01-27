@@ -78,7 +78,7 @@ body {
 	margin: 0 7.6%;
 }
 #access div {
-	margin: 0 7.6%;
+	margin: 0px;
 }
 #primary {
     background-color: #C0AA7D;
@@ -346,7 +346,6 @@ p {
 	line-height: 20px;
 }
 ul, ol {
-	margin: 5px;
 }
 ul {
 	font-size: 10px;
@@ -465,8 +464,8 @@ input#s {
 	-moz-border-radius: 2px;
 	border-radius: 2px;
 	font-size: 14px;
-	height: 22px;
-	line-height: 1.2em;
+	height: 25px;
+	line-height: 25px;
 	padding: 4px 10px 4px 28px;
 }
 input#searchsubmit {
@@ -501,6 +500,82 @@ a:hover {
 	text-decoration: underline;
 	top: 0;
 	left: 7.6%;
+}
+
+
+/* =Global Menu
+-------------------------------------------------------------- */
+#global {
+	background-color: #1E1E1E;
+    display: block;
+    float: left;
+    height: 25px;
+    width: 1000px;
+}
+#global ul {
+    background-color: inherit;
+    height: 25px;
+    list-style: none outside none;
+}
+#global li {
+    color: white;
+    float: right;
+    font-size: 10px;
+    font-variant: small-caps;
+    line-height: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+    text-align: right;
+}
+#global a {
+    color: white;
+    text-decoration: none;
+}
+#global ul ul {
+	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	display: none;
+	float: left;
+	margin: 0;
+	position: absolute;
+	top: 3.333em;
+	left: 0;
+	width: 188px;
+	z-index: 99999;
+}
+#global ul ul ul {
+	left: 100%;
+	top: 0;
+}
+#global ul ul a {
+	background: #f9f9f9;
+	border-bottom: 1px dotted #ddd;
+	color: #444;
+	font-size: 13px;
+	font-weight: normal;
+	height: auto;
+	line-height: 1.4em;
+	padding: 10px 10px;
+	width: 168px;
+}
+#global li:hover > a,
+#global ul ul :hover > a,
+#global a:focus {
+	background: white;
+	color: black;
+}
+#global li:hover > a,
+#global a:focus
+#global ul li:hover > ul {
+	display: block;
+}
+#global .current-menu-item > a,
+#global .current-menu-ancestor > a,
+#global .current_page_item > a,
+#global .current_page_ancestor > a {
+	font-weight: bold;
 }
 
 
@@ -540,7 +615,7 @@ a:hover {
 }
 
 
-/* =Menu
+/* =Main Menu
 -------------------------------------------------------------- */
 
 #access {
@@ -604,7 +679,7 @@ a:hover {
 #access li:hover > a,
 #access ul ul :hover > a,
 #access a:focus {
-	background: #efefef;
+	background: #C0AA7D;
 }
 #access li:hover > a,
 #access a:focus
@@ -639,7 +714,7 @@ a:hover {
 	-o-transition-duration: 400ms;
 	-o-transition-property: width, background;
 	-o-transition-timing-function: ease;
-	width: 72px;
+	width: 100px;
 }
 #branding #s:focus {
 	background-color: #f9f9f9;
@@ -1738,6 +1813,7 @@ section.recent-posts .other-recent-posts li:after {
     background-color: #AA9678;
     clear: both;
     margin-bottom: 25px;
+    padding: 10px;
 }
 .widget-title {
 	color: #666;
@@ -2197,7 +2273,8 @@ p.comment-form-comment {
 	clear: both;
 }
 #supplementary {
-    background-color: #AA9678;
+    background-color: black;
+    color: white;
     height: 130px;
     overflow: hidden;
 }
