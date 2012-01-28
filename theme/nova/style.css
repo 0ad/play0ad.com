@@ -82,7 +82,7 @@ body {
 }
 #primary {
     background-color: #C0AA7D;
-    float: left;
+    float: right;
     height: 800px;
     width: 750px;
 }
@@ -92,9 +92,9 @@ body {
 }
 #secondary {
     background-color: #C0AA7D;
-    float: right;
+    float: left;
     height: 775px;
-    padding-right: 25px;
+    padding-left: 25px;
     padding-top: 25px;
     width: 225px;
 }
