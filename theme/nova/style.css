@@ -75,7 +75,7 @@ body {
     width: 1000px;
 }
 #branding hgroup {
-	margin: 0 7.6%;
+	height: 225px;
 }
 #access div {
 	margin: 0px;
@@ -113,8 +113,8 @@ body {
 .singular .entry-content,
 .singular footer.entry-meta,
 .singular #comments-title {
-	margin: 0 auto;
-	width: 68.9%;
+    margin: 0 auto;
+    width: 100%;
 }
 
 /* Attachments */
@@ -583,9 +583,7 @@ a:hover {
 ----------------------------------------------- */
 
 #branding {
-    height: 200px;
     position: relative;
-    z-index: 9999;
 }
 #site-title {
 	margin-right: 270px;
@@ -1161,7 +1159,9 @@ article.format-status .entry-content {
 	position: relative;
 }
 .singular.page .hentry {
-	padding: 3.5em 0 0;
+	margin: 25px;
+    padding: 10px;
+    width: 680px;
 }
 .singular .entry-title {
 	color: #000;
