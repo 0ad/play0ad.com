@@ -778,7 +778,9 @@ a:hover {
 .hentry:last-child,
 .no-results {
 	background-color: #AA9678;
-    border-bottom: medium none;
+	margin-top: 25px
+	margin-right: 25px;
+	margin-bottom: 25px;
     padding: 10px;
 }
 .blog .sticky .entry-header .entry-meta {
