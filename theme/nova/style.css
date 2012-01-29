@@ -524,9 +524,9 @@ a:hover {
     font-variant: small-caps;
     line-height: 25px;
     padding-left: 5px;
-    padding-right: 5px;
     position: relative;
     text-align: right;
+    width: 50px;
 }
 #global a {
     color: white;
