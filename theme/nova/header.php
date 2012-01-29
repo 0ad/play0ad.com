@@ -46,10 +46,12 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed">
-	<nav id="global" role="navigation">
-		<?php wp_nav_menu( array('menu' => 'GLOBAL', 'container' => '' , 'menu_class' => 'GLOBAL', 'menu_id' =>'' )); ?>
-	</nav>
+
 	<header id="branding" role="banner">
+			<nav id="global" role="navigation">
+					<?php wp_nav_menu( array('menu' => 'GLOBAL', 'container' => '' , 'menu_class' => 'GLOBAL', 'menu_id' =>'' )); ?>
+			</nav>
+			
 			<hgroup>
 				<h1 id="site-title">
 					<span>
