@@ -68,11 +68,10 @@ footer, header, hgroup, menu, nav, section {
 ----------------------------------------------- */
 
 body {
-	padding: 0 2em;
 }
 #page {
     margin: auto;
-    width: 1000px;
+    width: 100%;
 }
 #branding hgroup {
 	height: 225px;
@@ -505,7 +504,7 @@ a:hover {
     display: block;
     float: left;
     height: 25px;
-    width: 1000px;
+    width: 100%;
     border-style: none none solid none;
     border-width:  1px;
     border-color: #e8be48;
@@ -2319,7 +2318,7 @@ p.comment-form-comment {
     line-height: 15px;
     padding: 5px;
     text-align: center;
-    width: 990px;
+    width: 100%;
     border-style: solid none none none;
     border-width:  1px;
     border-color: #e8be48;
