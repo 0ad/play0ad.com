@@ -514,6 +514,7 @@ a:hover {
     background-color: inherit;
     height: 25px;
     list-style: none outside none;
+    margin-right: 50px;
 }
 #global li {
     color: white;
