@@ -81,7 +81,6 @@ body {
 	margin: 0px;
 }
 #primary {
-    background-color: #C0AA7D;
     float: right;
     height: 800px;
     width: 750px;
@@ -91,7 +90,6 @@ body {
     width: 700px;
 }
 #secondary {
-    background-color: #C0AA7D;
     float: left;
     height: 775px;
     padding-left: 25px;
