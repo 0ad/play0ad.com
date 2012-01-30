@@ -2276,6 +2276,8 @@ p.comment-form-comment {
     color: white;
     height: 130px;
     overflow: hidden;
+    width:1000px;
+    margin: 0 auto;
 }
 
 /* Two Footer Widget Areas */
