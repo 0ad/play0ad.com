@@ -2271,9 +2271,9 @@ p.comment-form-comment {
 
 #colophon {
 	clear: both;
+    background-color: black;
 }
 #supplementary {
-    background-color: black;
     color: white;
     height: 130px;
     overflow: hidden;
