@@ -506,6 +506,9 @@ a:hover {
     float: left;
     height: 25px;
     width: 1000px;
+    border-style: none none solid none;
+    border-width:  1px;
+    border-color: #e8be48;
 }
 #global ul {
     background-color: inherit;
@@ -2309,14 +2312,17 @@ p.comment-form-comment {
 
 /* Site Generator Line */
 #site-generator {
-    background-color: #1E1E1E;
+    background-color: #480001;
     color: #555;
     font-size: 10px;
     font-variant: small-caps;
     line-height: 15px;
     padding: 5px;
     text-align: center;
-    width: 990px;  
+    width: 990px;
+    border-style: solid none none none;
+    border-width:  1px;
+    border-color: #e8be48;
 }
 #site-generator a {
 	color: white;
