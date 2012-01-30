@@ -1,4 +1,11 @@
 <?php
+/**
+* The header placed on every page.
+*
+* @package WildfireGames
+* @subpackage Nova
+* @since Nova 0.2
+*/
 ?><!DOCTYPE html>
 <!--[if IE 6]>
 <html id="ie6" <?php language_attributes(); ?>>

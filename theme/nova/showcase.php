@@ -9,9 +9,9 @@
  *
  * We are creating two queries to fetch the proper posts and a custom widget for the sidebar.
  *
- * @package WordPress
- * @subpackage Twenty_Eleven
- * @since Twenty Eleven 1.0
+ * @package WildfireGames
+ * @subpackage Nova
+ * @since Nova 0.2
  */
 
 // Enqueue showcase script for the slider

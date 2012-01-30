@@ -2,9 +2,9 @@
 /**
  * The Sidebar containing the main widget area.
  *
- * @package WordPress
- * @subpackage Twenty_Eleven
- * @since Twenty Eleven 1.0
+ * @package WildfireGames
+ * @subpackage Nova
+ * @since Nova 0.2
  */
 
 $options = twentyeleven_get_theme_options();

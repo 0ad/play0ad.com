@@ -6,6 +6,10 @@
  * Please note that this is the WordPress construct of pages
  * and that other 'pages' on your WordPress site will use a
  * different template.
+ * 
+ * @package WildfireGames
+ * @subpackage Nova
+ * @since Nova 0.2
  */
 
 get_header(); ?>

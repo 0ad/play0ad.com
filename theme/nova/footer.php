@@ -1,4 +1,11 @@
 <?php
+/**
+* The footer added on every page.
+*
+* @package WildfireGames
+* @subpackage Nova
+* @since Nova 0.2
+*/
 ?>
 	</div><!-- #main -->
 	<footer id="colophon" role="contentinfo">
