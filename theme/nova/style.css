@@ -2605,7 +2605,7 @@ p.comment-form-comment {
 		padding: 0;
 	}
 	#branding hgroup {
-		margin: 0;
+		margin-left:  250px;
 	}
 	#site-title a {
 		font-size: 21pt;
