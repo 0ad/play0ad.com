@@ -93,10 +93,8 @@ body {
 }
 #secondary {
     float: left;
-    height: 775px;
-    padding-left: 25px;
-    padding-top: 25px;
-    width: 225px;
+    height: 800px;
+    width: 250px;
 }
 
 /* Singular */
@@ -345,9 +343,9 @@ p {
 ul, ol {
 }
 ul {
-	font-size: 10px;
+	font-size: 12px;
     line-height: 15px;
-    list-style: none;
+    list-style: square;
     text-align: left;
 }
 ol {
@@ -1821,7 +1819,7 @@ section.recent-posts .other-recent-posts li:after {
 .widget {
     background-color: #AA9678;
     clear: both;
-    margin-bottom: 25px;
+    margin-top: 25px;
     padding: 10px;
 }
 .widget-title {
@@ -2319,6 +2317,12 @@ p.comment-form-comment {
 }
 #supplementary.five .widget-area + .widget-area + .widget-area + .widget-area + .widget-area {
 	margin-right: 0;
+}
+#supplementary.five .widget-area + .widget-area + .widget-area + .widget-area + .widget-area ul{
+	font-size: 10px;
+    line-height: 15px;
+    list-style: none outside none;
+    text-align: left;
 }
 
 /* Site Generator Line */
