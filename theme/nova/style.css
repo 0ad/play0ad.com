@@ -89,7 +89,7 @@ body {
 }
 #content {
     margin: 25px;
-    width: 700px;
+    width: 725px;
 }
 #secondary {
     float: left;
@@ -2288,26 +2288,6 @@ p.comment-form-comment {
     margin: 0 auto;
 }
 
-/* Two Footer Widget Areas */
-#supplementary.two .widget-area {
-	float: left;
-	margin-right: 3.7%;
-	width: 48.1%;
-}
-#supplementary.two .widget-area + .widget-area {
-	margin-right: 0;
-}
-
-/* Three Footer Widget Areas */
-#supplementary.three .widget-area {
-	float: left;
-	margin-right: 3.7%;
-	width: 30.85%;
-}
-#supplementary.three .widget-area + .widget-area + .widget-area {
-	margin-right: 0;
-}
-
 /* Five Footer Widget Areas */
 #supplementary.five .widget-area {
 	float: left;
@@ -2318,7 +2298,7 @@ p.comment-form-comment {
 #supplementary.five .widget-area + .widget-area + .widget-area + .widget-area + .widget-area {
 	margin-right: 0;
 }
-#supplementary.five .widget-area + .widget-area + .widget-area + .widget-area + .widget-area ul{
+#supplementary.five ul{
 	font-size: 10px;
     line-height: 15px;
     list-style: none outside none;
