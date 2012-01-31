@@ -13,7 +13,7 @@
  */
 
 get_header(); ?>
-
+		
 		<div id="primary">
 			<div id="content" role="main">
 			
@@ -27,5 +27,5 @@ get_header(); ?>
 		<div id="secondary" class="widget-area" role="complementary">
 			<?php get_sidebar; ?> 
 		</div>
-		
+
 <?php get_footer(); ?>
