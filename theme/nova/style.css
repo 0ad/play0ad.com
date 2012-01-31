@@ -751,6 +751,8 @@ a:hover {
 
 #main {
 	clear: both;
+	margin: 0;
+    width: 1000px;
 }
 .page-title {
 	color: #666;
