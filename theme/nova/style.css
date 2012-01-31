@@ -564,7 +564,7 @@ a:hover {
 #global li:hover > a,
 #global ul ul :hover > a,
 #global a:focus {
-	background: white;
+	background-color: #E8BE48;
 	color: black;
 }
 #global li:hover > a,
