@@ -75,7 +75,9 @@ body {
 }
 #branding hgroup {
 	height: 225px;
-	margin-left:  250px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
 }
 #access div {
 	margin: 0px;
@@ -619,19 +621,18 @@ a:hover {
 	background-color: #3C0000;
 	clear: both;
 	display: block;
-	float: left;
+	float: center;
 	height: 50px;
-	width: 100%;
-	color: #AAAA00;
+	width: 1000px;
+	color: #AA0;
+	margin-left: auto;
+	margin-right: auto;
 }
 #access ul {
     background-color: #480001;
     font-size: 15px;
     height: 50px;
     list-style: none outside none;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1000px;
 }
 #access li {
 	float: left;
