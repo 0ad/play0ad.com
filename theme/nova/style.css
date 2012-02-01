@@ -89,7 +89,7 @@ body {
 }
 #content {
     margin: 25px;
-    width: 725px;
+    width: 100%;
 }
 
 #content ul {
@@ -110,7 +110,7 @@ body {
 }
 .singular #content,
 .left-sidebar.singular #content {
-	margin: 25px;
+	margin-left: 25px;
 	position: relative;
 	width: auto;
 }
@@ -1173,9 +1173,8 @@ article.format-status .entry-content {
 	position: relative;
 }
 .singular.page .hentry {
-	margin: 25px;
     padding: 10px;
-    width: 680px;
+    width: 100%;
 }
 .singular .entry-title {
 	color: #000;
