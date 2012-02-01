@@ -1173,6 +1173,7 @@ article.format-status .entry-content {
 	position: relative;
 }
 .singular.page .hentry {
+ 	background-color: #dedede;
     padding: 10px;
     width: 100%;
 }
@@ -1823,7 +1824,7 @@ section.recent-posts .other-recent-posts li:after {
 	font-size: 12px;
 }
 .widget {
-    background-color: #AA9678;
+    background-color: #222222;
     clear: both;
     margin-top: 25px;
     padding: 10px;
