@@ -91,6 +91,13 @@ body {
     margin: 25px;
     width: 725px;
 }
+
+#content ul {
+    list-style: square outside none;
+    text-align: left;
+    margin-left: 20px;
+}
+
 #secondary {
     float: left;
     height: 800px;
