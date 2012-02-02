@@ -103,7 +103,7 @@ body {
 #secondary {
     float: left;
     height: 800px;
-    width: 250px;
+    width: 225px;
 }
 
 /* Singular */
@@ -1963,6 +1963,22 @@ section.ephemera .entry-title a span {
 	border-bottom: 1px solid #ccc;
 }
 
+/* Custom Sidebar Widgets */
+
+#download{
+	background-color: #222222;
+    height: 100px;
+    width: 100%
+}
+#share {
+	background-color: #222222;
+    height: 50px;
+    width: 100%
+}
+#donate {
+    height: 100px;
+    width: 100%;
+}
 
 /* =Comments
 ----------------------------------------------- */

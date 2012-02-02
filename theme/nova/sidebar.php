@@ -15,11 +15,16 @@ if ( 'content' != $current_layout ) :
 		<div id="secondary" class="widget-area" role="complementary">
 			<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 
-				<aside id="archives" class="widget">
-					<h3 class="widget-title"><?php _e( 'Archives', 'nova' ); ?></h3>
-					<ul>
-						<?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
-					</ul>
+				<aside id="download" class="widget">
+					<p>Download Button</p>
+				</aside>
+				
+				<aside id="share" class="widget">
+					<p>Share Button</p>
+				</aside>
+				
+				<aside id="donate" class="widget">
+					<p>Donate Section</p>
 				</aside>
 
 			<?php endif; // end sidebar widget area ?>
