@@ -86,7 +86,6 @@ body {
 }
 #primary {
     float: right;
-    height: 800px;
     width: 750px;
 }
 #content {
@@ -102,7 +101,7 @@ body {
 
 #secondary {
     float: left;
-    height: 800px;
+	height: 775px;
     width: 225px;
 }
 
@@ -763,10 +762,11 @@ a:hover {
 ----------------------------------------------- */
 
 #main {
-    clear: both;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1000px;
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+	height: 775px;
 }
 .page-title {
 	color: #666;
@@ -1831,6 +1831,7 @@ section.recent-posts .other-recent-posts li:after {
     clear: both;
     margin-top: 25px;
     padding: 10px;
+    width: 230px;
 }
 .widget-title {
 	color: #666;
@@ -1968,16 +1969,29 @@ section.ephemera .entry-title a span {
 
 #download{
 	background-color: #222222;
+	margin-top: 25px;
     height: 100px;
-    width: 100%
+    width: 250px;
 }
 #share {
 	background-color: #222222;
     height: 50px;
-    width: 100%
+    margin-top: 25px;
+    width: 250px;
+}
+#revlog {
+    height: 180px;
+    width: 100%;
+}
+#revlog a{
+	color: white;
+}
+#devblog {
+    height: 155px;
+    width: 100%;
 }
 #donate {
-    height: 100px;
+    height: 80px;
     width: 100%;
 }
 
