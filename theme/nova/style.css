@@ -645,6 +645,8 @@ a:hover {
 #access li {
 	float: left;
 	position: relative;
+	text-align: center;
+	width: 125px;
 }
 #access a {
     background-color: maroon;
