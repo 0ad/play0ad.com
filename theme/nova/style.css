@@ -332,7 +332,11 @@ body, input, textarea {
 body {
 	background-image: url("images/bg.png");
 	background-repeat: repeat;
+<<<<<<< HEAD
 	background-position: top center;
+=======
+	background-position: center top;
+>>>>>>> Minor thing
 }
 
 /* Headings */
