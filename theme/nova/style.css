@@ -107,13 +107,13 @@ body {
 
 /* Singular */
 .singular #primary {
-	margin: 0;
+    height: 725px;
+    width: 750px;
 }
 .singular #content,
 .left-sidebar.singular #content {
-	margin-left: 25px;
-	position: relative;
-	width: auto;
+    position: relative;
+    width: 725px;
 }
 .singular .entry-header,
 .singular .entry-content,
@@ -1178,9 +1178,8 @@ article.format-status .entry-content {
 	position: relative;
 }
 .singular.page .hentry {
- 	background-color: #dedede;
+    background-color: #DEDEDE;
     padding: 10px;
-    width: 100%;
 }
 .singular .entry-title {
 	color: #000;
