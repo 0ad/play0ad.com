@@ -102,7 +102,7 @@ body {
 #secondary {
     float: left;
 	height: 775px;
-    width: 225px;
+    width: 250px;
 }
 
 /* Singular */
@@ -1854,6 +1854,7 @@ section.recent-posts .other-recent-posts li:after {
 	font-size: 13px;
 }
 .widget a {
+	color: white;
 	font-weight: bold;
 	text-decoration: none;
 }
@@ -1982,18 +1983,15 @@ section.ephemera .entry-title a span {
 }
 #revlog {
     height: 180px;
-    width: 100%;
-}
-#revlog a{
-	color: white;
+    width: 230px;
 }
 #devblog {
     height: 155px;
-    width: 100%;
+    width: 230px;
 }
 #donate {
     height: 80px;
-    width: 100%;
+    width: 230px;
 }
 
 /* =Comments
