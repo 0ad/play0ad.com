@@ -1976,10 +1976,11 @@ section.ephemera .entry-title a span {
     width: 250px;
 }
 #share {
-	background-color: #222222;
+	background-image: url("images/share-button.png")
     height: 50px;
     margin-top: 25px;
     width: 250px;
+    text-align: center;
 }
 #revlog {
     height: 180px;
