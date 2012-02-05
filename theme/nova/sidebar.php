@@ -20,7 +20,7 @@ if ( 'content' != $current_layout ) :
 				</aside>
 				
 				<aside id="share">
-					<p>Share Button</p>
+					<img src="images/share-button.png" height="50" width="250" />
 				</aside>
 				
 				<aside id="revlog" class="widget">
