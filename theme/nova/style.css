@@ -794,7 +794,7 @@ a:hover {
 }
 .hentry:last-child,
 .no-results {
-	background-color: #AA9678;
+	background-color: #DEDEDE;
 	margin-top: 25px
 	margin-right: 25px;
 	margin-bottom: 25px;
@@ -1180,6 +1180,7 @@ article.format-status .entry-content {
 .singular.page .hentry {
     background-color: #DEDEDE;
     padding: 10px;
+    height: 705px;
 }
 .singular .entry-title {
 	color: #000;
