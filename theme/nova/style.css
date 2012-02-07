@@ -520,10 +520,11 @@ a:hover {
     border-color: #e8be48;
 }
 #global ul {
-    background-color: inherit;
-    height: 25px;
-    list-style: none outside none;
-    margin-right: 50px;
+	background-color: inherit;
+	list-style: none outside none;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
 }
 #global li {
     color: white;
