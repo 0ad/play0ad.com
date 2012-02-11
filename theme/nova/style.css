@@ -74,8 +74,7 @@ body {
     width: 100%;
 }
 #branding hgroup {
-	background-color: #DEDEDE;
-	background-image: url("images/header-sample.png");
+	background-image: url("images/header.png");
 	height: 225px;
 	margin-left: auto;
 	margin-right: auto;
