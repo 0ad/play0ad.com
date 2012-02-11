@@ -154,16 +154,6 @@ body {
 	width: 22.15%;
 }
 
-/* error404 */
-.error404 #primary {
-	float: none;
-	margin: 0;
-}
-.error404 #primary #content {
-	margin: 0 7.6%;
-	width: auto;
-}
-
 /* Alignment */
 .alignleft {
 	display: inline;
@@ -1382,39 +1372,12 @@ blockquote.pull {
 }
 
 
-/* =error404
+/* 404
 ----------------------------------------------- */
 
-.error404 #main #searchform {
-	background: #f9f9f9;
-	border: 1px solid #ddd;
-	border-width: 1px 0;
-	margin: 0 -8.9% 1.625em;
-	overflow: hidden;
-	padding: 1.625em 8.9%;
-}
-.error404 #main #s {
-	width: 95%;
-}
-.error404 #main .widget {
-	clear: none;
-	float: left;
-	margin-right: 3.7%;
-	width: 30.85%;
-}
-.error404 #main .widget_archive {
-	margin-right: 0;
-}
-.error404 #main .widget_tag_cloud {
-	float: none;
-	margin-right: 0;
-	width: 100%;
-}
-.error404 .widgettitle {
-	font-size: 10px;
-	letter-spacing: 0.1em;
-	line-height: 2.6em;
-	text-transform: uppercase;
+#404{
+	background-color: #DEDEDE;
+	height: 250px;
 }
 
 
