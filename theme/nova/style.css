@@ -2313,6 +2313,13 @@ p.comment-form-comment {
     list-style: none outside none;
     text-align: left;
 }
+#supplementary a{
+	color: gold;
+}
+
+#supplementary a:focus, a:active, a:hover {
+	color: white;
+}
 
 /* Site Generator Line */
 #site-generator {
