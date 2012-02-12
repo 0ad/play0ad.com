@@ -118,7 +118,7 @@ body {
 .singular .entry-content,
 .singular footer.entry-meta,
 .singular #comments-title {
-    margin: 0 auto;
+    height: 50px;
     width: 100%;
 }
 
@@ -467,7 +467,7 @@ input#searchsubmit {
 
 /* Links */
 a {
-	color: gold;
+	color: gray;
 	text-decoration: none;
 }
 a:focus,
@@ -810,8 +810,13 @@ a:hover {
 }
 .entry-title,
 .entry-title a {
-	color: #222;
-	text-decoration: none;
+	background-image: url("images/entry-title.png");
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+    padding-bottom: 5px;
+    text-decoration: none;
 }
 .entry-title a:hover,
 .entry-title a:focus,
@@ -1173,10 +1178,11 @@ article.format-status .entry-content {
     height: 705px;
 }
 .singular .entry-title {
-	color: #000;
-	font-size: 36px;
-	font-weight: bold;
-	line-height: 48px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+    padding-bottom: 5px;
 }
 .singular .entry-title,
 .singular .entry-header .entry-meta {
