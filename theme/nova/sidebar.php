@@ -14,13 +14,17 @@ if ( 'content' != $current_layout ) :
 ?>
 		<div id="secondary" class="widget-area" role="complementary">
 			<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
-
-				<aside id="download">
-					<p>Download Button</p>
+								
+				<aside id="donate" class="widget">
+					<p>Support WFG</p>
 				</aside>
 				
 				<aside id="share">
-					<img src="images/share-button.png" height="50" width="250" />
+				<p>Big Share button that opens dialog box upon click.</p>
+				</aside>
+				
+				<aside id="devblog" class="widget">
+					<h2>Development Blog Feed</h2>
 				</aside>
 				
 				<aside id="revlog" class="widget">
@@ -48,14 +52,6 @@ if ( 'content' != $current_layout ) :
     					</li>
     					<?php endforeach; ?>
 					</ul>
-				</aside>
-				
-				<aside id="devblog" class="widget">
-					<h2>Dev Blog</h2>
-					</aside>
-				
-				<aside id="donate" class="widget">
-					<p>Donate Section</p>
 				</aside>
 
 			<?php endif; // end sidebar widget area ?>
