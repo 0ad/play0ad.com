@@ -804,9 +804,6 @@ a:hover {
 	color: #222;
 	font-size: 26px;
 	font-weight: bold;
-	line-height: 1.5em;
-	padding-bottom: .3em;
-	padding-top: 15px;
 }
 .entry-title,
 .entry-title a {
@@ -814,9 +811,10 @@ a:hover {
     color: white;
     font-size: 30px;
     font-weight: bold;
-    line-height: 40px;
-    padding-bottom: 5px;
+    line-height: 50px;
     text-decoration: none;
+    height: 100%;
+    padding-left: 10px;
 }
 .entry-title a:hover,
 .entry-title a:focus,
@@ -1181,8 +1179,7 @@ article.format-status .entry-content {
     color: white;
     font-size: 30px;
     font-weight: bold;
-    line-height: 40px;
-    padding-bottom: 5px;
+    line-height: 50px;
 }
 .singular .entry-title,
 .singular .entry-header .entry-meta {
