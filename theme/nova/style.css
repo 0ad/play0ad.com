@@ -1170,7 +1170,7 @@ article.format-status .entry-content {
 .singular.page .hentry {
     background-color: #DEDEDE;
     padding: 10px;
-    height: 705px;
+    min-height: 550px;
 }
 .singular .entry-title {
     color: white;
