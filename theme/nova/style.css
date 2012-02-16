@@ -118,7 +118,6 @@ body {
 .singular .entry-content,
 .singular footer.entry-meta,
 .singular #comments-title {
-    height: 50px;
     width: 100%;
 }
 
@@ -262,7 +261,6 @@ body {
 	margin: 0 0 0 1.625em;
 }
 .one-column.singular .entry-meta .edit-link a {
-	position: absolute;
 	left: 0;
 	top: 40px;
 }
@@ -914,7 +912,6 @@ dl.gallery-item {
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	color: #666;
-	float: right;
 	font-size: 12px;
 	line-height: 1.5em;
 	font-weight: 300;
@@ -1224,7 +1221,6 @@ blockquote.pull {
 .singular .entry-meta .edit-link a {
 	bottom: auto;
 	left: 50px;
-	position: absolute;
 	right: auto;
 	top: 80px;
 }
@@ -1418,7 +1414,6 @@ article.intro .edit-link a {
 	color: #fff;
 	font-size: 12px;
 	padding: 0 8px;
-	position: absolute;
 	top: 30px;
 	right: 20px;
 	text-decoration: none;
@@ -2431,7 +2426,6 @@ p.comment-form-comment {
 	}
 	.singular .entry-meta .edit-link a {
 		left: 0;
-		position: absolute;
 		top: 40px;
 	}
 	.singular #author-info {
