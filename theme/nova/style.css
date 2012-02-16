@@ -1184,6 +1184,7 @@ article.format-status .entry-content {
 .singular .entry-title,
 .singular .entry-header .entry-meta {
 	padding-right: 0;
+	margin: -10px;
 }
 .singular .entry-header .entry-meta {
 	position: absolute;
