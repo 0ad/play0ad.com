@@ -336,6 +336,7 @@ hr {
 p {
 	line-height: 20px;
 	padding-top: 1em;
+	color: black;
 }
 ul, ol {
 }
@@ -2312,7 +2313,7 @@ p.comment-form-comment {
 }
 
 #supplementary a:focus, a:active, a:hover {
-	color: white;
+	color: maroon;
 }
 
 /* Site Generator Line */
