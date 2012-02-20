@@ -20,7 +20,7 @@ if ( 'content' != $current_layout ) :
 					<p>Support WFG</p>
 				</aside>
 				
-				<aside id="share">
+				<aside id="share" class="widget">
 				<p>Big Share button that opens dialog box upon click.</p>
 				</aside>
 				
@@ -31,7 +31,10 @@ if ( 'content' != $current_layout ) :
 				<aside id="tweet" class="widget">
 					<p>Twitter Feed will go here.</p>
 				</aside>
-
+				
+				<aside id="devarea" class="widget">
+					<p>Developers Area</p>
+				</aside>
 
 			<?php endif; // end sidebar widget area ?>
 		</div><!-- #secondary .widget-area -->

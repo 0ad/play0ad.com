@@ -371,7 +371,7 @@ function nova_widgets_init() {
 	register_widget( 'Twenty_Eleven_Ephemera_Widget' );
 
 	register_sidebar( array(
-		'name' => __( 'Home Sidebar', 'nova' ),
+		'name' => __( 'Home', 'nova' ),
 		'id' => 'sidebar-1',
 		'description' => __( 'Appears on homepage only.', 'nova' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -381,7 +381,7 @@ function nova_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name' => __( 'Universal Sidebar', 'nova' ),
+		'name' => __( 'Universal', 'nova' ),
 		'id' => 'sidebar-3',
 		'description' => __( 'Appears on all pages.', 'nova' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
