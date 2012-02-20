@@ -7,6 +7,8 @@
  * @since Nova 0.2
  */
 
+
+
 $options = twentyeleven_get_theme_options();
 $current_layout = $options['theme_layout'];
 
@@ -19,13 +21,13 @@ if ( 'content' != $current_layout ) :
 					<p>Support WFG</p>
 				</aside>
 				
-				<aside id="share">
-				<p>Big Share button that opens dialog box upon click.</p>
+				<aside id="community" class="widget">
+				<p>Community Updates go here.</p>
 				</aside>
-				
-				<aside id="devblog" class="widget">
-					<h2>Development Blog Feed</h2>
-				</aside>
+
+				<aside id="video" class="widget">
+					<p>Embed featured video here</p>
+				</aside>				
 				
 				<aside id="revlog" class="widget">
 					<h2><?php _e('Revision Log'); ?></h2>
@@ -52,6 +54,10 @@ if ( 'content' != $current_layout ) :
     					</li>
     					<?php endforeach; ?>
 					</ul>
+				</aside>
+				
+				<aside id="devarea" class="widget">
+					<p>Developers Area</p>
 				</aside>
 
 			<?php endif; // end sidebar widget area ?>

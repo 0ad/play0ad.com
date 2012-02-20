@@ -1169,7 +1169,7 @@ article.format-status .entry-content {
 .singular.page .hentry {
     background-color: #DEDEDE;
     padding: 10px;
-    min-height: 550px;
+    min-height: 575px;
 }
 .singular .entry-title {
     color: white;
@@ -1931,30 +1931,50 @@ section.ephemera .entry-title a span {
 
 /* Custom Sidebar Widgets */
 
-#download{
-	background-color: #222222;
-	margin-top: 25px;
-    height: 100px;
-    width: 250px;
+#community{
+	height: 175px;
+	width: 230px;
 }
+
+#devarea{
+	height: 80px;
+	width: 230px;
+}
+
+#devblog {
+    height: 155px;
+    width: 230px;
+}
+
+#donate {
+    height: 80px;
+    width: 230px;
+}
+
+#revlog {
+    height: 80px;
+    width: 230px;
+}
+/* Whoever does styling for revlog, put the properties here please.*/
+
 #share {
     height: 50px;
     margin-top: 25px;
     width: 250px;
     text-align: center;
 }
-#revlog {
-    height: 130px;
-    width: 230px;
+
+#tweet {
+	height: 180px;
+	width: 230px;
 }
-#devblog {
-    height: 155px;
-    width: 230px;
+
+#video {
+	height: 130px;
+	width:	250px;
+	padding: 0px;
 }
-#donate {
-    height: 80px;
-    width: 230px;
-}
+
 
 /* =Comments
 ----------------------------------------------- */
