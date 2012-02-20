@@ -33,9 +33,9 @@
  *
  * For more information on hooks, actions, and filters, see http://codex.wordpress.org/Plugin_API.
  *
- * @package WordPress
+ * @package WildfireGames
  * @subpackage Nova
- * @since Nova 0.3
+ * @since Nova 0.2
  */
 
 /**

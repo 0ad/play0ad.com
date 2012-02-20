@@ -32,8 +32,8 @@
 			</div>
 		</div>
 		<div id="site-generator">
-			<?php do_action( 'twentyeleven_credits' ); ?>
-			<a href="<?php echo esc_url( __( 'http://wildfiregames.com', 'twentyeleven' ) ); ?>" rel="generator"><?php printf( __( '&copy; 2012 Wildfire Games | CC-BY-SA ', 'twentyeleven' ) ); ?></a>
+			<?php do_action( 'nova_credits' ); ?>
+			<a href="<?php echo esc_url( __( 'http://wildfiregames.com', 'nova' ) ); ?>" rel="generator"><?php printf( __( '&copy; 2012 Wildfire Games | CC-BY-SA ', 'nova' ) ); ?></a>
 		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->

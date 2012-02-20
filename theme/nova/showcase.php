@@ -15,7 +15,7 @@
  */
 
 // Enqueue showcase script for the slider
-wp_enqueue_script( 'twentyeleven-showcase', get_template_directory_uri() . '/js/showcase.js', array( 'jquery' ), '2011-04-28' );
+wp_enqueue_script( 'nova-showcase', get_template_directory_uri() . '/js/showcase.js', array( 'jquery' ), '2011-04-28' );
 
 get_header(); ?>
 
@@ -69,7 +69,7 @@ get_header(); ?>
 					?>
 
 				<div class="featured-posts">
-					<h1 class="showcase-heading"><?php _e( 'Featured Post', 'twentyeleven' ); ?></h1>
+					<h1 class="showcase-heading"><?php _e( 'Featured Post', 'nova' ); ?></h1>
 
 				<?php
 					// Let's roll.
@@ -112,7 +112,7 @@ get_header(); ?>
 								else
 									$thumbnail_size = 'small-feature';
 								?>
-								<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyeleven' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_post_thumbnail( $thumbnail_size ); ?></a>
+								<a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'nova' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_post_thumbnail( $thumbnail_size ); ?></a>
 								<?php
 							}
 						?>
@@ -142,7 +142,7 @@ get_header(); ?>
 							else
 								$class = '';
 				    	?>
-						<li><a href="#featured-post-<?php echo $counter_slider; ?>" title="<?php printf( esc_attr__( 'Featuring: %s', 'twentyeleven' ), the_title_attribute( 'echo=0' ) ); ?>" <?php echo $class; ?>></a></li>
+						<li><a href="#featured-post-<?php echo $counter_slider; ?>" title="<?php printf( esc_attr__( 'Featuring: %s', 'nova' ), the_title_attribute( 'echo=0' ) ); ?>" <?php echo $class; ?>></a></li>
 					<?php endwhile;	?>
 					</ul>
 				</nav>

@@ -2,9 +2,9 @@
 /**
  * The template for displaying Search Results pages.
  *
- * @package WordPress
- * @subpackage Twenty_Eleven
- * @since Twenty Eleven 1.0
+ * @package WildfireGames
+ * @subpackage Nova
+ * @since Nova 0.2
  */
 
 get_header(); ?>
@@ -15,10 +15,10 @@ get_header(); ?>
 			<?php if ( have_posts() ) : ?>
 
 				<header class="page-header">
-					<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentyeleven' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+					<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'nova' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 				</header>
 
-				<?php twentyeleven_content_nav( 'nav-above' ); ?>
+				<?php nova_content_nav( 'nav-above' ); ?>
 
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -33,17 +33,17 @@ get_header(); ?>
 
 				<?php endwhile; ?>
 
-				<?php twentyeleven_content_nav( 'nav-below' ); ?>
+				<?php nova_content_nav( 'nav-below' ); ?>
 
 			<?php else : ?>
 
 				<article id="post-0" class="post no-results not-found">
 					<header class="entry-header">
-						<h1 class="entry-title"><?php _e( 'Nothing Found', 'twentyeleven' ); ?></h1>
+						<h1 class="entry-title"><?php _e( 'Nothing Found', 'nova' ); ?></h1>
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">
-						<p><?php _e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'twentyeleven' ); ?></p>
+						<p><?php _e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'nova' ); ?></p>
 						<?php get_search_form(); ?>
 					</div><!-- .entry-content -->
 				</article><!-- #post-0 -->
