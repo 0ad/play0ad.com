@@ -773,20 +773,13 @@ a:hover {
 	text-transform: none;
 }
 .hentry,
-.no-results {
-	border-bottom: 1px solid #ddd;
-	margin: 0 0 1.625em;
-	padding: 0 0 1.625em;
-	position: relative;
-}
 .hentry:last-child,
 .no-results {
-	background-color: #DEDEDE;
-	margin-top: 25px
-	margin-right: 25px;
-	margin-bottom: 25px;
-    padding: 10px;
+    background-color: #DEDEDE;
+    margin: 0 25px 25px 0;
+    position: relative;
 }
+
 .blog .sticky .entry-header .entry-meta {
 	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
 	clip: rect(1px, 1px, 1px, 1px);
@@ -794,7 +787,8 @@ a:hover {
 }
 .entry-title,
 .entry-header .entry-meta {
-	padding-right: 76px;
+	padding-left: 25px;
+    background-image: url("images/entry-title.png");
 }
 .entry-title {
 	clear: both;
@@ -804,14 +798,12 @@ a:hover {
 }
 .entry-title,
 .entry-title a {
-	background-image: url("images/entry-title.png");
     color: white;
     font-size: 30px;
     font-weight: bold;
     line-height: 50px;
     text-decoration: none;
     height: 100%;
-    padding-left: 10px;
 }
 .entry-title a:hover,
 .entry-title a:focus,
@@ -832,7 +824,7 @@ a:hover {
 }
 .entry-content,
 .entry-summary {
-	padding: 1.625em 0 0;
+	padding: 10px;
 }
 .entry-content h1,
 .entry-content h2,
