@@ -60,7 +60,7 @@
 			</nav>
 			
 			<hgroup>
-				<a href="download.html"> 
+				<a href="download"> 
 					<div id="download-button">
 						<h1>DOWNLOAD</h1>
 						<p>Alpha 9 I-something</p>
