@@ -112,7 +112,6 @@ body {
 .singular #content,
 .left-sidebar.singular #content {
     position: relative;
-    width: 725px;
 }
 .singular .entry-header,
 .singular .entry-content,
@@ -809,7 +808,6 @@ a:hover {
 }
 .entry-title,
 .entry-header .entry-meta {
-	padding-left: 25px;
     background-image: url("images/entry-title.png");
 }
 .entry-title {
@@ -833,10 +831,11 @@ a:hover {
 	color: #1982d1;
 }
 .entry-meta {
-	color: #666;
-	clear: both;
-	font-size: 12px;
-	line-height: 18px;
+    clear: both;
+    color: #666666;
+    font-size: 10px;
+    line-height: 20px;
+    padding: 5px 0 5px 25px;
 }
 .entry-meta a {
 	font-weight: bold;
