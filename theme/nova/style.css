@@ -612,7 +612,7 @@ a:hover {
 }
 
 #download-button {
-    background-image:url(images/download-button.png)
+    background-image:url(images/download-button.png);
     float: left;
     height: 100px;
     margin: 50px 125px 0 500px;
