@@ -1821,8 +1821,7 @@ section.recent-posts .other-recent-posts li:after {
     width: 230px;
 }
 .widget-title {
-	color: #666;
-	font-size: 10px;
+	font-size: 18px;
 	font-weight: 500;
 	letter-spacing: 0.1em;
 	line-height: 20px;
