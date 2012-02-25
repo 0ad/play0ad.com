@@ -64,6 +64,15 @@ footer, header, hgroup, menu, nav, section {
 }
 
 
+/* =Clearing divs so they can contain floated elements
+-------------------------------------------------------------- */
+div:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+}
+
 /* =Structure
 ----------------------------------------------- */
 
@@ -1193,8 +1202,8 @@ article.format-status .entry-content {
 }
 .singular .entry-title,
 .singular .entry-header .entry-meta {
-	padding-right: 0;
 	margin: -10px;
+	padding-left: 20px;
 }
 .singular .entry-header .entry-meta {
 	position: absolute;
@@ -1987,6 +1996,19 @@ section.ephemera .entry-title a span {
 	padding: 0px;
 }
 
+/* Pledgie badge */
+.pledgieBadge {
+	float: left;
+}
+
+.pledgieBadge img {
+	margin: 0;
+}
+
+/* PayPal badge */
+.payPalBadge {
+	float: right;
+}
 
 /* =Comments
 ----------------------------------------------- */
