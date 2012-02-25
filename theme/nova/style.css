@@ -64,6 +64,15 @@ footer, header, hgroup, menu, nav, section {
 }
 
 
+/* =Clearing divs so they can contain floated elements
+-------------------------------------------------------------- */
+div:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+}
+
 /* =Structure
 ----------------------------------------------- */
 
@@ -84,11 +93,12 @@ body {
 	margin: 0px;
 }
 #primary {
-    float: right;
+    float: left;
     width: 750px;
 }
 #content {
-    margin: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     width: 100%;
 }
 
@@ -99,7 +109,7 @@ body {
 }
 
 #secondary {
-    float: left;
+    float: right;
 	height: 775px;
     width: 250px;
 }
@@ -118,6 +128,7 @@ body {
 .singular footer.entry-meta,
 .singular #comments-title {
     width: 100%;
+    color: black;
 }
 
 /* Attachments */
@@ -335,7 +346,6 @@ hr {
 p {
 	line-height: 20px;
 	padding-top: 1em;
-	color: black;
 }
 ul, ol {
 }
@@ -1192,8 +1202,8 @@ article.format-status .entry-content {
 }
 .singular .entry-title,
 .singular .entry-header .entry-meta {
-	padding-right: 0;
 	margin: -10px;
+	padding-left: 20px;
 }
 .singular .entry-header .entry-meta {
 	position: absolute;
@@ -1804,14 +1814,17 @@ section.recent-posts .other-recent-posts li:after {
 }
 .widget {
     background-color: #222222;
+    color: white;
     clear: both;
     margin-top: 25px;
     padding: 10px;
     width: 230px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
 }
 .widget-title {
-	color: #666;
-	font-size: 10px;
+	font-size: 18px;
 	font-weight: 500;
 	letter-spacing: 0.1em;
 	line-height: 20px;
@@ -1986,6 +1999,19 @@ section.ephemera .entry-title a span {
 	padding: 0px;
 }
 
+/* Pledgie badge */
+.pledgieBadge {
+	float: left;
+}
+
+.pledgieBadge img {
+	margin: 0;
+}
+
+/* PayPal badge */
+.payPalBadge {
+	float: right;
+}
 
 /* =Comments
 ----------------------------------------------- */
