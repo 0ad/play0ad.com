@@ -7,11 +7,11 @@
  * @since Nova 0.2
  */
 ?>
-	<header class="entry-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
+	<header>
+		<h1 class="blog-title"><?php the_title(); ?></h1>
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<?php endif; ?>
-	</header><!-- .entry-header -->
+	</header>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="entry-content">
 		<?php the_content(); ?>
