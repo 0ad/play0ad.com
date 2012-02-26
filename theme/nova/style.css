@@ -816,8 +816,20 @@ a:hover {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
 }
+
+.blog-title{
+    background-image: url("images/entry-title.png");
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 25px;
+    width: 700px;
+}
+
 .entry-title,
-.entry-header .entry-meta {
+.entry-header{
     background-image: url("images/entry-title.png");
 }
 .entry-title {
@@ -838,7 +850,7 @@ a:hover {
 .entry-title a:hover,
 .entry-title a:focus,
 .entry-title a:active {
-	color: #1982d1;
+	color: maroon;
 }
 .entry-meta {
     clear: both;
@@ -1185,9 +1197,8 @@ article.format-status .entry-content {
 
 /* Singular content styles for Posts and Pages */
 .singular .hentry {
-	border-bottom: none;
-	padding: 4.875em 0 0;
-	position: relative;
+    padding: 10px;
+    position: relative;
 }
 .singular.page .hentry {
     background-color: #DEDEDE;
