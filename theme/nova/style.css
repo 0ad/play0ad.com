@@ -1824,8 +1824,8 @@ section.recent-posts .other-recent-posts li:after {
     border-style: solid;
 }
 .widget-title {
-	font-size: 18px;
-	font-weight: 500;
+	font-size: 16px;
+	font-weight: bold;
 	letter-spacing: 0.1em;
 	line-height: 20px;
 	text-transform: uppercase;
@@ -1953,6 +1953,19 @@ section.ephemera .entry-title a span {
 	background: #f4f4f4;
 	border-top: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
+}
+
+/* RSS Widget */
+
+.widget_rss ul li {
+	border-top: 1px;
+	border-style: solid;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.widget_rss ul li a {
+	display: block;
 }
 
 /* Custom Sidebar Widgets */
