@@ -665,25 +665,12 @@ a:hover {
 }
 
 #download-button {
-    background-image:url(images/download-button.png);
+    background-image: url("images/download-button.png");
+    background-position: center top;
     float: left;
-    height: 100px;
+    height: 75px;
     margin: 25px 125px 0 500px;
     width: 250px;
-}
-
-#download-button h1 {
-    color: white;
-    font-size: 30px;
-    line-height: 50px;
-    padding: 10px 0 10px 25px;
-}
-
-#download-button p {
-    color: white;
-    font-size: 15px;
-    line-height: 25px;
-    padding: 5px 0 5px 25px;
 }
 
 

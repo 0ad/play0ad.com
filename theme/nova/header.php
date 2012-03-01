@@ -62,8 +62,6 @@
 			<hgroup>
 				<a href="download"> 
 					<div id="download-button">
-						<h1>DOWNLOAD</h1>
-						<p>Alpha 9 I-something</p>
 					</div><!-- Download Button -->
 				</a><!-- DOWNLOAD ANCHOR -->
 			</hgroup>
