@@ -76,15 +76,47 @@ div:after {
 
 /* =Front Page
 ----------------------------------------------- */
-#carosuel {
+#carousel {
+    background-color: #DEDEDE;
+    clear: both;
+    height: 400px;
+    width: 725px;
 }
 
 #updates {
+    background-color: #DEDEDE;
+    float: left;
+    height: 400px;
+    margin-left: 25px;
+    margin-top: 25px;
+    padding: 10px;
+    width: 480px;
 }
 
-#tweet {
+#front-tweet {
+    background-color: #DEDEDE;
+    float: left;
+    height: 400px;
+    margin-top: 25px;
+    padding: 10px;
+    width: 180px;
 }
 
+.front-blog-title{
+	background-image: url("images/entry-title.png");
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 25px;
+    width: 450px;
+}
+
+#front-excerpt {
+	padding: 10px;
+	width: 480px;
+}
 
 /* =Structure
 ----------------------------------------------- */
