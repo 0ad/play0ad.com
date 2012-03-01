@@ -89,8 +89,7 @@ div:after {
     height: 400px;
     margin-left: 25px;
     margin-top: 25px;
-    padding: 10px;
-    width: 480px;
+    width: 500px;
 }
 
 #front-tweet {
@@ -110,7 +109,7 @@ div:after {
     height: 50px;
     line-height: 50px;
     padding-left: 25px;
-    width: 450px;
+    width: 475px;
 }
 
 #front-excerpt {
