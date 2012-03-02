@@ -8,8 +8,6 @@ get_header(); ?>
 			<div id="content" role="main">
 				<div id="carousel">
 				</div><!-- #carousel -->
-				<div id="front-tweet">
-				</div><!-- #front-tweet -->	
 				<div id="updates">
 				<?php
 					$args = array( 'numberposts' => 1);

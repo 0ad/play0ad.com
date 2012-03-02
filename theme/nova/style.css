@@ -77,9 +77,18 @@ div:after {
 /* =Front Page
 ----------------------------------------------- */
 #carousel {
-    background-color: #DEDEDE;
+    background: #0a0a0a; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #0a0a0a 0%, #1e1e1e 75%, #2d2d2d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#0a0a0a), color-stop(75%,#1e1e1e), color-stop(100%,#2d2d2d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, #0a0a0a 0%,#1e1e1e 75%,#2d2d2d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, #0a0a0a 0%,#1e1e1e 75%,#2d2d2d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, #0a0a0a 0%,#1e1e1e 75%,#2d2d2d 100%); /* IE10+ */
+	background: linear-gradient(-45deg, #0a0a0a 0%,#1e1e1e 75%,#2d2d2d 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a0a0a', endColorstr='#2d2d2d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     clear: both;
-    height: 400px;
+    height: 153px;
+    padding-bottom: 7px;
+    padding-top: 8px;
     width: 725px;
 }
 
@@ -89,16 +98,7 @@ div:after {
     height: 400px;
     margin-left: 25px;
     margin-top: 25px;
-    width: 500px;
-}
-
-#front-tweet {
-    background-color: #DEDEDE;
-    float: left;
-    height: 400px;
-    margin-top: 25px;
-    padding: 10px;
-    width: 180px;
+    width: 700px;
 }
 
 .front-blog-title{
@@ -109,12 +109,12 @@ div:after {
     height: 50px;
     line-height: 50px;
     padding-left: 25px;
-    width: 475px;
+    width: 675px;
 }
 
 #front-excerpt {
 	padding: 10px;
-	width: 480px;
+    width: 680px;
 }
 
 /* =Structure
