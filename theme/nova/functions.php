@@ -316,7 +316,7 @@ endif; // nova_admin_header_image
  * function tied to the excerpt_length filter hook.
  */
 function nova_excerpt_length( $length ) {
-	return 40;
+	return 150;
 }
 add_filter( 'excerpt_length', 'nova_excerpt_length' );
 
@@ -324,7 +324,7 @@ add_filter( 'excerpt_length', 'nova_excerpt_length' );
  * Returns a "Continue Reading" link for excerpts
  */
 function nova_continue_reading_link() {
-	return ' <a href="'. esc_url( get_permalink() ) . '">' . __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'nova' ) . '</a>';
+	return ' <a href="'. esc_url( get_permalink() ) . '">' . __( 'Full Update <span class="meta-nav">&rarr;</span>', 'nova' ) . '</a>';
 }
 
 /**
@@ -562,4 +562,4 @@ function nova_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'nova_body_classes' );
-
+?>

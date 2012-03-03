@@ -8,7 +8,7 @@ get_header(); ?>
 			<div id="content" role="main">
 				<div id="carousel">
 				</div><!-- #carousel -->
-				<div id="updates">
+				<div id="latest-update">
 				<?php
 					$args = array( 'numberposts' => 1);
 					$postslist = get_posts( $args );
@@ -22,7 +22,22 @@ get_header(); ?>
 							</div><!-- #front-excerpt -->	
 						</div>
 				<?php endforeach; ?>
-				</div><!-- #updates -->				
+				</div><!-- #latest -->
+				<div id="next-update">
+				<?php
+					$args = array( 'numberposts' => 1, 'offset'=> 1,);
+					$postslist = get_posts( $args );
+					foreach ($postslist as $post) :  setup_postdata($post); ?> 
+						<div>
+							<h1 class="front-blog-title"> 
+								<?php the_title(); ?>
+							</h1>
+							<div id="front-excerpt">
+								<?php the_excerpt(); ?>
+							</div><!-- #front-excerpt -->	
+						</div>
+				<?php endforeach; ?>
+				</div><!-- #next-update -->					
 			</div><!-- #content -->
 		</div><!-- #primary -->
 
