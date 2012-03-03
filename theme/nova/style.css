@@ -124,6 +124,34 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a0a0a', end
     width: 705px;
 }
 
+
+/* =Media Page
+----------------------------------------------- */
+#media-slider {
+	background-color: #dedede;
+	height: 375px;
+	width:725px;
+}
+
+#media-wall {
+	background-color: #dedede;
+    display: block;
+    height: 455px;
+    padding: 10px;
+    width: 705px;
+} 
+
+.media-block {
+	background-color: green;
+	border: 5px solid #dedede;
+	display: block;
+	float: left;
+	height:210px;
+	margin: 5px;
+	width: 215px;
+}
+ 
+    
 /* =Structure
 ----------------------------------------------- */
 
