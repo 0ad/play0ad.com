@@ -686,34 +686,31 @@ a:hover {
 -------------------------------------------------------------- */
 
 #access {
+	background-image: url("images/menu-bg.png");
 	clear: both;
 	display: block;
 	float: center;
-	height: 50px;
+	height: 30px;
 	width: 1000px;
-	color: #AA0;
 	margin-left: auto;
 	margin-right: auto;
 }
 #access ul {
-    font-size: 15px;
-    height: 50px;
     list-style: none outside none;
 }
 #access li {
-	background-image: url(images/menu-normal.png);
 	float: left;
 	position: relative;
 	text-align: center;
 	width: 125px;
 }
 #access a {
-    color: black;
+    color: white;
     display: block;
     font-size: 20px;
-    height: 30px;
-    line-height: 30px;
-    padding: 10px;
+    height: 20px;
+    line-height: 20px;
+    padding: 5px;
     text-decoration: none;
 }
 #access ul ul {
@@ -748,6 +745,8 @@ a:hover {
 #access ul ul :hover > a,
 #access a:focus {
 	background-image: url(images/menu-hover.png);
+	background-position: center center;
+	color: black;
 }
 #access li:hover > a,
 #access a:focus
@@ -2401,7 +2400,7 @@ p.comment-form-comment {
 }
 #supplementary {
     color: white;
-    height: 130px;
+    height: 150px;
     overflow: hidden;
     width:1000px;
     margin: 0 auto;
