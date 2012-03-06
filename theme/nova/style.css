@@ -2,9 +2,9 @@
 Theme Name: Nova
 Theme URI: http://wildfiregames.com/0adwebdev/theme-dev/
 Author: Geek377, gerbilOFdoom, bstempi
-Author URI: http://wildfiregame.com
+Author URI: http://wildfiregames.com
 Description: Based off of WordPress 2011 theme; customized for use with Wildfire Games 0 AD
-Version: 0.2
+Version: 0.3
 License: GNU General Public License
 License URI: http://www.gnu.org/copyleft/gpl.html
 */
@@ -142,15 +142,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a0a0a', end
 } 
 
 .media-block {
-	background-color: green;
-	border: 5px solid #dedede;
+	background-image: green;
+	border-radius: 5px;
 	display: block;
-	float: left;
-	height:210px;
-	margin: 5px;
-	width: 215px;
+    float: left;
+    height: 215px;
+    margin: 5px;
+    width: 220px;
 }
- 
+
     
 /* =Structure
 ----------------------------------------------- */
@@ -714,32 +714,36 @@ a:hover {
 -------------------------------------------------------------- */
 
 #access {
-	background-image: url("images/menu-bg.png");
-	clear: both;
-	display: block;
-	float: center;
-	height: 30px;
-	width: 1000px;
-	margin-left: auto;
-	margin-right: auto;
+	background: #222; /* Show a solid color for older browsers */
+	background: -moz-linear-gradient(#252525, #0a0a0a);
+	background: -o-linear-gradient(#252525, #0a0a0a);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#252525), to(#0a0a0a)); /* older webkit syntax */
+	background: -webkit-linear-gradient(#252525, #0a0a0a);
+	-webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
 }
 #access ul {
-    list-style: none outside none;
+	font-size: 13px;
+	list-style: none;
+	margin: 0 0 0 -0.8125em;
+	padding-left: 0;
 }
 #access li {
 	float: left;
 	position: relative;
-	text-align: center;
-	width: 125px;
 }
 #access a {
-    color: white;
-    display: block;
-    font-size: 20px;
-    height: 20px;
-    line-height: 20px;
-    padding: 5px;
-    text-decoration: none;
+	color: #eee;
+	display: block;
+	line-height: 3.333em;
+	padding: 0 1.2125em;
+	text-decoration: none;
 }
 #access ul ul {
 	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
@@ -772,12 +776,17 @@ a:hover {
 #access li:hover > a,
 #access ul ul :hover > a,
 #access a:focus {
-	background-image: url(images/menu-hover.png);
-	background-position: center center;
-	color: black;
+	background: #efefef;
 }
 #access li:hover > a,
-#access a:focus
+#access a:focus {
+	background: #f9f9f9; /* Show a solid color for older browsers */
+	background: -moz-linear-gradient(#f9f9f9, #e5e5e5);
+	background: -o-linear-gradient(#f9f9f9, #e5e5e5);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#e5e5e5)); /* Older webkit syntax */
+	background: -webkit-linear-gradient(#f9f9f9, #e5e5e5);
+	color: #373737;
+}
 #access ul li:hover > ul {
 	display: block;
 }

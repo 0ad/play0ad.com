@@ -2,6 +2,7 @@
 /**
  * Template Name: Media
  * The template for displaying the media page in Nova
+ * See design specs for details
  *
  * @package WildfireGames
  * @subpackage Nova
