@@ -714,49 +714,42 @@ a:hover {
 -------------------------------------------------------------- */
 
 #access {
-	background: #222; /* Show a solid color for older browsers */
-	background: -moz-linear-gradient(#252525, #0a0a0a);
-	background: -o-linear-gradient(#252525, #0a0a0a);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#252525), to(#0a0a0a)); /* older webkit syntax */
-	background: -webkit-linear-gradient(#252525, #0a0a0a);
-	-webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
-	-moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
-	box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+    background-image: url("images/menu-bg.png");
+    background-position: center center;
     clear: both;
     display: block;
+    height: 30px;
     margin-left: auto;
     margin-right: auto;
     width: 1000px;
 }
 #access ul {
-	font-size: 13px;
+	font-size: 15px;
 	list-style: none;
-	margin: 0 0 0 -0.8125em;
-	padding-left: 0;
+	margin: 0;
 }
 #access li {
-	float: left;
-	position: relative;
+    color: #EEEEEE;
+    display: block;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    padding: 5px 0px 5px 5px;
+    position: relative;
+    width: 120px;
 }
 #access a {
-	color: #eee;
-	display: block;
-	line-height: 3.333em;
-	padding: 0 1.2125em;
-	text-decoration: none;
+    text-decoration: none;
 }
 #access ul ul {
-	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	display: none;
-	float: left;
-	margin: 0;
-	position: absolute;
-	top: 3.333em;
-	left: 0;
-	width: 188px;
-	z-index: 99999;
+    background: green;
+    display: none;
+    float: left;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    width: 125px;
+    z-index: 99999;
 }
 #access ul ul ul {
 	left: 100%;
@@ -780,12 +773,7 @@ a:hover {
 }
 #access li:hover > a,
 #access a:focus {
-	background: #f9f9f9; /* Show a solid color for older browsers */
-	background: -moz-linear-gradient(#f9f9f9, #e5e5e5);
-	background: -o-linear-gradient(#f9f9f9, #e5e5e5);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#e5e5e5)); /* Older webkit syntax */
-	background: -webkit-linear-gradient(#f9f9f9, #e5e5e5);
-	color: #373737;
+	background-image: url("images/menu-hover.png");
 }
 #access ul li:hover > ul {
 	display: block;
