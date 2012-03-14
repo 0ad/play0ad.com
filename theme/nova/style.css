@@ -740,6 +740,7 @@ a:hover {
 }
 #access a {
     text-decoration: none;
+    color: white;
 }
 #access ul ul {
     background: none;
