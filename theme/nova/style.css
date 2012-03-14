@@ -712,7 +712,7 @@ a:hover {
 -------------------------------------------------------------- */
 
 #access {
-    background-image: url("images/menu-bg.png");
+    background-image: url("images/menu/bg.png");
     background-position: center center;
     clear: both;
     display: block;
@@ -727,25 +727,26 @@ a:hover {
 	margin: 0;
 }
 #access li {
+	background-image: url();    
     color: #EEEEEE;
     display: block;
     float: left;
     height: 20px;
     line-height: 20px;
-    padding: 5px 0px 5px 5px;
+    padding: 5px 0 5px 0;
     position: relative;
-    width: 120px;
+    text-align: center;
+    width: 125px;
 }
 #access a {
     text-decoration: none;
 }
 #access ul ul {
-    background: green;
+    background: none;
     display: none;
     float: left;
-    left: 0;
-    margin: 0;
-    position: absolute;
+    position: relative;
+    top: 0;
     width: 125px;
     z-index: 99999;
 }
@@ -753,17 +754,20 @@ a:hover {
 	left: 100%;
 	top: 0;
 }
-#access ul ul a {
+#access ul ul li {
 	background: #f9f9f9;
-	border-bottom: 1px dotted #ddd;
 	color: #444;
-	font-size: 13px;
 	font-weight: normal;
-	height: auto;
-	line-height: 1.4em;
-	padding: 10px 10px;
-	width: 168px;
+	height: 30px;
+	line-height: 20px;
+	padding: 5px 0px 5px 0px;
+	width: 125px;
 }
+
+#access ul ul a {
+	color: #444;
+}
+
 #access li:hover > a,
 #access ul ul :hover > a,
 #access a:focus {
@@ -771,7 +775,17 @@ a:hover {
 }
 #access li:hover > a,
 #access a:focus {
-	background-image: url("images/menu-hover.png");
+	background-image: url("images/menu/main-hover.png");
+	color: black;
+    display: block;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin-top: -5px;
+    padding: 5px 0 5px 0;
+    position: relative;
+    text-align: center;
+    width: 125px;
 }
 #access ul li:hover > ul {
 	display: block;
