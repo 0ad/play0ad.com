@@ -727,7 +727,7 @@ a:hover {
 	margin: 0;
 }
 #access li {
-	background-image: url();    
+	background-image: url("images/menu/main-normal.png");    
     color: #EEEEEE;
     display: block;
     float: left;
@@ -755,13 +755,14 @@ a:hover {
 	top: 0;
 }
 #access ul ul li {
-	background: #f9f9f9;
-	color: #444;
-	font-weight: normal;
-	height: 30px;
-	line-height: 20px;
-	padding: 5px 0px 5px 0px;
-	width: 125px;
+    background-image: url("images/menu/child-normal.png");
+    background-repeat: repeat;
+    color: #444444;
+    font-weight: normal;
+    height: 30px;
+    line-height: 20px;
+    padding: 5px 0;
+    width: 125px;
 }
 
 #access ul ul a {
@@ -771,7 +772,8 @@ a:hover {
 #access li:hover > a,
 #access ul ul :hover > a,
 #access a:focus {
-	background: #efefef;
+	display: block;
+	background-image: url("images/menu/child-hover.png");
 }
 #access li:hover > a,
 #access a:focus {
