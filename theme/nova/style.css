@@ -95,7 +95,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a0a0a', end
 #latest-update {
     background-color: #DEDEDE;
     float: left;
-    height: 400px;
     margin-top: 25px;
     width: 725px;
 }
@@ -103,7 +102,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a0a0a', end
 #next-update {
     background-color: #DEDEDE;
     float: left;
-    height: 250px;
     margin-top: 25px;
     width: 725px;
 }
