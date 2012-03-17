@@ -77,30 +77,23 @@ div:after {
 /* =Front Page
 ----------------------------------------------- */
 #carousel {
-    background: #0a0a0a; /* Old browsers */
-	background: -moz-linear-gradient(-45deg, #0a0a0a 0%, #1e1e1e 75%, #2d2d2d 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#0a0a0a), color-stop(75%,#1e1e1e), color-stop(100%,#2d2d2d)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(-45deg, #0a0a0a 0%,#1e1e1e 75%,#2d2d2d 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(-45deg, #0a0a0a 0%,#1e1e1e 75%,#2d2d2d 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(-45deg, #0a0a0a 0%,#1e1e1e 75%,#2d2d2d 100%); /* IE10+ */
-	background: linear-gradient(-45deg, #0a0a0a 0%,#1e1e1e 75%,#2d2d2d 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a0a0a', endColorstr='#2d2d2d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: green;
     clear: both;
-    height: 140px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    height: 375px;
     width: 725px;
 }
 
 #latest-update {
     background-color: #DEDEDE;
     float: left;
+    height: 450px;
     margin-top: 25px;
     width: 725px;
 }
 
 #next-update {
     background-color: #DEDEDE;
+    display: none;
     float: left;
     margin-top: 25px;
     width: 725px;
@@ -1904,14 +1897,14 @@ section.recent-posts .other-recent-posts li:after {
     color: white;
     clear: both;
     margin-top: 25px;
-    padding: 10px;
+    padding: 9px;
     width: 230px;
     border-width: 1px;
     border-color: black;
     border-style: solid;
 }
 .widget-title {
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: bold;
 	letter-spacing: 0.1em;
 	line-height: 20px;
@@ -2043,6 +2036,9 @@ section.ephemera .entry-title a span {
 }
 
 /* RSS Widget */
+.widget_rss {
+	height: 180px;	
+}
 
 .widget_rss ul li {
 	border-top: 1px;
@@ -2057,14 +2053,8 @@ section.ephemera .entry-title a span {
 
 /* Custom Sidebar Widgets */
 
-#community{
-	height: 175px;
-	width: 230px;
-}
-
 #devarea{
 	height: 80px;
-	width: 230px;
 }
 
 #devblog {
@@ -2072,31 +2062,20 @@ section.ephemera .entry-title a span {
     width: 230px;
 }
 
-#donate {
-    height: 80px;
-    width: 230px;
-}
-
 #revlog {
     height: 80px;
-    width: 230px;
 }
-/* Whoever does styling for revlog, put the properties here please.*/
 
 #share {
     height: 50px;
-    width: 230px;
 }
 
 #tweet {
     height: 160px;
-	width: 230px;
 }
 
 #video {
 	height: 130px;
-	width:	250px;
-	padding: 0px;
 }
 
 /* Pledgie badge */
