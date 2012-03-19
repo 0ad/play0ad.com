@@ -181,13 +181,13 @@ body {
 
 #secondary {
     float: right;
-	height: 775px;
+	height: 875px;
     width: 250px;
 }
 
 /* Singular */
 .singular #primary {
-    height: 725px;
+    height: 875px;
     width: 750px;
 }
 .singular #content,
@@ -2035,6 +2035,11 @@ section.ephemera .entry-title a span {
 	border-bottom: 1px solid #ccc;
 }
 
+/* Widget Text */
+.widget_text {
+	height: 130px;	
+}
+
 /* RSS Widget */
 .widget_rss {
 	height: 180px;	
@@ -2051,7 +2056,8 @@ section.ephemera .entry-title a span {
 	display: block;
 }
 
-/* Custom Sidebar Widgets */
+/* =Custom Sidebar Widgets
+----------------------------------------------- */
 
 #devarea{
 	height: 80px;
@@ -2090,6 +2096,11 @@ section.ephemera .entry-title a span {
 /* PayPal badge */
 .payPalBadge {
 	float: right;
+}
+
+/* PayPal badge */
+#tubepress {
+	height: 205px;
 }
 
 /* =Comments
