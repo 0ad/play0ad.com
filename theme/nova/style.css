@@ -76,8 +76,13 @@ div:after {
 
 /* =Front Page
 ----------------------------------------------- */
-#carousel {
-    background: green;
+#slider {
+    background-image: linear-gradient(left top, rgb(50,50,50) 0%, rgb(40,40,40) 25%, rgb(30,30,30) 75%, rgb(57,57,57) 100%);
+	background-image: -o-linear-gradient(left top, rgb(50,50,50) 0%, rgb(40,40,40) 25%, rgb(30,30,30) 75%, rgb(57,57,57) 100%);
+	background-image: -moz-linear-gradient(left top, rgb(50,50,50) 0%, rgb(40,40,40) 25%, rgb(30,30,30) 75%, rgb(57,57,57) 100%);
+	background-image: -webkit-linear-gradient(left top, rgb(50,50,50) 0%, rgb(40,40,40) 25%, rgb(30,30,30) 75%, rgb(57,57,57) 100%);
+	background-image: -ms-linear-gradient(left top, rgb(50,50,50) 0%, rgb(40,40,40) 25%, rgb(30,30,30) 75%, rgb(57,57,57) 100%);
+	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, rgb(50,50,50)), color-stop(0.25, rgb(40,40,40)), color-stop(0.75, rgb(30,30,30)), color-stop(1, rgb(57,57,57)));
     clear: both;
     height: 375px;
     width: 725px;
@@ -88,6 +93,7 @@ div:after {
     float: left;
     height: 450px;
     margin-top: 25px;
+    overflow: hidden;
     width: 725px;
 }
 
@@ -720,7 +726,8 @@ a:hover {
 	margin: 0;
 }
 #access li {
-	background-image: url("images/menu/main-normal.png");    
+	background-image: url("images/menu/normal.png"); 
+	background-position: center center;   
     color: #EEEEEE;
     display: block;
     float: left;
@@ -749,13 +756,13 @@ a:hover {
 	top: 0;
 }
 #access ul ul li {
-    background-image: url("images/menu/child-normal.png");
-    background-repeat: repeat;
+    background-color: black;
+	background-image: none;
     color: #444444;
     font-weight: normal;
     height: 30px;
     line-height: 20px;
-    padding: 5px 0;
+    opacity: 0.9;
     width: 125px;
 }
 
@@ -767,11 +774,16 @@ a:hover {
 #access ul ul :hover > a,
 #access a:focus {
 	display: block;
-	background-image: url("images/menu/child-hover.png");
+	background-image: url("images/menu/hover.png");
+	background-position: center center;
+	border-image-left: url("images/menu/left.png");
+	border-image-right: url("images/menu/right.png");
+	opacity: 1.0;
+	
 }
 #access li:hover > a,
 #access a:focus {
-	background-image: url("images/menu/main-hover.png");
+	background-image: url("images/menu/hover.png");
 	color: black;
     display: block;
     float: left;
@@ -795,9 +807,6 @@ a:hover {
 
 /* Search Form */
 #branding #searchform {
-	position: absolute;
-	top: 50px;
-	right: 50px;
 	text-align: right;
 }
 #branding #searchform div {
@@ -805,16 +814,7 @@ a:hover {
 }
 #branding #s {
 	float: right;
-	-webkit-transition-duration: 400ms;
-	-webkit-transition-property: width, background;
-	-webkit-transition-timing-function: ease;
-	-moz-transition-duration: 400ms;
-	-moz-transition-property: width, background;
-	-moz-transition-timing-function: ease;
-	-o-transition-duration: 400ms;
-	-o-transition-property: width, background;
-	-o-transition-timing-function: ease;
-	width: 100px;
+	width: 125px;
 }
 #branding #s:focus {
 	background-color: #f9f9f9;
@@ -2054,6 +2054,8 @@ section.ephemera .entry-title a span {
 
 .widget_rss ul li a {
 	display: block;
+    max-height: 30px;
+    overflow: hidden;
 }
 
 /* =Custom Sidebar Widgets
@@ -2087,6 +2089,8 @@ section.ephemera .entry-title a span {
 /* Pledgie badge */
 .pledgieBadge {
 	float: left;
+	/*To prevent PayPal from smudging in case both are in use*/
+	margin-right: 10px;
 }
 
 .pledgieBadge img {
@@ -2095,7 +2099,7 @@ section.ephemera .entry-title a span {
 
 /* PayPal badge */
 .payPalBadge {
-	float: right;
+	float: left;
 }
 
 /* PayPal badge */
