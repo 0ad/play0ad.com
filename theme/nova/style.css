@@ -160,8 +160,8 @@ body {
 }
 #branding hgroup {
 	background-image: url("images/header.png");
-    background-position: center bottom;	
-	height: 175px;
+    background-position: center;	
+	height: 150px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 1000px;
@@ -586,8 +586,8 @@ a:hover {
 -------------------------------------------------------------- */
 #global {
 	background-color: #480001;
+    clear: both;
     display: block;
-    float: left;
     height: 25px;
     width: 100%;
     border-style: none none solid none;
@@ -2099,7 +2099,9 @@ section.ephemera .entry-title a span {
 
 /* PayPal badge */
 .payPalBadge {
-	float: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 62px;
 }
 
 /* PayPal badge */
