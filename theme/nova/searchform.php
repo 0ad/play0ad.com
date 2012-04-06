@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying search forms in Twenty Eleven
+ * The template for displaying search forms in Nova
  *
  * @package WildfireGames
  * @subpackage Nova

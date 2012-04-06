@@ -310,13 +310,13 @@ function nova_admin_header_image() { ?>
 endif; // nova_admin_header_image
 
 /**
- * Sets the post excerpt length to 40 words.
+ * Sets the post excerpt length to 500 words.
  *
  * To override this length in a child theme, remove the filter and add your own
  * function tied to the excerpt_length filter hook.
  */
 function nova_excerpt_length( $length ) {
-	return 150;
+	return 500;
 }
 add_filter( 'excerpt_length', 'nova_excerpt_length' );
 
