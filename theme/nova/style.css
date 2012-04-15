@@ -84,7 +84,7 @@ div:after {
 	background-image: -ms-linear-gradient(left top, rgb(50,50,50) 0%, rgb(40,40,40) 25%, rgb(30,30,30) 75%, rgb(57,57,57) 100%);
 	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, rgb(50,50,50)), color-stop(0.25, rgb(40,40,40)), color-stop(0.75, rgb(30,30,30)), color-stop(1, rgb(57,57,57)));
     clear: both;
-    height: 375px;
+    height: 150px;
     width: 725px;
 }
 
@@ -100,9 +100,10 @@ div:after {
 
 #next-update {
     background-color: #DEDEDE;
-    display: none;
     float: left;
+    height: 300px;
     margin-top: 25px;
+   	overflow: hidden;
     width: 725px;
 }
 
@@ -152,9 +153,6 @@ div:after {
     
 /* =Structure
 ----------------------------------------------- */
-
-body {
-}
 #page {
     margin: auto;
     width: 100%;
@@ -175,8 +173,6 @@ body {
     width: 750px;
 }
 #content {
-    margin-top: 25px;
-    margin-bottom: 25px;
     width: 100%;
 }
 
@@ -188,13 +184,13 @@ body {
 
 #secondary {
     float: right;
-	height: 875px;
+	height: inherit;
     width: 250px;
 }
 
 /* Singular */
 .singular #primary {
-    height: 875px;
+    height: inherit;
     width: 750px;
 }
 .singular #content,
@@ -219,27 +215,6 @@ body {
 	width: 68.9%;
 }
 
-/* Showcase */
-.page-template-showcase-php #primary,
-.left-sidebar.page-template-showcase-php #primary {
-	margin: 0;
-}
-.page-template-showcase-php #content,
-.left-sidebar.page-template-showcase-php #content {
-	margin: 0 7.6%;
-	width: auto;
-}
-.page-template-showcase-php section.recent-posts {
-	float: right;
-	margin: 0 0 0 31%;
-	width: 69%;
-}
-.page-template-showcase-php #main .widget-area {
-	float: left;
-	margin: 0 -22.15% 0 0;
-	width: 22.15%;
-}
-
 /* Simplify the pullquotes and pull styles */
 .one-column.singular blockquote.pull {
 	margin: 0 0 1.625em;
@@ -257,37 +232,6 @@ body {
 .one-column.singular #author-info {
 	margin: 2.2em -8.8% 0;
 	padding: 20px 8.8%;
-}
-/* Make sure we have room for our comment avatars */
-.one-column .commentlist > li.comment {
-	margin-left: 102px;
-	width: auto;
-}
-/* Talking avatars take up too much room at this size */
-.one-column .commentlist > li.comment {
-	margin-left: 0;
-}
-.one-column .commentlist > li.comment .comment-meta,
-.one-column .commentlist > li.comment .comment-content {
-	margin-right: 85px;
-}
-.one-column .commentlist .avatar {
-	background: transparent;
-	display: block;
-	padding: 0;
-	top: 1.625em;
-	left: auto;
-	right: 1.625em;
-}
-.one-column .commentlist .children .avatar {
-	background: none;
-	padding: 0;
-	position: absolute;
-	top: 2.2em;
-	left: 2.2em;
-}
-.one-column #respond {
-	width: auto;
 }
 
 
@@ -577,6 +521,7 @@ a:hover {
 ----------------------------------------------- */
 
 #branding {
+    margin-bottom: 25px;
     position: relative;
 }
 #site-title {
@@ -767,11 +712,11 @@ a:hover {
 ----------------------------------------------- */
 
 #main {
-	clear: both;
-	margin-left: auto;
-	margin-right: auto;
-	min-height: 900px;
-	width: 1000px;
+    clear: both;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
 }
 .page-title {
 	color: #666;
@@ -1810,7 +1755,7 @@ section.recent-posts .other-recent-posts li:after {
     background-color: #222222;
     color: white;
     clear: both;
-    margin-top: 25px;
+    margin-bottom: 25px;
     padding: 9px;
     width: 230px;
     border-width: 1px;
@@ -2345,28 +2290,26 @@ p.comment-form-comment {
 ----------------------------------------------- */
 
 #colophon {
-	clear: both;
     background-color: black;
+    clear: both;
+    margin-top: 25px;
 }
 #supplementary {
     color: white;
     height: 150px;
     overflow: hidden;
-    width:1000px;
+    width: 1000px;
     margin: 0 auto;
 }
 
 /* Five Footer Widget Areas */
-#supplementary.five .widget-area {
+#supplementary .widget-area {
 	float: left;
 	padding: 10px;
 	width: 180px;
 	height: 130px;
 }
-#supplementary.five .widget-area + .widget-area + .widget-area + .widget-area + .widget-area {
-	margin-right: 0;
-}
-#supplementary.five ul{
+#supplementary ul{
 	font-size: 10px;
     line-height: 15px;
     list-style: none outside none;
@@ -2389,7 +2332,7 @@ p.comment-form-comment {
     line-height: 15px;
     padding: 5px;
     text-align: center;
-    width: 100%;
+    width: full;
     border-style: solid none none none;
     border-width:  1px;
     border-color: #e8be48;

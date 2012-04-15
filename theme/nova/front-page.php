@@ -6,11 +6,23 @@ Front page template file
 get_header(); ?>
 		<div id="primary">
 			<div id="content" role="main">
-				<div id="carousel">
-					<?php echo do_shortcode('[jj-ngg-jquery-carousel html_id="carousel" gallery="1" width="600" height="338" scroll="1" auto="3" skin_class="jcarousel-skin-nova"]');?>
+				<div id="slider">
+					<p>Carousel</p>
 				</div><!-- #carousel -->
 				<div id="latest-update">
-				<?php $posts_array = get_posts( 'numberposts' => 5, 'offset'=> 1, 'category' => 1 ); ?>
+					<?php query_posts('showposts=1');
+    	  			global $dlPageId;
+      				$dlPageId = null; ?>
+    				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+					<?php $dlPageId = $post->ID; ?>
+                    <h1 class="front-blog-title">
+                    	<h2><?php the_title(); ?></h2>
+                    </h1>
+   					<div id="front-excerpt">
+   						<?php the_content(); ?>
+					</div>
+					<?php endwhile; endif; ?>
+					<?php edit_post_link('Edit this entry.', '', ''); ?>	
 				</div><!-- #latest -->
 				<div id="next-update">
 				<?php

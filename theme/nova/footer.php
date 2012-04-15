@@ -30,6 +30,9 @@
 			<h2>Connect With Us</h2>
 			<a href="http://www.tigrs.org/rating.php?data=20003200000000"><img src="http://f.cl.ly/items/1V1q3H022K0T201Y0h19/rating.png"/></a>
 			</div>
+			<div id="sixth" class="widget-area" role="complementary">
+				<h2>Some Random Content</h2>
+			</div>
 		</div>
 		<div id="site-generator">
 			<?php do_action( 'nova_credits' ); ?>
