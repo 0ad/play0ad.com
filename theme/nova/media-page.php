@@ -31,6 +31,7 @@
 				</div><!-- #media-wall -->
 			</div><!-- #content -->
 		</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
+		<div id="secondary" class="widget-area" role="complementary">
+			<?php dynamic_sidebar( 'sidebar-2' ); ?>
+		</div>
 <?php get_footer(); ?>

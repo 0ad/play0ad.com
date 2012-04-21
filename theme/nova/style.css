@@ -1751,7 +1751,7 @@ section.recent-posts .other-recent-posts li:after {
 .widget-area {
 	font-size: 12px;
 }
-.widget {
+#secondary .widget {
     background-color: #222222;
     color: white;
     clear: both;
@@ -1762,43 +1762,43 @@ section.recent-posts .other-recent-posts li:after {
     border-color: black;
     border-style: solid;
 }
-.widget-title {
+#secondary .widget-title {
 	font-size: 15px;
 	font-weight: bold;
 	letter-spacing: 0.1em;
 	line-height: 20px;
 	text-transform: uppercase;
 }
-.widget ul {
+#secondary .widget ul {
 	font-size: 15px;
 	list-style: none;
 }
-.widget ul ul {
+#secondary .widget ul ul {
 	margin-left: 1.5em;
 }
-.widget ul li {
+#secondary .widget ul li {
 	color: #777;
 	font-size: 13px;
 }
-.widget a {
+#secondary .widget a {
 	color: white;
 	font-weight: bold;
 	text-decoration: none;
 }
-.widget a:hover,
-.widget a:focus,
-.widget a:active {
+#secondary .widget a:hover,
+#secondary .widget a:focus,
+#secondary .widget a:active {
 	text-decoration: underline;
 }
 
 /* Search Widget */
-.widget_search form {
+#secondary .widget_search form {
 	margin: 0 0 1.625em;
 }
-.widget_search #s {
+#secondary .widget_search #s {
 	width: 77%;
 }
-.widget_search #searchsubmit {
+#secondary .widget_search #searchsubmit {
 	background: #ddd;
 	border: 1px solid #ccc;
 	-webkit-box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.09);
@@ -1810,7 +1810,7 @@ section.recent-posts .other-recent-posts li:after {
 	position: relative;
 	top: -2px;
 }
-.widget_search #searchsubmit:active {
+#secondary .widget_search #searchsubmit:active {
 	background: #1982d1;
 	border-color: #0861a5;
 	-webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.1);
@@ -2303,11 +2303,15 @@ p.comment-form-comment {
 }
 
 /* Five Footer Widget Areas */
-#supplementary .widget-area {
+#supplementary aside {
 	float: left;
 	padding: 10px;
 	width: 180px;
 	height: 130px;
+}
+#supplementary .widget {
+    clear: none;
+    color: white;
 }
 #supplementary ul{
 	font-size: 10px;

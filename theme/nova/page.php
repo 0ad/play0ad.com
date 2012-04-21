@@ -25,7 +25,7 @@ get_header(); ?>
 			</div><!-- #content -->
 		</div><!-- #primary -->
 		<div id="secondary" class="widget-area" role="complementary">
-			<?php get_sidebar(universal); ?> 
+			<?php dynamic_sidebar( 'sidebar-2' ); ?>
 		</div>
 
 <?php get_footer(); ?>
