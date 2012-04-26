@@ -254,6 +254,8 @@ body {
 /* Headings */
 h1,h2,h3,h4,h5,h6 {
 	clear: both;
+    font-size: 20px;
+    font-weight: bold;
 }
 hr {
 	background-color: #ccc;
@@ -2296,7 +2298,7 @@ p.comment-form-comment {
 }
 #supplementary {
     color: white;
-    height: 150px;
+    height: auto;
     overflow: hidden;
     width: 1000px;
     margin: 0 auto;
@@ -2312,6 +2314,9 @@ p.comment-form-comment {
 #supplementary .widget {
     clear: none;
     color: white;
+}
+#supplementary .widget-title {
+	
 }
 #supplementary ul{
 	font-size: 10px;
