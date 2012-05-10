@@ -294,53 +294,21 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 }
 
 
+/* ------- */
 /* =Header
------------------------------------------------ */
-
-#branding {
-    margin-bottom: 25px;
-    position: relative;
-}
-#site-title {
-	margin-right: 270px;
-	padding: 3.65625em 0 0;
-}
-#site-title a {
-	color: #7A7A7A;
-	font-size: 30px;
-	font-weight: bold;
-	line-height: 36px;
-	text-decoration: none;
-}
-#site-title a:hover,
-#site-title a:focus,
-#site-title a:active {
-	color: #1982d1;
-}
-#site-description {
-	color: #7a7a7a;
-	font-size: 14px;
-	margin: 0 270px 3.65625em 0;
-}
-#branding img {
-	height: auto;
-	margin-bottom: -7px;
-	width: 100%;
-}
-
-#download-button {
-    background-image: url("images/download-button.png");
-    background-position: center top;
-    float: left;
-    height: 75px;
-    margin: 25px 125px 0 500px;
-    width: 250px;
-}
+---------- */
+#branding { margin-bottom: 25px; position: relative; }
+#site-title { margin-right: 270px; padding: 3.65625em 0 0; }
+#site-title a { color: #7A7A7A; font-size: 30px; font-weight: bold; line-height: 36px; text-decoration: none; }
+#site-title a:hover, #site-title a:focus, #site-title a:active { color: #1982d1; }
+#site-description { color: #7a7a7a; font-size: 14px; margin: 0 270px 3.65625em 0; }
+#branding img { float: left; margin: 10px; }
+#download-button { background-image: url("images/download-button.png"); background-position: center top; float: right; height: 75px; margin: 25px 125px; width: 250px; }
 
 
+/* ---------- */
 /* =Main Menu
--------------------------------------------------------------- */
-
+------------- */
 #access {
     background-image: url("images/menu/bg.png");
     background-position: center center;
