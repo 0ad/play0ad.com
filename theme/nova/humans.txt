@@ -1,0 +1,15 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  WildFire Games Web Dev Team : bstempi, gerbilOFdoom, Geek377
+  Site: 0 A.D.
+  Twitter: @play0ad
+  URL: http:///wildfiregames.com/0ad
+
+/* THANKS */
+  Names (& URL):
+  
+/* SITE */
+  Standards: HTML5, CSS3
