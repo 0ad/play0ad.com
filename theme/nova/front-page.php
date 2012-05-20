@@ -6,8 +6,8 @@ Front page template file
 get_header(); ?>
 		<div id="primary">
 			<div id="content" role="main">
-				<div id="slider">
-					<?php echo do_shortcode( '[jj-ngg-jquery-carousel html_id="about-jcarousel" gallery="1" gap="10" width="150" height="100" visible="4" scroll="1" auto="03"]' ); ?>
+				<div id="carousel">
+					<?php echo do_shortcode( '[jj-ngg-jquery-carousel html_id="about-jcarousel" gallery="1" gap="15" width="205" height="115" visible="3" scroll="1" auto="0" skin_class="jcarousel-skin-tango" wrap="both"]' ); ?>
 				</div><!-- #carousel -->
 				<div id="latest-update">
 					<?php
