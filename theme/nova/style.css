@@ -164,6 +164,45 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 #media-wall{background-color:#dedede;display:block;height:455px;width:705px;padding:10px}
 .media-block{background-image:green;border-radius:5px;display:block;float:left;height:215px;width:220px;margin:5px}
 
+/* ---------- */    
+/* =News Page
+------------- */
+.news-r1{
+	background-color:#DEDEDE;
+	float:left;
+	height: 375px;
+	overflow: hidden;
+	width: 725px;
+}
+.news-r2{
+	background-color:#DEDEDE;
+	float:left;
+	height: 220px;
+	margin-top: 25px;
+	overflow: hidden;
+	width: 350px;
+}
+.news-r3{
+	background-color:#DEDEDE;
+	float:left;
+	height: 200px;
+	margin-top: 25px;
+	overflow: hidden;
+	width: 225px;
+	float: left;
+}
+
+.news-container{
+	overflow: hidden;
+	padding: 10px;
+}
+
+#news-gap{
+	height: 25px;
+	width: 25px;
+	float: left;
+}
+
 /* ------------ */
 /* =Global Menu
 --------------- */
@@ -1814,7 +1853,7 @@ p.comment-form-comment {
 #supplementary a{ color:#FFD700 }
 #supplementary a:focus, a:active, a:hover { color: maroon; }
 /* Site Generator Line */
-#site-generator { background-color:#480001; color:#555; font-size:10px; font-variant:small-caps; line-height:15px; text-align:center; width:full; border-color:#e8be48; border-style:solid none none; border-width:1px; padding:5px }
+#site-generator { background-color:#480001; color:#555; font-size:10px; font-variant:small-caps; line-height:15px; text-align:center; border-color:#e8be48; border-style:solid none none; border-width:1px; padding:5px }
 #site-generator a{ color:#FFF; font-weight:bold; text-decoration:none }
 #site-generator .sep{ background:url(images/wordpress.png) center left no-repeat; color:transparent; display:inline-block; height:16px; line-height:16px; width:16px; margin:0 7px }
 

@@ -316,7 +316,7 @@ endif; // nova_admin_header_image
  * function tied to the excerpt_length filter hook.
  */
 function nova_excerpt_length( $length ) {
-	return 500;
+	return 55;
 }
 add_filter( 'excerpt_length', 'nova_excerpt_length' );
 
