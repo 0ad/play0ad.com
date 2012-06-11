@@ -1798,7 +1798,7 @@ p.comment-form-comment {
 /* =Footer
 ---------- */
 
-#colophon { background-color: black; clear: both; }
+#colophon { background-color: black; clear: both; margin-top: 25px;}
 #supplementary {
     color: white;
     height: auto;
