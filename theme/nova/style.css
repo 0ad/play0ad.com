@@ -1442,11 +1442,6 @@ section.ephemera .entry-title a span {color: #29628d;}
 	border-bottom: 1px solid #ccc;
 }
 
-/* Widget Text */
-.widget_text {
-	height: 130px;	
-}
-
 /* RSS Widget */
 .widget_rss {
 	height: 180px;	
