@@ -1452,34 +1452,12 @@ section.ephemera .entry-title a span {color: #29628d;}
 
 /* =Custom Sidebar Widgets
 ----------------------------------------------- */
-
-#devarea{
-	height: 80px;
-}
-
-#devblog {
-    height: 155px;
-    width: 230px;
-}
-
-#revlog {
-    height: 80px;
-}
-
-#share {
-    height: 50px;
-}
-
 /* Twitter feed */
 .aktt_tweets ul li {
 	border-top: 1px;
 	border-style: solid;
 	padding-top: 5px;
 	padding-bottom: 5px;
-}
-
-#video {
-	height: 130px;
 }
 
 /* Pledgie badge */
@@ -1494,16 +1472,10 @@ section.ephemera .entry-title a span {color: #29628d;}
 }
 
 /* PayPal badge */
-.payPalBadge {
-    margin-left: auto;
-    margin-right: auto;
-    width: 62px;
-}
+.payPalBadge {height: 30px;margin-left: auto;margin-right: auto;width: 62px;}
 
-/* PayPal badge */
-#tubepress {
-	height: 205px;
-}
+/* TubePress Video */
+#tubepress {height: 205px;}
 
 /* =Comments
 ----------------------------------------------- */
