@@ -139,17 +139,7 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 ------------ */
 
 /* Carousel */
-#carousel { background-image: 
-	linear-gradient(left top, rgb(50,50,50) 0%, rgb(40,40,40) 25%, rgb(30,30,30) 75%, rgb(57,57,57) 100%);
-	background-image: -o-linear-gradient(left top, rgb(50,50,50) 0%, rgb(40,40,40) 25%, rgb(30,30,30) 75%, rgb(57,57,57) 100%);
-	background-image: -moz-linear-gradient(left top, rgb(50,50,50) 0%, rgb(40,40,40) 25%, rgb(30,30,30) 75%, rgb(57,57,57) 100%);
-	background-image: -webkit-linear-gradient(left top, rgb(50,50,50) 0%, rgb(40,40,40) 25%, rgb(30,30,30) 75%, rgb(57,57,57) 100%); 
-	background-image: -ms-linear-gradient(left top, rgb(50,50,50) 0%, rgb(40,40,40) 25%, rgb(30,30,30) 75%, rgb(57,57,57) 100%);
-	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, rgb(50,50,50)), color-stop(0.25, rgb(40,40,40)), color-stop(0.75, rgb(30,30,30)), color-stop(1, rgb(57,57,57)));
-	clear: both; 
-	height: 150px; 
-	width: 725px; }
-
+#carousel {background-color: #222; clear: both; border-width: 1px; border-color: black; border-style: solid; height: 148px; width: 723px; }
 /* Updates */
 #latest-update { background-color:#DEDEDE;float:left;height:440px;margin-top:25px;overflow:hidden;padding-bottom:10px;width:725px}
 #next-update { background-color:#DEDEDE;float:left;height:375px; margin-top:25px; overflow:hidden; width:725px}
