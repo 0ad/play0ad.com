@@ -1440,7 +1440,7 @@ section.ephemera .entry-title a span {color: #29628d;}
 	background: #f4f4f4;
 	border-top: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
-}
+}	
 
 /* RSS Widget */
 .widget_rss {
@@ -1480,8 +1480,12 @@ section.ephemera .entry-title a span {color: #29628d;}
     height: 50px;
 }
 
-#tweet {
-    height: 160px;
+/* Twitter feed */
+.aktt_tweets ul li {
+	border-top: 1px;
+	border-style: solid;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 #video {
