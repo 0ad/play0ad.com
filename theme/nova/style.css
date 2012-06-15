@@ -128,7 +128,7 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 .singular .entry-header,
 .singular .entry-content,
 .singular footer.entry-meta,
-.singular #comments-title { width: 100%; color: black; }
+.singular #comments-title { width: inherit; color: black; }
 /* Attachments */
 .singular .image-attachment .entry-content { margin: 0 auto; width: auto; }
 .singular .image-attachment .entry-description { margin: 0 auto; width: 68.9%; }
@@ -141,8 +141,7 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 /* Carousel */
 #carousel {background-color: #222; clear: both; border-width: 1px; border-color: black; border-style: solid; height: 148px; width: 723px; }
 /* Updates */
-#latest-update { background-color:#DEDEDE;float:left;height:440px;margin-top:25px;overflow:hidden;padding-bottom:10px;width:725px}
-#next-update { background-color:#DEDEDE;float:left;height:375px; margin-top:25px; overflow:hidden; width:725px}
+.front-update { background-color:#DEDEDE;float:left;margin-top:25px;overflow:hidden;padding-bottom:10px;width:725px}
 .front-blog-title { background-image:url(images/entry-title.png); color:#FFF; font-size:25px; font-weight:700; height:50px; line-height:50px; padding-left:25px; width:700px}
 #front-excerpt { padding: 10px; width: 705px; }
 
@@ -160,23 +159,18 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 .news-r1{
 	background-color:#DEDEDE;
 	float:left;
-	height: 375px;
 	overflow: hidden;
 	width: 725px;
 }
 .news-r2{
 	background-color:#DEDEDE;
 	float:left;
-	height: 220px;
-	margin-top: 25px;
 	overflow: hidden;
 	width: 350px;
 }
 .news-r3{
 	background-color:#DEDEDE;
 	float:left;
-	height: 200px;
-	margin-top: 25px;
 	overflow: hidden;
 	width: 225px;
 	float: left;
@@ -192,18 +186,23 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 	width: 25px;
 	float: left;
 }
+#row-wrap{
+	width: 725px;
+	height:  auto;
+	margin-bottom: 25px;
+}
 
 /* ------------ */
 /* =Global Menu
 --------------- */
-#global{background-color:#480001;clear:both;display:block;height:24px;width:100%;border-color:#e8be48;border-style:none none solid;border-width:1px}
-#global ul{background-color:inherit;list-style:none outside none;margin-left:auto;margin-right:auto;width:1000px}
-#global li{color:#FFF;float:right;font-size:15px;font-variant:small-caps;line-height:25px;padding-left:10px;position:relative;width:auto;text-align:center}
+#global{background-color:#480001;clear:both;display:block;height:29px;width:100%;border-color:#e8be48;border-style:none none solid;border-width:1px}
+#global ul{background-color:inherit;font-size:15px;font-variant:small-caps;height:20px;line-height:20px;list-style:none outside none;margin-left:auto;margin-right:auto;padding-top:5px;width:1000px}
+#global li{color:#FFF;float:right;padding:0 5px 0 5px;position:relative;width:auto;text-align:center}
 #global a{color:#FFF;text-decoration:none}
 #global ul ul{-moz-box-shadow:0 3px 3px rgba(0,0,0,0.2);-webkit-box-shadow:0 3px 3px rgba(0,0,0,0.2);box-shadow:0 3px 3px rgba(0,0,0,0.2);display:none;float:left;position:absolute;top:3.333em;left:0;width:188px;z-index:99999;margin:0}
 #global ul ul ul{left:100%;top:0}
 #global ul ul a{background:#f9f9f9;border-bottom:1px dotted #ddd;color:#444;font-size:13px;font-weight:400;height:auto;line-height:1.4em;width:168px;padding:10px}
-#global li:hover > a,#global ul ul :hover > a,#global a:focus{background-color:#E8BE48;color:#000}
+#global li:hover > a,#global ul ul :hover > a,#global a:focus{color:gray}
 #global li:hover > a,#global a:focus
 #global ul li:hover > ul{display:block}
 #global .current-menu-item > a,#global .current-menu-ancestor > a,#global .current_page_item > a,#global .current_page_ancestor > a{font-weight:700}
@@ -242,7 +241,7 @@ a:focus, a:active, a:hover { text-decoration: underline;}
     margin-left: 875px;
     position: absolute;
     text-align: right;
-    top: 175px;
+    top: 180px;
 }
 #branding #searchform div {
 	margin: 0;
@@ -680,7 +679,6 @@ article.format-status .entry-content {
 
 /* Singular content styles for Posts and Pages */
 .singular .hentry {
-    padding: 10px;
     position: relative;
 }
 .singular.page .hentry {
