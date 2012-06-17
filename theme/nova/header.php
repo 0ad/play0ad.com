@@ -60,7 +60,7 @@
 			</nav>
 			
 			<hgroup>
-			<a href="http://"><img src="http://www.wildfiregames.com/0adwebdev/theme-dev/wp-content/themes/nova/images/0ad-logo.png" alt="" width="265" height="125" /></a>
+				<img src="http://www.wildfiregames.com/0adwebdev/theme-dev/wp-content/themes/nova/images/0ad-logo.png" alt="" width="265" height="125" />
 				<a href="download"> 
 					<div id="download-button">
 					</div><!-- Download Button -->

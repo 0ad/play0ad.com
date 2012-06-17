@@ -12,7 +12,25 @@
 <?php get_header(); ?>
 		<div id="primary">
 			<div id="content" role="main">
+				<div id="row-wrap">
 				<section class="news-r1">
+					<?php
+						$args = array( 'numberposts' => 1, 'offset'=> 0,);
+						$postslist = get_posts( $args );
+						foreach ($postslist as $post) :  setup_postdata($post); ?> 
+							<div class="news-container">
+								<h1> 
+									<?php the_title(); ?>
+								</h1>
+								<div>
+									<?php the_excerpt(); ?>
+								</div>
+							</div>
+					<?php endforeach; ?>
+				</section>
+				</div>
+				<div id="row-wrap">
+				<section class="news-r2">
 					<?php
 						$args = array( 'numberposts' => 1, 'offset'=> 1,);
 						$postslist = get_posts( $args );
@@ -26,6 +44,8 @@
 								</div>
 							</div>
 					<?php endforeach; ?>
+				</section>
+				<section id="news-gap">
 				</section>
 				<section class="news-r2">
 					<?php
@@ -42,26 +62,11 @@
 							</div>
 					<?php endforeach; ?>
 				</section>
-				<section id="news-gap">
-				</section>
-				<section class="news-r2">
-					<?php
-						$args = array( 'numberposts' => 1, 'offset'=> 3,);
-						$postslist = get_posts( $args );
-						foreach ($postslist as $post) :  setup_postdata($post); ?> 
-							<div class="news-container">
-								<h1> 
-									<?php the_title(); ?>
-								</h1>
-								<div>
-									<?php the_excerpt(); ?>
-								</div>
-							</div>
-					<?php endforeach; ?>
-				</section>
+				</div>
+				<div id="row-wrap">
 				<section class="news-r3">
 					<?php
-						$args = array( 'numberposts' => 1, 'offset'=> 4,);
+						$args = array( 'numberposts' => 1, 'offset'=> 3,);
 						$postslist = get_posts( $args );
 						foreach ($postslist as $post) :  setup_postdata($post); ?> 
 							<div class="news-container">
@@ -78,7 +83,7 @@
 				</section>	
 				<section class="news-r3">
 					<?php
-						$args = array( 'numberposts' => 1, 'offset'=> 5,);
+						$args = array( 'numberposts' => 1, 'offset'=> 4,);
 						$postslist = get_posts( $args );
 						foreach ($postslist as $post) :  setup_postdata($post); ?> 
 							<div class="news-container">
@@ -94,7 +99,38 @@
 				<section id="news-gap">
 				</section>
 				<section class="news-r3">
-				<p>Archives Button</p>
+					<?php
+						$args = array( 'numberposts' => 1, 'offset'=> 5,);
+						$postslist = get_posts( $args );
+						foreach ($postslist as $post) :  setup_postdata($post); ?> 
+							<div class="news-container">
+								<h1> 
+									<?php the_title(); ?>
+								</h1>
+								<div>
+									<?php the_excerpt(); ?>
+								</div>
+							</div>
+					<?php endforeach; ?>
+				</section>
+				</div>
+				<section class="news-r1">
+					<?php
+						$args = array( 'numberposts' => 1, 'offset'=> 6,);
+						$postslist = get_posts( $args );
+						foreach ($postslist as $post) :  setup_postdata($post); ?> 
+							<div class="news-container">
+								<h1> 
+									<?php the_title(); ?>
+								</h1>
+								<div>
+									<?php the_excerpt(); ?>
+								</div>
+							</div>
+					<?php endforeach; ?>
+				</section>
+				<section class="news-r1">
+					<p>Archives Button</p>
 				</section>
 			</div><!-- #content -->
 		</div><!-- #primary -->

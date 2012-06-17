@@ -324,7 +324,7 @@ add_filter( 'excerpt_length', 'nova_excerpt_length' );
  * Returns a "Continue Reading" link for excerpts
  */
 function nova_continue_reading_link() {
-	return ' <a href="'. esc_url( get_permalink() ) . '">' . __( 'Full Update <span class="meta-nav">&rarr;</span>', 'nova' ) . '</a>';
+	return ' <a href="'. esc_url( get_permalink() ) . '">' . __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'nova' ) . '</a>';
 }
 
 /**
