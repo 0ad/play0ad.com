@@ -19,12 +19,6 @@
 			<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'nova' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 			<?php endif; ?>
 
-			<?php if ( 'post' == get_post_type() ) : ?>
-			<div class="entry-meta">
-				<?php nova_posted_on(); ?>
-			</div><!-- .entry-meta -->
-			<?php endif; ?>
-
 			<?php if ( comments_open() && ! post_password_required() ) : ?>
 			<div class="comments-link">
 				<?php comments_popup_link( '<span class="leave-reply">' . __( 'Reply', 'nova' ) . '</span>', _x( '1', 'comments number', 'nova' ), _x( '%', 'comments number', 'nova' ) ); ?>
@@ -36,7 +30,13 @@
 		<div class="entry-summary">
 			<?php the_excerpt(); ?>
 		</div><!-- .entry-summary -->
-		<?php else : ?>
+		<?php else : ?>	
+			<?php if ( 'post' == get_post_type() ) : ?>
+			<div class="entry-meta">
+				<?php nova_posted_on(); ?>
+			</div><!-- .entry-meta -->
+			<?php endif; ?>
+			
 		<div class="entry-content">
 			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'nova' ) ); ?>
 			<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'nova' ) . '</span>', 'after' => '</div>' ) ); ?>

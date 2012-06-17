@@ -128,7 +128,7 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 .singular .entry-header,
 .singular .entry-content,
 .singular footer.entry-meta,
-.singular #comments-title { width: 100%; color: black; }
+.singular #comments-title { color: black; }
 /* Attachments */
 .singular .image-attachment .entry-content { margin: 0 auto; width: auto; }
 .singular .image-attachment .entry-description { margin: 0 auto; width: 68.9%; }
@@ -141,8 +141,6 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 /* Carousel */
 #carousel {background-color: #222; clear: both; border-width: 1px; border-color: black; border-style: solid; height: 148px; width: 723px; }
 /* Updates */
-#latest-update { background-color:#DEDEDE;float:left;height:440px;margin-top:25px;overflow:hidden;padding-bottom:10px;width:725px}
-#next-update { background-color:#DEDEDE;float:left;height:375px; margin-top:25px; overflow:hidden; width:725px}
 .front-blog-title { background-image:url(images/entry-title.png); color:#FFF; font-size:25px; font-weight:700; height:50px; line-height:50px; padding-left:25px; width:700px}
 #front-excerpt { padding: 10px; width: 705px; }
 
@@ -312,7 +310,8 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 }
 .hentry,
 .hentry:last-child,
-.no-results {
+.no-results,
+.front-excerpt {
     background-color: #DEDEDE;
     margin: 0 25px 25px 0;
     position: relative;
@@ -680,14 +679,10 @@ article.format-status .entry-content {
 
 /* Singular content styles for Posts and Pages */
 .singular .hentry {
-    padding: 10px;
     position: relative;
-}
-.singular.page .hentry {
     background-color: #DEDEDE;
-    padding: 10px;
-    min-height: 575px;
 }
+
 .singular .entry-title {
     color: white;
     font-size: 30px;
@@ -696,7 +691,6 @@ article.format-status .entry-content {
 }
 .singular .entry-title,
 .singular .entry-header .entry-meta {
-	margin: -10px;
 	padding-left: 20px;
 }
 .singular .entry-header .entry-meta {
