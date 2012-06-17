@@ -311,7 +311,8 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 .hentry,
 .hentry:last-child,
 .no-results,
-.front-excerpt {
+.front-excerpt,
+.error404 {
     background-color: #DEDEDE;
     margin: 0 25px 25px 0;
     position: relative;
@@ -379,7 +380,6 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 .comment-content h2 {
 	color: #000;
 	font-weight: bold;
-	margin: 0 0 .8125em;
 }
 .entry-content h3,
 .comment-content h3 {
@@ -410,6 +410,11 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 }
 .entry-content #s {
 	width: 75%;
+	border-top: solid;
+	border-bottom: solid;
+	border-left: solid;
+	border-right: solid;
+	border-width: 1px;
 }
 .comment-content ul,
 .comment-content ol {
