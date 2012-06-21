@@ -128,11 +128,7 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 .singular .entry-header,
 .singular .entry-content,
 .singular footer.entry-meta,
-<<<<<<< HEAD
-.singular #comments-title { color: black; }
-=======
 .singular #comments-title { width: inherit; color: black; }
->>>>>>> b688643c5e979a3f0ce83105f2166b2e2db7cdaa
 /* Attachments */
 .singular .image-attachment .entry-content { margin: 0 auto; width: auto; }
 .singular .image-attachment .entry-description { margin: 0 auto; width: 68.9%; }
