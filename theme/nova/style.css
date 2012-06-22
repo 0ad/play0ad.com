@@ -1433,10 +1433,6 @@ section.ephemera .entry-title a span {color: #29628d;}
 }	
 
 /* RSS Widget */
-.widget_rss {
-	height: 180px;	
-}
-
 .widget_rss ul li {
 	border-top: 1px;
 	border-style: solid;
@@ -1446,8 +1442,6 @@ section.ephemera .entry-title a span {color: #29628d;}
 
 .widget_rss ul li a {
 	display: block;
-    max-height: 18px;
-    overflow: hidden;
 }
 
 /* =Custom Sidebar Widgets
