@@ -12,126 +12,85 @@
 <?php get_header(); ?>
 		<div id="primary">
 			<div id="content" role="main">
-				<div id="row-wrap">
-				<section class="news-r1">
-					<?php
-						$args = array( 'numberposts' => 1, 'offset'=> 0,);
+				<p>This page is undergoing construction; its a mess right now.</p>
+				<div class="news-row">
+					<section class="news-one">
+						<?php
+						$args = array( 'numberposts' => 1, 'offset'=> 0, );
 						$postslist = get_posts( $args );
-						foreach ($postslist as $post) :  setup_postdata($post); ?> 
-							<div class="news-container">
-								<h1> 
-									<?php the_title(); ?>
-								</h1>
-								<div>
-									<?php the_excerpt(); ?>
-								</div>
-							</div>
-					<?php endforeach; ?>
-				</section>
+								foreach ($postslist as $post) :  setup_postdata($post); ?>
+						<?php
+						global $more;
+						$more = 0;
+						?>
+						<?php get_template_part( 'content', get_post_format() ); ?>
+						<?php endforeach; ?>				
+					</section>
 				</div>
-				<div id="row-wrap">
-				<section class="news-r2">
-					<?php
-						$args = array( 'numberposts' => 1, 'offset'=> 1,);
+				<div class="news-row">
+					<section class="news-two">
+						<?php
+						$args = array( 'numberposts' => 1, 'offset'=> 1, );
 						$postslist = get_posts( $args );
-						foreach ($postslist as $post) :  setup_postdata($post); ?> 
-							<div class="news-container">
-								<h1> 
-									<?php the_title(); ?>
-								</h1>
-								<div>
-									<?php the_excerpt(); ?>
-								</div>
-							</div>
-					<?php endforeach; ?>
-				</section>
-				<section id="news-gap">
-				</section>
-				<section class="news-r2">
-					<?php
-						$args = array( 'numberposts' => 1, 'offset'=> 2,);
+								foreach ($postslist as $post) :  setup_postdata($post); ?>
+						<?php
+						global $more;
+						$more = 0;
+						?>
+						<?php get_template_part( 'content', get_post_format() ); ?>
+						<?php endforeach; ?>
+					</section>
+					<section class="news-two">
+						<?php
+						$args = array( 'numberposts' => 1, 'offset'=> 2, );
 						$postslist = get_posts( $args );
-						foreach ($postslist as $post) :  setup_postdata($post); ?> 
-							<div class="news-container">
-								<h1> 
-									<?php the_title(); ?>
-								</h1>
-								<div>
-									<?php the_excerpt(); ?>
-								</div>
-							</div>
-					<?php endforeach; ?>
-				</section>
+								foreach ($postslist as $post) :  setup_postdata($post); ?>
+						<?php
+						global $more;
+						$more = 0;
+						?>
+						<?php get_template_part( 'content', get_post_format() ); ?>
+						<?php endforeach; ?>
+					</section>
 				</div>
-				<div id="row-wrap">
-				<section class="news-r3">
-					<?php
-						$args = array( 'numberposts' => 1, 'offset'=> 3,);
+				<div class="news-row">
+					<section class="news-three">
+						<?php
+						$args = array( 'numberposts' => 1, 'offset'=> 3, );
 						$postslist = get_posts( $args );
-						foreach ($postslist as $post) :  setup_postdata($post); ?> 
-							<div class="news-container">
-								<h1> 
-									<?php the_title(); ?>
-								</h1>
-								<div>
-									<?php the_excerpt(); ?>
-								</div>
-							</div>
-					<?php endforeach; ?>
-				</section>
-				<section id="news-gap">
-				</section>	
-				<section class="news-r3">
-					<?php
-						$args = array( 'numberposts' => 1, 'offset'=> 4,);
+								foreach ($postslist as $post) :  setup_postdata($post); ?>
+						<?php
+						global $more;
+						$more = 0;
+						?>
+						<?php get_template_part( 'content', get_post_format() ); ?>
+						<?php endforeach; ?>
+					</section>
+					<section class="news-three">
+						<?php
+						$args = array( 'numberposts' => 1, 'offset'=> 4, );
 						$postslist = get_posts( $args );
-						foreach ($postslist as $post) :  setup_postdata($post); ?> 
-							<div class="news-container">
-								<h1> 
-									<?php the_title(); ?>
-								</h1>
-								<div>
-									<?php the_excerpt(); ?>
-								</div>
-							</div>
-					<?php endforeach; ?>
-				</section>
-				<section id="news-gap">
-				</section>
-				<section class="news-r3">
-					<?php
-						$args = array( 'numberposts' => 1, 'offset'=> 5,);
+								foreach ($postslist as $post) :  setup_postdata($post); ?>
+						<?php
+						global $more;
+						$more = 0;
+						?>
+						<?php get_template_part( 'content', get_post_format() ); ?>
+						<?php endforeach; ?>
+					</section>
+					<section class="news-three">
+						<?php
+						$args = array( 'numberposts' => 1, 'offset'=> 5, );
 						$postslist = get_posts( $args );
-						foreach ($postslist as $post) :  setup_postdata($post); ?> 
-							<div class="news-container">
-								<h1> 
-									<?php the_title(); ?>
-								</h1>
-								<div>
-									<?php the_excerpt(); ?>
-								</div>
-							</div>
-					<?php endforeach; ?>
-				</section>
+								foreach ($postslist as $post) :  setup_postdata($post); ?>
+						<?php
+						global $more;
+						$more = 0;
+						?>
+						<?php get_template_part( 'content', get_post_format() ); ?>
+						<?php endforeach; ?>
+					</section>
 				</div>
-				<section class="news-r1">
-					<?php
-						$args = array( 'numberposts' => 1, 'offset'=> 6,);
-						$postslist = get_posts( $args );
-						foreach ($postslist as $post) :  setup_postdata($post); ?> 
-							<div class="news-container">
-								<h1> 
-									<?php the_title(); ?>
-								</h1>
-								<div>
-									<?php the_excerpt(); ?>
-								</div>
-							</div>
-					<?php endforeach; ?>
-				</section>
-				<section class="news-r1">
-					<p>Archives Button</p>
-				</section>
 			</div><!-- #content -->
 		</div><!-- #primary -->
 

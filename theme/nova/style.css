@@ -149,37 +149,19 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 /* ---------- */    
 /* =News Page
 ------------- */
-.news-r1{
-	background-color:#DEDEDE;
-	float:left;
-	overflow: hidden;
+.news-one{
 	width: 725px;
 }
-.news-r2{
-	background-color:#DEDEDE;
+.news-two{
 	float:left;
-	overflow: hidden;
 	width: 350px;
 }
-.news-r3{
-	background-color:#DEDEDE;
+.news-three{
 	float:left;
-	overflow: hidden;
 	width: 225px;
-	float: left;
 }
 
-.news-container{
-	overflow: hidden;
-	padding: 10px;
-}
-
-#news-gap{
-	height: 25px;
-	width: 25px;
-	float: left;
-}
-#row-wrap{
+.news-row{
 	width: 725px;
 	height:  auto;
 	margin-bottom: 25px;
@@ -305,7 +287,6 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 .hentry,
 .hentry:last-child,
 .no-results,
-.front-excerpt,
 .error404 {
     background-color: #DEDEDE;
     margin: 0 25px 25px 0;
@@ -1462,7 +1443,7 @@ section.ephemera .entry-title a span {color: #29628d;}
 .payPalBadge {height: 30px;margin-left: auto;margin-right: auto;width: 62px;}
 
 /* TubePress Video */
-#tubepress {height: 205px;}
+#tubepress {height: 190px;}
 
 /* =Comments
 ----------------------------------------------- */
