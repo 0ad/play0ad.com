@@ -12,7 +12,7 @@
 <?php get_header(); ?>
 		<div id="primary">
 			<div id="content" role="main">
-				<p>This page is undergoing construction; its a mess right now.</p>
+				<a>This page is undergoing construction; its a mess right now.</a>
 				<div class="news-row">
 					<section class="news-one">
 						<?php
@@ -54,7 +54,7 @@
 					</section>
 				</div>
 				<div class="news-row">
-					<section class="news-three">
+					<section class="news-one">
 						<?php
 						$args = array( 'numberposts' => 1, 'offset'=> 3, );
 						$postslist = get_posts( $args );
@@ -66,7 +66,9 @@
 						<?php get_template_part( 'content', get_post_format() ); ?>
 						<?php endforeach; ?>
 					</section>
-					<section class="news-three">
+				</div>
+				<div class="news-row">
+					<section class="news-two">
 						<?php
 						$args = array( 'numberposts' => 1, 'offset'=> 4, );
 						$postslist = get_posts( $args );
@@ -78,7 +80,7 @@
 						<?php get_template_part( 'content', get_post_format() ); ?>
 						<?php endforeach; ?>
 					</section>
-					<section class="news-three">
+					<section class="news-two">
 						<?php
 						$args = array( 'numberposts' => 1, 'offset'=> 5, );
 						$postslist = get_posts( $args );

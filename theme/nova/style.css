@@ -4,7 +4,7 @@ Theme URI: http://wildfiregames.com/0adwebdev/theme-dev/
 Author: Geek377, gerbilOFdoom, bstempi
 Author URI: http://wildfiregames.com
 Description: Based off of WordPress 2011 theme; customized for use with Wildfire Games 0 AD
-Version: 0.3
+Version: 0.4
 License: GNU General Public License
 License URI: http://www.gnu.org/copyleft/gpl.html
 */
@@ -149,24 +149,12 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 /* ---------- */    
 /* =News Page
 ------------- */
-.news-one{
-	width: 725px;
-}
-.news-two{
-	float:left;
-	width: 350px;
-}
-.news-three{
-	float:left;
-	width: 225px;
-}
-
-.news-row{
-	width: 725px;
-	height:  auto;
-	margin-bottom: 25px;
-}
-
+.news-one{width:750px}
+.news-two{float:left;width:350px}
+.news-three{float:left;width:225px}
+.news-row{width:725px;height:auto;margin-bottom:25px}
+.news-row .entry-title{background-image:none;background-color:#DEDEDE}
+.news-row .entry-title a{color:#000}
 /* ------------ */
 /* =Global Menu
 --------------- */
@@ -337,13 +325,13 @@ a:focus, a:active, a:hover { text-decoration: underline;}
     color: #666666;
     font-size: 10px;
     line-height: 20px;
-    padding: 5px 0 5px 25px;
+    padding: 5px 0 5px 10px;
 }
 .entry-meta a {
 	font-weight: bold;
 }
 .single-author .entry-meta .by-author {
-	display: none;
+	font-weight: bold;
 }
 .entry-content,
 .entry-summary {
@@ -671,7 +659,7 @@ article.format-status .entry-content {
 }
 .singular .entry-title,
 .singular .entry-header .entry-meta {
-	padding-left: 20px;
+	padding-left: 10px;
 }
 .singular .entry-header .entry-meta {
 	position: absolute;
