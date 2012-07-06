@@ -1433,6 +1433,12 @@ section.ephemera .entry-title a span {color: #29628d;}
 /* TubePress Video */
 #tubepress {height: 190px;}
 
+/* =Videos
+----------------------------------------------- */
+.tubepress_meta_group dl {
+	margin: 0;
+}
+
 /* =Comments
 ----------------------------------------------- */
 
