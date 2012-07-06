@@ -1435,7 +1435,7 @@ section.ephemera .entry-title a span {color: #29628d;}
 
 /* =Videos
 ----------------------------------------------- */
-.tubepress_meta_group dl {
+dl.tubepress_meta_group {
 	margin: 0;
 }
 
