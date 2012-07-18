@@ -1,5 +1,6 @@
 <?php
 /**
+ * Template Name: Archives
  * The template for displaying Archive pages.
  *
  * Used to display archive-type pages if nothing more specific matches a query.
@@ -9,64 +10,37 @@
  *
  * @package WildfireGames
  * @subpackage Nova
- * @since Nova 0.2
+ * @since Nova 0.4
  */
 
 get_header(); ?>
 
-		<section id="primary">
-			<div id="content" role="main">
-
-			<?php if ( have_posts() ) : ?>
-
-				<header class="page-header">
-					<h1 class="page-title">
-						<?php if ( is_day() ) : ?>
-							<?php printf( __( 'Daily Archives: %s', 'nova' ), '<span>' . get_the_date() . '</span>' ); ?>
-						<?php elseif ( is_month() ) : ?>
-							<?php printf( __( 'Monthly Archives: %s', 'nova' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'nova' ) ) . '</span>' ); ?>
-						<?php elseif ( is_year() ) : ?>
-							<?php printf( __( 'Yearly Archives: %s', 'nova' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'nova' ) ) . '</span>' ); ?>
-						<?php else : ?>
-							<?php _e( 'Blog Archives', 'nova' ); ?>
-						<?php endif; ?>
-					</h1>
-				</header>
-
-				<?php nova_content_nav( 'nav-above' ); ?>
-
-				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
-
-					<?php
-						/* Include the Post-Format-specific template for the content.
-						 * If you want to overload this in a child theme then include a file
-						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-						 */
-						get_template_part( 'content', get_post_format() );
-					?>
-
-				<?php endwhile; ?>
-
-				<?php nova_content_nav( 'nav-below' ); ?>
-
-			<?php else : ?>
-
-				<article id="post-0" class="post no-results not-found">
+		<div id="primary">
+			<div id="content" role="main">				
+				<article class="hentry">
 					<header class="entry-header">
-						<h1 class="entry-title"><?php _e( 'Nothing Found', 'nova' ); ?></h1>
-					</header><!-- .entry-header -->
-
-					<div class="entry-content">
-						<p><?php _e( 'Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post.', 'nova' ); ?></p>
-						<?php get_search_form(); ?>
-					</div><!-- .entry-content -->
-				</article><!-- #post-0 -->
-
-			<?php endif; ?>
-
+						<h1 class="entry-title"><?php the_title(); ?></h1>
+					</header>
+					<div class="entry-content"> 
+						
+						<?php the_post(); the_content();  ?>
+						
+						<h2>Monthly Archive</h2>  
+						<ul>
+						<?php wp_get_archives('show_post_count=1'); ?>  
+						</ul>
+						<br> 
+					
+						<h2>Categories Archive</h2>
+						<ul>  
+						<?php wp_list_categories('show_post_count=1'); ?>   
+						</ul>
+						<br>
+						 
+					</div><!-- #entry-content -->
+				</article><!-- .hentry -->
 			</div><!-- #content -->
-		</section><!-- #primary -->
+		</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
