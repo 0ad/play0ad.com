@@ -109,9 +109,7 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 .assistive-text { position: absolute !important; clip: rect(1px 1px 1px 1px); /* IE6, IE7 */ clip: rect(1px, 1px, 1px, 1px); }
 #access a.assistive-text:active,
 #access a.assistive-text:focus { background: #eee; border-bottom: 1px solid #ddd; color: #1982d1; clip: auto !important; font-size: 12px; position: absolute; text-decoration: underline; top: 0; left: 7.6%; }
-
-
-/* ---------- */    
+   
 /* =Structure
 ------------- */
 #page { margin: auto; width: 100%; }
@@ -132,23 +130,11 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 /* Attachments */
 .singular .image-attachment .entry-content { margin: 0 auto; width: auto; }
 .singular .image-attachment .entry-description { margin: 0 auto; width: 68.9%; }
-
-
-/* --------- */    
+  
 /* =Front Page
 ------------ */
 #carousel {background-color: #222; clear: both; border-width: 1px; border-color: black; border-style: solid; height: 148px; width: 723px; margin-bottom: 25px; '}
 
-/* ---------- */    
-/* =News Page
-------------- */
-.news-one{width:750px}
-.news-two{float:left;width:350px}
-.news-three{float:left;width:225px}
-.news-row{width:725px;height:auto;margin-bottom:25px}
-.news-row .entry-title{background-image:none;background-color:#DEDEDE}
-.news-row .entry-title a{color:#000}
-/* ------------ */
 /* =Global Menu
 --------------- */
 #global{background-color:#480001;clear:both;display:block;height:29px;width:100%;border-color:#e8be48;border-style:none none solid;border-width:1px}
@@ -163,7 +149,6 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 #global ul li:hover > ul{display:block}
 #global .current-menu-item > a,#global .current-menu-ancestor > a,#global .current_page_item > a,#global .current_page_ancestor > a{font-weight:700}
 
-/* ------- */
 /* =Header
 ---------- */
 #branding { margin-bottom: 25px; position: relative; }
@@ -174,8 +159,6 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 #branding img { float: left; margin: 10px; }
 #download-button { background-image: url("images/download-button.png"); background-position: center top; float: right; height: 75px; margin: 25px 125px; width: 250px; }
 
-
-/* ---------- */
 /* =Main Menu
 ------------- */
 #access{background-image:url(images/menu/bg.png);background-position:center center;clear:both;display:block;height:30px;margin-left:auto;margin-right:auto;width:1000px}
@@ -843,24 +826,10 @@ blockquote.pull {
 
 
 /* 404
------------------------------------------------ */
-
+------ */
 #404{
 	background-color: #DEDEDE;
 	height: 250px;
-}
-
-
-/* =Showcase
------------------------------------------------ */
-
-h1.showcase-heading {
-	color: #666;
-	font-size: 10px;
-	font-weight: 500;
-	letter-spacing: 0.1em;
-	line-height: 2.6em;
-	text-transform: uppercase;
 }
 
 /* Intro */
@@ -968,7 +937,7 @@ section.feature-image.large {
 	padding: 0;
 	width: 100%;
 }
-section.feature-image.large .showcase-heading {
+section.feature-image.large {
 	display: none;
 }
 section.feature-image.large .hentry {
@@ -1015,7 +984,7 @@ section.feature-image.large img {
 	position: relative;
 	overflow: hidden;
 }
-.featured-posts .showcase-heading {
+.featured-posts {
 	padding-left: 8.9%;
 }
 .featured-posts section.featured-post {
@@ -1749,20 +1718,11 @@ p.comment-form-comment {
 	display: none;
 }
 
-/*--------
 /* =Footer
 ---------- */
-
-#colophon { background-color: black; clear: both;}
-#supplementary {
-    color: white;
-    height: auto;
-    overflow: hidden;
-    width: 1000px;
-    margin: 0 auto;
-}
-
-/* Five Footer Widget Areas */
+#colophon{background-color:#000;clear:both}
+#supplementary{color:#FFF;height:auto;margin:0 auto;overflow:hidden;width:1000px}
+/* Widget Areas */
 #supplementary aside{ float:left; width:180px; height:130px; padding:10px }
 #supplementary .widget{ clear:none; color:#FFF }
 #supplementary ul{ font-size:10px; line-height:15px; list-style:none outside none; text-align:left }
@@ -1773,431 +1733,38 @@ p.comment-form-comment {
 #site-generator a{ color:#FFF; font-weight:bold; text-decoration:none }
 #site-generator .sep{ background:url(images/wordpress.png) center left no-repeat; color:transparent; display:inline-block; height:16px; line-height:16px; width:16px; margin:0 7px }
 
-/* =Responsive Structure
------------------------------------------------ */
-
-@media (max-width: 800px) {
-	/* Simplify the basic layout */
-	#main #content {
-		margin: 0 7.6%;
-		width: auto;
-	}
-	#nav-below {
-		border-bottom: 1px solid #ddd;
-		margin-bottom: 1.625em;
-	}
-	#main #secondary {
-		float: none;
-		margin: 0 7.6%;
-		width: auto;
-	}
-	/* Simplify the showcase template */
-	.page-template-showcase-php .featured-posts {
-		min-height: 280px;
-	}
-	.featured-posts section.featured-post {
-		height: auto;
-	}
-	.page-template-showcase-php section.recent-posts {
-		float: none;
-		margin: 0;
-		width: 100%;
-	}
-	.page-template-showcase-php #main .widget-area {
-		float: none;
-		margin: 0;
-		width: auto;
-	}
-	.page-template-showcase-php .other-recent-posts {
-		border-bottom: 1px solid #ddd;
-	}
-	/* Simplify the showcase template when small feature */
-	section.featured-post .attachment-small-feature,
-	.one-column section.featured-post .attachment-small-feature {
-		border: none;
-		display: block;
-		float: left;
-		height: auto;
-		margin: 0.625em auto 1.025em;
-		max-width: 30%;
-		position: static;
-	}
-	article.feature-image.small {
-		float: right;
-		margin: 0 0 1.625em;
-		width: 64%;
-	}
-	.one-column article.feature-image.small .entry-summary {
-		height: auto;
-	}
-	article.feature-image.small .entry-summary p a {
-		left: 0;
-		padding-left: 20px;
-		padding-right: 20px;
-		width: auto;
-	}
-	/* Remove the margin on singular articles */
-	.singular .entry-header,
-	.singular .entry-content,
-	.singular footer.entry-meta,
-	.singular #comments-title {
-		width: 100%;
-	}
-	/* Simplify the pullquotes and pull styles */
-	.singular blockquote.pull {
-		margin: 0 0 1.625em;
-	}
-	.singular .pull.alignleft {
-		margin: 0 1.625em 0 0;
-	}
-	.singular .pull.alignright {
-		margin: 0 0 0 1.625em;
-	}
-	.singular .entry-meta .edit-link a {
-		left: 0;
-		top: 40px;
-	}
-	.singular #author-info {
-		margin: 2.2em -8.8% 0;
-		padding: 20px 8.8%;
-	}
-	/* Make sure we have room for our comment avatars */
-	.commentlist {
-		width: 100%;
-	}
-	.commentlist > li.comment,
-	.commentlist .pingback {
-		margin-left: 102px;
-		width: auto;
-	}
-	/* And a full-width comment form */
-	#respond {
-		width: auto;
-	}
-	/* No need to float footer widgets at this size */
-	#colophon #supplementary .widget-area {
-		float: none;
-		margin-right: 0;
-		width: auto;
-	}
-	/* No need to float 404 widgets at this size */
-	.error404 #main .widget {
-		float: none;
-		margin-right: 0;
-		width: auto;
-	}
-
-}
-@media (max-width: 650px) {
-	/* @media (max-width: 650px) Reduce font-sizes for better readability on smaller devices */
-	body, input, textarea {
-		font-size: 13px;
-	}
-	#site-title a {
-		font-size: 24px;
-	}
-	#site-description {
-		font-size: 12px;
-	}
-	#access ul {
-		font-size: 12px;
-	}
-	article.intro .entry-content {
-		font-size: 12px;
-	}
-	.entry-title {
-		font-size: 21px;
-	}
-	.featured-post .entry-title {
-		font-size: 14px;
-	}
-	.singular .entry-title {
-		font-size: 28px;
-	}
-	.entry-meta {
-		font-size: 12px;
-	}
-	blockquote {
-		margin: 0;
-	}
-	blockquote.pull {
-		font-size: 17px;
-	}
-	/* Reposition the site title and description slightly */
-	#site-title {
-		padding: 5.30625em 0 0;
-	}
-	#site-title,
-	#site-description {
-		margin-right: 0;
-	}
-	/* Make sure the logo and search form don't collide */
-	#branding #searchform {
-		top: 1.625em !important;
-	}
-	/* Floated content doesn't work well at this size */
-	.alignleft,
-	.alignright {
-		float: none;
-		margin-left: 0;
-		margin-right: 0;
-	}
-	/* Make sure the post-post navigation doesn't collide with anything */
-	#nav-single {
-		display: block;
-		position: static;
-	}
-	.singular .hentry {
-		padding: 1.625em 0 0;
-	}
-	.singular.page .hentry {
-		padding: 1.625em 0 0;
-	}
-	/* Talking avatars take up too much room at this size */
-	.commentlist > li.comment,
-	.commentlist > li.pingback {
-		margin-left: 0 !important;
-	}
-	.commentlist .avatar {
-		background: transparent;
-		display: block;
-		padding: 0;
-		position: static;
-	}
-	.commentlist .children .avatar {
-		background: none;
-		left: 2.2em;
-		padding: 0;
-		position: absolute;
-		top: 2.2em;
-	}
-	/* Use the available space in the smaller comment form */
-	#respond input[type="text"] {
-		width: 95%;
-	}
-	#respond .comment-form-author .required,
-	#respond .comment-form-email .required {
-		left: 95%;
-	}
-	#content .gallery-columns-3 .gallery-item {
-		width: 31%;
-		padding-right: 2%;
-	}
-	#content .gallery-columns-3 .gallery-item img {
-		width: 100%;
-		height: auto;
-	}
-
-}
-@media (max-width: 450px) {
-	#content .gallery-columns-2 .gallery-item {
-		width: 45%;
-		padding-right: 4%;
-	}
-	#content .gallery-columns-2 .gallery-item img {
-		width: 100%;
-		height: auto;
-	}
-
-}
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-	body {
-		padding: 0;
-	}
-	#page {
-		margin-top: 0;
-	}
-	#branding {
-		border-top: none;
-	}
-
-}
-
-
 /* =Print
------------------------------------------------ */
-
+--------- */
 @media print {
-	body {
-		background: none !important;
-		font-size: 10pt;
-	}
-	footer.entry-meta a[rel=bookmark]:link:after,
-	footer.entry-meta a[rel=bookmark]:visited:after {
-		content: " [" attr(href) "] "; /* Show URLs */
-	}
-	#page {
-		clear: both !important;
-		display: block !important;
-		float: none !important;
-		max-width: 100%;
-		position: relative !important;
-	}
-	#branding {
-		border-top: none !important;
-		padding: 0;
-	}
-	#branding hgroup {
-		margin-left:  250px;
-	}
-	#site-title a {
-		font-size: 21pt;
-	}
-	#site-description {
-		font-size: 10pt;
-	}
-	#branding #searchform {
-		display: none;
-	}
-	#branding img {
-		display: none;
-	}
-	#access {
-		display: none;
-	}
-	#main {
-		border-top: none;
-		box-shadow: none;
-	}
-	#primary {
-		float: left;
-		margin: 0;
-		width: 100%;
-	}
-	#content {
-		margin: 0;
-		width: auto;
-	}
-	.singular #content {
-		margin: 0;
-		width: 100%;
-	}
-	.singular .entry-header .entry-meta {
-		position: static;
-	}
-	.entry-meta .edit-link a {
-		display: none;
-	}
-	#content nav {
-		display: none;
-	}
-	.singular .entry-header,
-	.singular .entry-content,
-	.singular footer.entry-meta,
-	.singular #comments-title {
-		margin: 0;
-		width: 100%;
-	}
-	.singular .hentry {
-		padding: 0;
-	}
-	.entry-title,
-	.singular .entry-title {
-		font-size: 21pt;
-	}
-	.entry-meta {
-		font-size: 10pt;
-	}
-	.entry-header .comments-link {
-		display: none;
-	}
-	.page-link {
-		display: none;
-	}
-	.singular #author-info {
-		background: none;
-		border-bottom: none;
-		border-top: none;
-		margin: 2.2em 0 0;
-		padding: 0;
-	}
-	#respond {
-		display: none;
-	}
-	.widget-area {
-		display: none;
-	}
-	#colophon {
-		display: none;
-	}
-
-	/* Comments */
-	.commentlist > li.comment {
-		background: none;
-		border: 1px solid #ddd;
-		-moz-border-radius: 3px 3px 3px 3px;
-		border-radius: 3px 3px 3px 3px;
-		margin: 0 auto 1.625em;
-		padding: 1.625em;
-		position: relative;
-		width: auto;
-	}
-	.commentlist .avatar {
-		height: 39px;
-		left: 2.2em;
-		top: 2.2em;
-		width: 39px;
-	}
-	.commentlist li.comment .comment-meta {
-		line-height: 1.625em;
-		margin-left: 50px;
-	}
-	.commentlist li.comment .fn {
-		display: block;
-	}
-	.commentlist li.comment .comment-content {
-		margin: 1.625em 0 0;
-	}
-	.commentlist .comment-edit-link {
-		display: none;
-	}
-	.commentlist > li::before,
-	.commentlist > li.bypostauthor::before {
-		content: '';
-	}
-	.commentlist .reply {
-		display: none;
-	}
-
-	/* Post author highlighting */
-	.commentlist > li.bypostauthor {
-		color: #444;
-	}
-	.commentlist > li.bypostauthor .comment-meta {
-		color: #666;
-	}
-	.commentlist > li.bypostauthor:before {
-		content: none;
-	}
-
-	/* Post Author threaded comments */
-	.commentlist .children > li.bypostauthor {
-		background: #fff;
-		border-color: #ddd;
-	}
-	.commentlist .children > li.bypostauthor > article,
-	.commentlist .children > li.bypostauthor > article .comment-meta {
-		color: #666;
-	}
-
+body{background:none!important;font-size:10pt}
+footer.entry-meta a[rel=bookmark]:link:after,footer.entry-meta a[rel=bookmark]:visited:after{content:" [" attr(href) "] "}
+#page{clear:both!important;display:block!important;float:none!important;max-width:100%;position:relative!important}
+#branding{border-top:none!important;padding:0}
+#branding hgroup{margin-left:250px}
+#main{border-top:none;box-shadow:none}
+#primary{float:left;margin:0;width:100%}
+#content{margin:0;width:auto}
+.singular .entry-header .entry-meta{position:static}
+.singular .hentry{padding:0}
+.singular #author-info{background:none;border-bottom:none;border-top:none;margin:2.2em 0 0;padding:0}
+.commentlist > li.comment{-moz-border-radius:3px;background:none;border:1px solid #ddd;border-radius:3px 3px 3px 3px;margin:0 auto 1.625em;padding:1.625em;position:relative;width:auto}
+.commentlist .avatar{height:39px;left:2.2em;top:2.2em;width:39px}
+.commentlist li.comment .comment-meta{line-height:1.625em;margin-left:50px}
+.commentlist li.comment .fn{display:block}
+.commentlist li.comment .comment-content{margin:1.625em 0 0}
+.commentlist > li::before,.commentlist > li.bypostauthor::before{content:''}
+.commentlist > li.bypostauthor{color:#444}
+.commentlist > li.bypostauthor:before{content:none}
+.commentlist .children > li.bypostauthor{background:#fff;border-color:#ddd}
+#site-title a,.entry-title,.singular .entry-title{font-size:21pt}
+#site-description,.entry-meta{font-size:10pt}
+#branding #searchform,#branding img,#access,.entry-meta .edit-link a,#content nav,.entry-header .comments-link,.page-link,#respond,.widget-area,#colophon,.commentlist .comment-edit-link,.commentlist .reply{display:none}
+.singular #content,.singular .entry-header,.singular .entry-content,.singular footer.entry-meta,.singular #comments-title{margin:0;width:100%}
+.commentlist > li.bypostauthor .comment-meta,.commentlist .children > li.bypostauthor > article,.commentlist .children > li.bypostauthor > article .comment-meta{color:#666}
 }
-
-
-/* ----- */    
+   
 /* =IE 7
 -------- */
-#ie7 article.intro {
-	margin-left: -7.6%;
-	margin-right: -7.6%;
-	padding-left: -7.6%;
-	padding-right: -7.6%;
-	max-width: 1000px;
-}
-#ie7 section.featured-post {
-	margin-left: -7.6%;
-	margin-right: -7.6%;
-	max-width: 850px;
-}
-#ie7 section.recent-posts {
-	margin-right: 7.6%;
-}
+#ie7 article.intro{margin-left:-7.6%;margin-right:-7.6%;max-width:1000px;padding-left:-7.6%;padding-right:-7.6%}
+#ie7 section.featured-post{margin-left:-7.6%;margin-right:-7.6%;max-width:850px}
+#ie7 section.recent-posts{margin-right:7.6%}
