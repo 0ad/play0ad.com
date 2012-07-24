@@ -139,13 +139,6 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 ------------ */
 #carousel {background-color: #222; clear: both; border-width: 1px; border-color: black; border-style: solid; height: 148px; width: 723px; margin-bottom: 25px; '}
 
-/* ----------- */    
-/* =Media Page
--------------- */
-#media-slider{background-color:#dedede;height:375px;width:725px}
-#media-wall{background-color:#dedede;display:block;height:455px;width:705px;padding:10px}
-.media-block{background-image:green;border-radius:5px;display:block;float:left;height:215px;width:220px;margin:5px}
-
 /* ---------- */    
 /* =News Page
 ------------- */
