@@ -133,7 +133,6 @@ a:focus, a:active, a:hover { text-decoration: underline;}
   
 /* =Front Page
 ------------ */
-#carousel {background-color: #222; clear: both; border-width: 1px; border-color: black; border-style: solid; height: 148px; width: 723px; margin-bottom: 25px; '}
 #carousel {background-color: #222; clear: both; border-width: 1px; border-color: black; border-style: solid; height: 148px; width: 723px; margin-bottom: 25px; }
 
 /* =Global Menu
