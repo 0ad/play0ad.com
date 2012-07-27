@@ -20,17 +20,27 @@ get_header(); ?>
 						
 						<?php the_post(); the_content();  ?>
 						
-						<h2>Monthly Archives</h2>   
-						<ul>
-						<?php wp_get_archives( 'type=monthly&format=html&show_post_count=1' ); ?>
-						</ul>
-						<br> 
-					
-						<h2>Most Used Categories</h2>
-						<ul>  
-						<?php wp_list_categories( array( 'orderby' => 'count', 'order' => 'DESC', 'show_count' => 1, 'title_li' => '' ) ); ?>   
-						</ul>
-						<br>
+						<hr>
+						<div class="archive-pg">
+							<h3>Latest Posts</h3>   
+							<ul>
+							<?php wp_get_archives('type=postbypost&limit=5&format=html'); ?>
+							</ul>
+						</div>
+						
+						<div class="archive-pg">
+							<h3>Monthly Archives</h3>  
+							<ul>
+							<?php wp_get_archives( 'type=monthly&format=html&show_post_count=1' ); ?>
+							</ul>
+						</div>
+						
+						<div class="archive-pg">
+							<h3>Most Used Categories</h3>
+							<ul>  
+							<?php wp_list_categories( array( 'orderby' => 'count', 'order' => 'DESC', 'show_count' => 1, 'title_li' => '' ) ); ?>   
+							</ul>
+						</div>
 						 
 					</div><!-- #entry-content -->
 				</article><!-- .hentry -->
