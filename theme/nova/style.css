@@ -119,6 +119,9 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 #content { width: 100%; }
 #content ul { list-style: square outside none; text-align: left; margin-left: 20px; }
 #secondary { float: right; height: inherit; width: 250px; }
+#full { float: left; width: 1000px; }
+#full .hentry { margin: 0 0 25px; }
+#full .entry-title { background-image: url("images/entry-title-full.png"); text-align: center; }
 /* Singular */
 .singular #primary { height: inherit; width: 750px; }
 .singular #content,
