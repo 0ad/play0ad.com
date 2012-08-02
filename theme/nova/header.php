@@ -61,11 +61,12 @@
 			</nav>
 			
 			<hgroup>
-				<img src="http://www.wildfiregames.com/0adwebdev/theme-dev/wp-content/themes/nova/images/0ad-logo.png" alt="" width="265" height="125" />
+				<img src="http://www.wildfiregames.com/0adwebdev/theme-dev/wp-content/themes/nova/images/0ad-logo.png" alt="" />
 				<a href="download"> 
 					<div id="download-button">
 					</div><!-- Download Button -->
 				</a><!-- DOWNLOAD ANCHOR -->
+				<?php get_search_form(); ?>
 			</hgroup>
                          
 			<nav id="access" role="navigation">
@@ -73,9 +74,7 @@
 				<?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff. */ ?>
 				<div class="skip-link"><a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to primary content', 'nova' ); ?>"><?php _e( 'Skip to primary content', 'nova' ); ?></a></div>
 				<div class="skip-link"><a class="assistive-text" href="#secondary" title="<?php esc_attr_e( 'Skip to secondary content', 'nova' ); ?>"><?php _e( 'Skip to secondary content', 'nova' ); ?></a></div>
-				<?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu. The menu assiged to the primary position is the one used. If none is assigned, the menu with the lowest ID is used. */ ?>
 				<?php wp_nav_menu( array( 'menu' => 'MAIN' ) ); ?>
-				<?php get_search_form(); ?>
 			</nav><!-- #access -->
 	</header><!-- #branding -->
 

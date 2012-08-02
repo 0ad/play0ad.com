@@ -113,7 +113,7 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 /* =Structure
 ------------- */
 #page { margin: auto; width: 100%; }
-#branding hgroup { background-image: url("images/header.png"); background-position: center; height: 150px; margin-left: auto; margin-right: auto; width: 1000px; }
+#branding hgroup { background-image: url("images/header.png"); background-position: center; height: 125px; margin-left: auto; margin-right: auto; width: 1000px; }
 #access div { margin: 0px; }
 #primary { float: left; width: 750px; }
 #content { width: 100%; }
@@ -159,8 +159,8 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 #site-title a { color: #7A7A7A; font-size: 30px; font-weight: bold; line-height: 36px; text-decoration: none; }
 #site-title a:hover, #site-title a:focus, #site-title a:active { color: #1982d1; }
 #site-description { color: #7a7a7a; font-size: 14px; margin: 0 270px 3.65625em 0; }
-#branding img { float: left; margin: 10px; }
-#download-button { background-image: url("images/download-button.png"); background-position: center top; float: right; height: 75px; margin: 25px 125px; width: 250px; }
+#branding img { margin: -23px -25px 0; z-index: 999; }
+#download-button { background-image: url("images/download-button.png"); background-position: center top; float: right; height: 75px; margin: 10px 250px 0 0; width: 250px; }
 
 /* =Main Menu
 ------------- */
@@ -179,24 +179,24 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 
 /* Search Form */
 #branding #searchform {
-    background-image: url("images/menu/search.png");
-    margin-left: 875px;
-    position: absolute;
-    text-align: right;
-    top: 180px;
+    background: #fff;
+	float: right;
+	height: 30px;
+	margin: -120px 50px 0;
+	width: 150px;
 }
 #branding #searchform div {
 	margin: 0;
 }
 #branding #s {
     border: none;
-    color: white;
+	color: #000;
     float: right;
     height: 20px;
     line-height: 20px;
     padding: 5px;
-    text-align: center;
-    width: 115px;
+	text-align: right;
+	width: 140px;
 }
 #branding #searchsubmit {
 	display: none;
