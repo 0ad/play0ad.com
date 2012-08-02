@@ -11,15 +11,10 @@
 get_header(); ?>
 
 		<div id="full">
-			<div id="content" role="main">				
-				<article class="hentry">
-					<header class="entry-header">
-						<h1 class="entry-title"><?php the_title(); ?></h1>
-					</header>
-					<div class="entry-content"> 
-						<?php the_post(); the_content();  ?>
-					</div><!-- #entry-content -->
-				</article><!-- .hentry -->
+			<div id="content" role="main">
+				<?php while ( have_posts() ) : the_post(); ?>
+					<?php get_template_part( 'content', 'page' ); ?>
+				<?php endwhile; // end of the loop. ?>
 			</div><!-- #content -->
 		</div><!-- #full -->
 		

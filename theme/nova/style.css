@@ -40,7 +40,7 @@ div:after {
 body, input, textarea { color: #373737; font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 300; line-height: 1.67; }
 body { background-color: black; background-image: url("images/bg.png"); background-position: center top; background-repeat: repeat-y; }
 /* Headings */
-h1,h2,h3,h4,h5,h6 { clear: both; font: bold 30px Georgia, "Times New Roman", Times, serif; line-height: 50px; }
+h1,h2,h3,h4,h5,h6 { clear: both; font: bold 30px 'Fanwood Text', serif; line-height: 50px; }
 h2 { line-height: 50px; font-size: 25px; }
 h3 { line-height: 25px; font-size: 20px; }
 h4 { line-height: 25px; font-size: 18px; }
@@ -113,7 +113,7 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 /* =Structure
 ------------- */
 #page { margin: auto; width: 100%; }
-#branding hgroup { background-image: url("images/header.png"); background-position: center; height: 125px; margin-left: auto; margin-right: auto; width: 1000px; }
+#branding hgroup { background-image: url("images/header.png"); background-position: center; height: 135px; margin-left: auto; margin-right: auto; width: 1000px; }
 #access div { margin: 0px; }
 #primary { float: left; width: 750px; }
 #content { width: 100%; }
@@ -140,7 +140,7 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 
 /* =Global Menu
 --------------- */
-#global{background-color:#480001;clear:both;display:block;height:29px;width:100%;border-color:#e8be48;border-style:none none solid;border-width:1px}
+#global{background-color:#480001;border-bottom: 1px solid #e8be48;clear:both;display:block;height:29px;width:100%;}
 #global ul{background-color:inherit;font-size:15px;font-variant:small-caps;height:20px;line-height:20px;list-style:none outside none;margin-left:auto;margin-right:auto;padding-top:5px;width:1000px}
 #global li{color:#FFF;float:right;padding:0 5px 0 5px;position:relative;width:auto;text-align:center}
 #global a{color:#FFF;text-decoration:none}
@@ -158,15 +158,16 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 #site-title { margin-right: 270px; padding: 3.65625em 0 0; }
 #site-title a { color: #7A7A7A; font-size: 30px; font-weight: bold; line-height: 36px; text-decoration: none; }
 #site-title a:hover, #site-title a:focus, #site-title a:active { color: #1982d1; }
-#site-description { color: #7a7a7a; font-size: 14px; margin: 0 270px 3.65625em 0; }
-#branding img { margin: -23px -25px 0; z-index: 999; }
-#download-button { background-image: url("images/download-button.png"); background-position: center top; float: right; height: 75px; margin: 10px 250px 0 0; width: 250px; }
+#site-description { color: #e0dfdf; font: 15px 'Fanwood Text', serif; margin: 90px 0 0 140px; position: absolute; }
+#branding img { margin: -23px -25px 0; position: absolute; z-index: 999; }
+#download-button { background-image: url("images/download-button.png"); background-position: center top; float: right; height: 75px; margin: 30px 142px 0 0; width: 300px; }
+#wfg-logo { background-image: url("images/wfg-logo.png"); background-position: center center; float: right; height: 63px; margin: 36px 32px 0 0; width: 96px; }
 
 /* =Main Menu
 ------------- */
-#access{background-image:url(images/menu/bg.png);background-position:center center;clear:both;display:block;height:30px;margin-left:auto;margin-right:auto;width:1000px}
+#access{background: url(images/menu/bg.png) center center;border-bottom: 1px solid #e7bf47;border-top: 1px solid #8f7c52;clear:both;display:block;height:30px;margin-left:auto;margin-right:auto;width:1000px}
 #access ul{font-size:15px;list-style:none;margin:0}
-#access li{background-image:url(images/menu/normal.png);background-position:center center;color:#EEE;display:block;float:left;height:20px;line-height:20px;position:relative;text-align:center;width:150px;padding:5px 0}
+#access li{background-image:url(images/menu/normal.png) center center;color:#EEE;display:block;float:left;height:20px;line-height:20px;position:relative;text-align:center;width:150px;padding:5px 0}
 #access a{text-decoration:none;color:#FFF}
 #access ul ul{background:none;display:none;float:left;position:relative;top:0;width:150px;z-index:99999}
 #access ul ul ul{left:100%;top:0}
@@ -182,7 +183,7 @@ a:focus, a:active, a:hover { text-decoration: underline;}
     background: #fff;
 	float: right;
 	height: 30px;
-	margin: -120px 50px 0;
+	margin: 20px 50px 0 0;
 	width: 150px;
 }
 #branding #searchform div {
@@ -288,9 +289,9 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 .entry-title,
 .entry-title a {
     color: white;
-    font-size: 30px;
+    font-size: 22px;
     font-weight: bold;
-    line-height: 50px;
+    line-height: 44px;
     text-decoration: none;
     height: 100%;
 }
@@ -1279,7 +1280,8 @@ section.recent-posts .other-recent-posts li:after {
 
 /* Search Widget */
 #secondary .widget_search form {
-	margin: 0 0 1.625em;
+	background: #fff;
+	margin: 0;
 }
 #secondary .widget_search #s {
 	width: 77%;

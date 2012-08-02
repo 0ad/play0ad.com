@@ -37,6 +37,7 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+	<link href='http://fonts.googleapis.com/css?family=Fanwood+Text' rel='stylesheet' type='text/css'>
 	<?php
 		/* We add some JavaScript to pages with the comment form
 		 * to support sites with threaded comments (when in use).
@@ -62,11 +63,12 @@
 			
 			<hgroup>
 				<img src="http://www.wildfiregames.com/0adwebdev/theme-dev/wp-content/themes/nova/images/0ad-logo.png" alt="" />
+				<div id="site-description"><?php bloginfo('description'); ?></div>
+				<div id="wfg-logo"></div>
 				<a href="download"> 
 					<div id="download-button">
 					</div><!-- Download Button -->
 				</a><!-- DOWNLOAD ANCHOR -->
-				<?php get_search_form(); ?>
 			</hgroup>
                          
 			<nav id="access" role="navigation">
