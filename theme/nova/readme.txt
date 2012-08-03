@@ -1,5 +1,5 @@
-= TWENTY ELEVEN =
+= NOVA =
 
-* by the WordPress team, http://wordpress.org/
+* Authors: /humans.txt
 
-== ABOUT TWENTY ELEVEN ==
+== ABOUT NOVA ==

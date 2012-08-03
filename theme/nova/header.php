@@ -22,22 +22,12 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width" />
-	<title><?php
-	global $page, $paged;
-	wp_title( '|', true, 'right' );
-	bloginfo( 'name' );
-	$site_description = get_bloginfo( 'description', 'display' );
-	if ( $site_description && ( is_home() || is_front_page() ) )
-		echo " | $site_description";
-	if ( $paged >= 2 || $page >= 2 )
-		echo ' | ' . sprintf( __( 'Page %s', 'nova' ), max( $paged, $page ) );
-	?>
-	</title>
+	<title><?php bloginfo('name'); ?> | A free, open-source game of ancient warfare</title>
 	<link rel="author" href="/humans.txt">
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-	<link href='http://fonts.googleapis.com/css?family=Fanwood+Text' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Gentium+Basic:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<?php
 		/* We add some JavaScript to pages with the comment form
 		 * to support sites with threaded comments (when in use).
@@ -63,7 +53,9 @@
 			
 			<hgroup>
 				<img src="http://www.wildfiregames.com/0adwebdev/theme-dev/wp-content/themes/nova/images/0ad-logo.png" alt="" />
-				<div id="site-description"><?php bloginfo('description'); ?></div>
+				<div id="download-description"><?php bloginfo('description'); ?></div>
+				<div id="site-description">A free, open-source game of ancient warfare</div>
+				
 				<div id="wfg-logo"></div>
 				<a href="download"> 
 					<div id="download-button">
