@@ -118,17 +118,7 @@ class JJ_NGG_JQuery_Carousel extends WP_Widget
           }
           if($size_gap != '')
           {
-            $size_width = (int)$size_width + (int)$size_gap;  
-          }
-          $top_offset = (string)(floor((int)$height/2)+8); 
-          $output .= "\n  div#" . $html_id . "_container ." . $skin_class . " .jcarousel-container-horizontal { width: " . $size_width . "px !important; }";
-          $output .= "\n  div#" . $html_id . "_container ." . $skin_class . " .jcarousel-clip-horizontal { width: " . $size_width . "px !important; height: " . $height . "px !important; }";          
-          $output .= "\n  div#" . $html_id . "_container ." . $skin_class . " .jcarousel-next-horizontal { top: " . $top_offset . "px !important; }";
-          $output .= "\n  div#" . $html_id . "_container ." . $skin_class . " .jcarousel-prev-horizontal { top: " . $top_offset . "px !important; }";          
-          if($gap != '')
-          {
-            $output .= "\n  div#" . $html_id . "_container ." . $skin_class . " .jcarousel-item-horizontal { margin-right: " . $gap . "px; }";
-            $output .= "\n  div#" . $html_id . "_container ." . $skin_class . " .jcarousel-direction-rtl .jcarousel-item-horizontal { margin-left: " . $gap . "px; }";
+            $size_width = (int)$size_width + (int)$size_gap;
           }   
         }
         else
@@ -207,7 +197,7 @@ class JJ_NGG_JQuery_Carousel extends WP_Widget
           $width_d = " width=\"" . $width . "\"";
           $height_d = " height=\"" . $height . "\"";  
         }     
-        $output .= "<img src=\"" . $image->imageURL . "\" " . $image_description . $width_d . $height_d . " border=\"0\" />";
+        $output .= "<a class=\"thickbox\" rel=\"". $result->galleryid ."\" alt=\"". $image_alt ."\" href=\"" . $image->imageURL . "\"><img src=\"" . $image->imageURL . "\" " . $image_description . $width_d . $height_d . " border=\"0\" /></a>";
         
         if($use_url)
         {

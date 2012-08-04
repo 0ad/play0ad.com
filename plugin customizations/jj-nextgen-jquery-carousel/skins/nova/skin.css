@@ -1,0 +1,11 @@
+.jcarousel-skin-tango .jcarousel-container{background:inherit}
+.jcarousel-skin-tango .jcarousel-direction-rtl{direction:rtl}
+.jcarousel-skin-tango .jcarousel-container-horizontal{height:auto;padding:0;width:auto}
+.jcarousel-skin-tango .jcarousel-clip-horizontal{height:auto;margin-left:0;margin-right:0;width:auto}
+.jcarousel-skin-tango .jcarousel-item-horizontal{height:115px;margin-left:10px;margin-right:10px;width:205px}
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-item-horizontal{margin-left:0;margin-right:0}
+.jcarousel-skin-tango .jcarousel-item-placeholder{background:#fff;color:#000}
+.jcarousel-skin-tango .jcarousel-next-horizontal{background:url(next-horizontal.png) no-repeat 0 0;background-position:center center;cursor:pointer;height:150px;opacity:0.9;position:absolute;right:0;top:0;width:25px}
+.jcarousel-skin-tango .jcarousel-prev-horizontal{background:url(prev-horizontal.png) no-repeat 0 0;background-position:center center;cursor:pointer;height:150px;left:0;opacity:0.9;position:absolute;top:0;width:25px}
+ul.ul_jj_carousel{list-style-type:none;margin:0;padding:0}
+ul.ul_jj_carousel li.li_jj_carousel{margin:0;padding:0}

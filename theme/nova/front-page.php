@@ -7,7 +7,7 @@ get_header(); ?>
 <div id="primary">
 	<div id="content" role="main">
 		<div id="carousel">
-			<?php echo do_shortcode( '[jj-ngg-jquery-carousel html_id="about-jcarousel" gallery="1" gap="15" width="205" height="115" visible="3" scroll="1" auto="0" skin_class="jcarousel-skin-tango" wrap="both"]' ); ?>
+			<?php echo do_shortcode( '[jj-ngg-jquery-carousel html_id="about-jcarousel" gallery="1" gap="5" width="175" height="98" visible="4" scroll="1" auto="0" skin_class="jcarousel-skin-tango" wrap="both"]' ); ?>
 		</div>
 		<!-- #carousel -->
 		<div id="updates">

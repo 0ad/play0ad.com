@@ -37,7 +37,7 @@ div:after {
 /* ------- */    
 /* =Global
 ---------- */
-body, input, textarea { color: #373737; font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 300; line-height: 1.67; }
+body, input, textarea { color: #373737; font: 15px/1.67 "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 300; }
 body { background-color: black; background-image: url("images/bg.png"); background-position: center top; background-repeat: repeat-y; }
 /* Headings */
 h1,h2,h3,h4,h5,h6 { clear: both; font: bold 30px 'Gentium Basic', serif; line-height: 50px; }
@@ -134,33 +134,42 @@ a:focus, a:active, a:hover { text-decoration: underline;}
   
 /* =Front Page
 ------------ */
-#carousel {background-color: #222; clear: both; border-width: 1px; border-color: black; border-style: solid; height: 148px; width: 723px; margin-bottom: 25px; }
+#carousel {background-color: #222; clear: both; border-width: 1px; border-color: black; border-style: solid; margin-bottom: 25px; padding: 9px 4px 9px; }
 
 /* =Global Menu
 --------------- */
-#global{background-color:#480001;border-bottom: 1px solid #e8be48;clear:both;display:block;height:29px;width:100%;}
-#global ul{background-color:inherit;font-size:15px;font-variant:small-caps;height:20px;line-height:20px;list-style:none outside none;margin-left:auto;margin-right:auto;padding-top:5px;width:1000px}
-#global li{color:#FFF;float:right;padding:0 5px 0 5px;position:relative;width:auto;text-align:center}
-#global a{color:#FFF;text-decoration:none}
-#global ul ul{-moz-box-shadow:0 3px 3px rgba(0,0,0,0.2);-webkit-box-shadow:0 3px 3px rgba(0,0,0,0.2);box-shadow:0 3px 3px rgba(0,0,0,0.2);display:none;float:left;position:absolute;top:3.333em;left:0;width:188px;z-index:99999;margin:0}
-#global ul ul ul{left:100%;top:0}
-#global ul ul a{background:#f9f9f9;border-bottom:1px dotted #ddd;color:#444;font-size:13px;font-weight:400;height:auto;line-height:1.4em;width:168px;padding:10px}
-#global li:hover > a,#global ul ul :hover > a,#global a:focus{color:gray}
-#global li:hover > a,#global a:focus
-#global ul li:hover > ul{display:block}
-#global .current-menu-item > a,#global .current-menu-ancestor > a,#global .current_page_item > a,#global .current_page_ancestor > a{font-weight:700}
+#global-bar{background-color:#480000;border-bottom:1px solid #e8be48;clear:both;display:block;height:30px;width:100%}
+#global{margin:0 auto;width:1000px}
+#global ul{background:#2b0000 url(images/menu/top-nav.gif) no-repeat left top;float:right;height:25px;list-style:none outside none;width:auto}
+#global li:first-child{border-left:none;padding-left:25px}
+#global li{border-left:1px solid #fff;display:block;float:left;height:15px;margin:5px;padding-left:10px;position:relative;text-align:center;width:auto}
+#global a{color:#FFF;font:normal 12px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;vertical-align:text-top}
+#global a:focus,#global a:hover{color:#cbcbcb;text-decoration:none}
 
 /* =Header
 ---------- */
 #branding { font: 15px 'Gentium Basic', serif; margin-bottom: 25px; position: relative; }
-#site-description { color: #e0dfdf; margin: 90px 0 0 140px; position: absolute; }
+#site-description { color: #e0dfdf; margin: 100px 0 0 140px; position: absolute; }
 #branding img { margin: -25px -25px 0; pointer-events: none; position: absolute; z-index: 999; }
-#download-button { background-image: url("images/download-button.png"); background-position: center top; float: right; height: 75px; margin: 30px 142px 0 0; width: 300px; }
-#download-description { color: #e0dfdf; margin: 80px 0 0 450px; position: absolute; }
+#download-button { background-image: url("images/download-button.png"); background-position: center top; float: right; height: 75px; margin: 30px 167px 0 0; width: 250px; }
+#download-description { color: #e0dfdf; margin: 80px 0 0 475px; position: absolute; }
 #wfg-logo { background-image: url("images/wfg-logo.png"); background-position: center center; float: right; height: 63px; margin: 36px 32px 0 0; width: 96px; }
 
 /* =Main Menu
 ------------- */
+#access{background: url(images/menu/bg.png) center center;border-bottom: 1px solid #e7bf47;border-top: 1px solid #8f7c52;clear:both;display:block;font-weight: bold;height:30px;margin-left:auto;margin-right:auto;padding-left:130px;width:870px;}
+#access ul{font-size:15px;list-style:none;margin:0}
+#access li{background-image:url(images/menu/normal.png);color:#EEE;display:block;float:left;height:20px;line-height:20px;position:relative;text-align:center;width:150px;padding:5px 0}
+#access a{text-decoration:none;color:#FFF}
+#access ul ul{background:none;display:none;float:left;position:relative;top:0;width:150px;z-index:99999}
+#access ul ul ul{left:100%;top:0}
+#access ul ul li{background-color:#000;background-image:none;font-size:10px;font-weight:400;height:20px;line-height:20px;opacity:0.9;width:150px}
+#access ul ul a{color:#FFF}
+#access li:hover > a,#access ul ul :hover > a,#access a:focus{display:block;background:url(images/menu/child-hover.png) no-repeat center center;opacity:1.0}
+#access li:hover > a,#access a:focus{background-image:url(images/menu/hover.png);color:#000;display:block;float:left;height:20px;line-height:20px;margin-top:-5px;position:relative;text-align:center;width:150px;padding:5px 0}
+#access ul li:hover > ul{display:block}
+#access .current-menu-item > a,#access .current-menu-ancestor > a,#access .current_page_item > a,#access .current_page_ancestor > a{font-weight:700}
+
 #menu-main > #menu-item-202{
 	background: none;
 	color: #000;
@@ -181,67 +190,17 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 	width: 280px;
 }
 
-#access{background: url(images/menu/bg.png) center center;border-bottom: 1px solid #e7bf47;border-top: 1px solid #8f7c52;clear:both;display:block;font-weight: bold;height:30px;margin-left:auto;margin-right:auto;padding-left:130px;width:870px;}
-#access ul{font-size:15px;list-style:none;margin:0}
-#access li{background-image:url(images/menu/normal.png);color:#EEE;display:block;float:left;height:20px;line-height:20px;position:relative;text-align:center;width:150px;padding:5px 0}
-#access a{text-decoration:none;color:#FFF}
-#access ul ul{background:none;display:none;float:left;position:relative;top:0;width:150px;z-index:99999}
-#access ul ul ul{left:100%;top:0}
-#access ul ul li{background-color:#000;background-image:none;font-size:10px;font-weight:400;height:20px;line-height:20px;opacity:0.9;width:150px}
-#access ul ul a{color:#FFF}
-#access li:hover > a,#access ul ul :hover > a,#access a:focus{display:block;background:url(images/menu/child-hover.png) no-repeat center center;opacity:1.0}
-#access li:hover > a,#access a:focus{background-image:url(images/menu/hover.png);color:#000;display:block;float:left;height:20px;line-height:20px;margin-top:-5px;position:relative;text-align:center;width:150px;padding:5px 0}
-#access ul li:hover > ul{display:block}
-#access .current-menu-item > a,#access .current-menu-ancestor > a,#access .current_page_item > a,#access .current_page_ancestor > a{font-weight:700}
-
 /* Search Form */
-#branding #searchform {
-    background: #fff;
-	float: right;
-	height: 30px;
-	margin: 20px 50px 0 0;
-	width: 150px;
-}
-#branding #searchform div {
-	margin: 0;
-}
-#branding #s {
-    border: none;
-	color: #000;
-    float: right;
-    height: 20px;
-    line-height: 20px;
-    padding: 5px;
-	text-align: right;
-	width: 140px;
-}
-#branding #searchsubmit {
-	display: none;
-}
-#branding .only-search #searchform {
-	top: 5px;
-	z-index: 1;
-}
-#branding .only-search #s {
-	background-color: #666;
-	border-color: #000;
-	color: #222;
-}
-#branding .only-search #s,
-#branding .only-search #s:focus {
-	width: 85%;
-}
-#branding .only-search #s:focus {
-	background-color: #bbb;
-}
-#branding .with-image #searchform {
-	top: auto;
-	bottom: -27px;
-	max-width: 195px;
-}
-#branding .only-search + #access div {
-	padding-right: 205px;
-}
+#branding #searchform{background:#fff;float:right;height:30px;margin:20px 50px 0 0;width:150px}
+#branding #searchform div{margin:0}
+#branding #s{border:none;color:#000;float:right;height:20px;line-height:20px;padding:5px;text-align:right;width:140px}
+#branding #searchsubmit{display:none}
+#branding .only-search #searchform{top:5px;z-index:1}
+#branding .only-search #s{background-color:#666;border-color:#000;color:#222}
+#branding .only-search #s,#branding .only-search #s:focus{width:85%}
+#branding .only-search #s:focus{background-color:#bbb}
+#branding .with-image #searchform{bottom:-27px;max-width:195px;top:auto}
+#branding .only-search + #access div{padding-right:205px}
 
 /* =Content
 ----------------------------------------------- */
@@ -293,31 +252,31 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 }
 
 .entry-title {
-	background: #f0f0f0 url('images/entry-title.png') no-repeat right top;
+	background: #f0f0f0 url('images/title-tri.png') no-repeat right top;
 }
 
 .entry-title,
 .entry-title a {
-    color: maroon;
+    color: #000;
     font-size: 22px;
     font-weight: bold;
-    line-height: 44px;
+    line-height: 62px;
     text-decoration: none;
     height: 100%;
 }
 .entry-title a:hover,
 .entry-title a:focus,
 .entry-title a:active {
-	color: #000;
+	color: #a80000;
 }
 .entry-meta {
     clear: both;
-    color: maroon;
     font-size: 10px;
     line-height: 20px;
     padding: 5px 0 5px 10px;
 }
 .entry-meta a {
+	color: #a80000;
 	font-weight: bold;
 }
 .single-author .entry-meta .by-author {
@@ -618,16 +577,18 @@ article.format-status .entry-content {
 }
 
 .singular .entry-title {
-    color: white;
+    color: maroon;
     font-size: 30px;
     font-weight: bold;
     line-height: 50px;
+    padding-left: 10px;
 }
-.singular .entry-title,
+.singular .entry-header {
+	background: #f0f0f0 url('images/title-tri.png') no-repeat right top;	
+	height: 62px;
+}
 .singular .entry-header .entry-meta {
 	padding-left: 10px;
-}
-.singular .entry-header .entry-meta {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1178,7 +1139,7 @@ section.ephemera .entry-title a span {color: #29628d;}
 .payPalBadge {height: 30px;margin-left: auto;margin-right: auto;width: 62px;}
 
 /* TubePress Video */
-#tubepress {height: 190px;}
+#tubepress {height: 170px;}
 
 /* =Videos
 ----------------------------------------------- */
@@ -1199,7 +1160,6 @@ dl.tubepress_meta_group {
 /* Site Generator Line */
 #site-generator { background-color:#480001; color:#555; font-size:10px; font-variant:small-caps; line-height:15px; text-align:center; border-color:#e8be48; border-style:solid none none; border-width:1px; padding:5px }
 #site-generator a{ color:#FFF; font-weight:bold; text-decoration:none }
-#site-generator .sep{ background:url(images/wordpress.png) center left no-repeat; color:transparent; display:inline-block; height:16px; line-height:16px; width:16px; margin:0 7px }
 
 /* =Print
 --------- */

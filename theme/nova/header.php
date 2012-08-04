@@ -47,17 +47,18 @@
 <div id="page" class="hfeed">
 
 	<header id="branding" role="banner">
-			<nav id="global" role="navigation">
+			<div id="global-bar">
+				<nav id="global" role="navigation">
 					<?php wp_nav_menu( array('menu' => 'GLOBAL', 'container' => '' , 'menu_class' => 'GLOBAL', 'menu_id' =>'' )); ?>
-			</nav>
+				</nav>
+			</div>
 			
 			<hgroup>
 				<img src="http://www.wildfiregames.com/0adwebdev/theme-dev/wp-content/themes/nova/images/0ad-logo.png" alt="" />
-				<div id="download-description"><?php bloginfo('description'); ?></div>
 				<div id="site-description">A free, open-source game of ancient warfare</div>
-				
 				<div id="wfg-logo"></div>
-				<a href="download"> 
+				<a href="download">
+					<div id="download-description"><?php bloginfo('description'); ?></div> 
 					<div id="download-button">
 					</div><!-- Download Button -->
 				</a><!-- DOWNLOAD ANCHOR -->
