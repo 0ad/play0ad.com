@@ -111,7 +111,7 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 /* =Structure
 ------------- */
 #page { margin: auto; width: 100%; }
-#branding hgroup { background-image: url("images/header.png"); background-position: center; height: 135px; margin-left: auto; margin-right: auto; width: 1000px; }
+#branding hgroup { background-image: url("images/header.png"); background-position: center; border-bottom: 1px solid #8f7c52; height: 135px; margin-left: auto; margin-right: auto; width: 1000px; }
 #access div { margin: 0px; }
 #primary { float: left; width: 750px; }
 #content { width: 100%; }
@@ -126,8 +126,7 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 .left-sidebar.singular #content { position: relative; }
 .singular .entry-header,
 .singular .entry-content,
-.singular footer.entry-meta,
-.singular #comments-title { width: inherit; color: black; }
+.singular footer.entry-meta { width: inherit; color: black; padding: 10px; }
 /* Attachments */
 .singular .image-attachment .entry-content { margin: 0 auto; width: auto; }
 .singular .image-attachment .entry-description { margin: 0 auto; width: 68.9%; }
@@ -140,9 +139,9 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 --------------- */
 #global-bar{background-color:#480000;border-bottom:1px solid #e8be48;clear:both;display:block;height:30px;width:100%}
 #global{margin:0 auto;width:1000px}
-#global ul{background:#2b0000 url(images/menu/top-nav.gif) no-repeat left top;float:right;height:25px;list-style:none outside none;width:auto}
-#global li:first-child{border-left:none;padding-left:25px}
-#global li{border-left:1px solid #fff;display:block;float:left;height:15px;margin:5px;padding-left:10px;position:relative;text-align:center;width:auto}
+#global ul{background:#2b0000 url(images/menu/top-nav.png) no-repeat left top;float:right;height:25px;list-style:none outside none;width:auto}
+#global li:first-child{border-left:none;padding-left:30px}
+#global li{border-left:1px solid #fff;display:block;float:left;height:15px;margin:5px;padding: 0 10px 0 20px;position:relative;text-align:center;width:auto}
 #global a{color:#FFF;font:normal 12px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;vertical-align:text-top}
 #global a:focus,#global a:hover{color:#cbcbcb;text-decoration:none}
 
@@ -150,14 +149,14 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 ---------- */
 #branding { font: 15px 'Gentium Basic', serif; margin-bottom: 25px; position: relative; }
 #site-description { color: #e0dfdf; margin: 100px 0 0 140px; position: absolute; }
-#branding img { margin: -25px -25px 0; pointer-events: none; position: absolute; z-index: 999; }
-#download-button { background-image: url("images/download-button.png"); background-position: center top; float: right; height: 75px; margin: 30px 167px 0 0; width: 250px; }
-#download-description { color: #e0dfdf; margin: 80px 0 0 475px; position: absolute; }
+#branding img { margin: -23px -23px 0; pointer-events: none; position: absolute; z-index: 999; }
+#download-button { background-image: url("images/download-button.png"); background-position: center top; height: 75px; margin: 30px 0 0 480px; position: absolute; width: 250px; }
+#download-description { color: #e0dfdf; margin: 80px 0 0 500px; position: absolute; }
 #wfg-logo { background-image: url("images/wfg-logo.png"); background-position: center center; float: right; height: 63px; margin: 36px 32px 0 0; width: 96px; }
 
 /* =Main Menu
 ------------- */
-#access{background: url(images/menu/bg.png) center center;border-bottom: 1px solid #e7bf47;border-top: 1px solid #8f7c52;clear:both;display:block;font-weight: bold;height:30px;margin-left:auto;margin-right:auto;padding-left:130px;width:870px;}
+#access{background: url(images/menu/bg.png) center center;border-bottom: 1px solid #e7bf47;border-top: 1px solid #000;clear:both;display:block;font-weight: bold;height:30px;margin-left:auto;margin-right:auto;padding-left:130px;width:870px;}
 #access ul{font-size:15px;list-style:none;margin:0}
 #access li{background-image:url(images/menu/normal.png);color:#EEE;display:block;float:left;height:20px;line-height:20px;position:relative;text-align:center;width:150px;padding:5px 0}
 #access a{text-decoration:none;color:#FFF}
@@ -231,7 +230,9 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 .hentry:last-child,
 .no-results,
 .error404 {
-    background-color: #d9d9d9;
+	background-color: #d9d9d9;
+    background-image: url('images/entry-content-left.png') no-repeat, url('images/entry-content-right.png') no-repeat;
+    background-position: left top, right top;
     margin: 0 25px 25px 0;
     position: relative;
 }
@@ -250,30 +251,37 @@ a:focus, a:active, a:hover { text-decoration: underline;}
     padding-left: 25px;
     width: 700px;
 }
-
-.entry-title {
-	background: #f0f0f0 url('images/title-tri.png') no-repeat right top;
+.entry-header{
+	background: #f0f0f0 url('images/entry-header.png') no-repeat right top;
+	width: 705px;
+	padding: 0 10px 0;
 }
 
-.entry-title,
-.entry-title a {
-    color: #000;
+.entry-title{
+	
+	width: 100%;
+}
+
+.entry-title a{
+	background: #f0f0f0 url('images/entry-title-stripes.png') repeat-x center bottom;   
+    color: #a80000;
     font-size: 22px;
     font-weight: bold;
-    line-height: 62px;
+    height: 30px;
+    line-height: 30px;
+    padding: 10px;
     text-decoration: none;
-    height: 100%;
+    width: 100%;
 }
 .entry-title a:hover,
 .entry-title a:focus,
 .entry-title a:active {
-	color: #a80000;
+	color: #000;
 }
 .entry-meta {
     clear: both;
     font-size: 10px;
     line-height: 20px;
-    padding: 5px 0 5px 10px;
 }
 .entry-meta a {
 	color: #a80000;
@@ -536,100 +544,6 @@ embed, iframe, object { max-width: 100%; }
 	font-weight: bold;
 	margin: 5px 0 10px;
 }
-
-/* Post Formats Headings
-To hide the headings, display: none the ".entry-header .entry-format" selector,
-and remove the padding rules below.
-*/
-.entry-header .entry-format {
-	background: #f0f0f0;
-	color: #666;
-	font-size: 10px;
-	font-weight: 500;
-	letter-spacing: 0.1em;
-	line-height: 2.6em;
-	position: absolute;
-	text-transform: uppercase;
-	top: -5px;
-}
-.entry-header hgroup .entry-title {
-	padding-top: 15px;
-}
-article.format-aside .entry-content,
-article.format-link .entry-content,
-article.format-status .entry-content {
-	padding: 20px 0 0;
-}
-article.format-status .entry-content {
-	min-height: 65px;
-}
-.recent-posts .entry-header .entry-format {
-	display: none;
-}
-.recent-posts .entry-header hgroup .entry-title {
-	padding-top: 0;
-}
-
-/* Singular content styles for Posts and Pages */
-.singular .hentry {
-    position: relative;
-    background-color: #d9d9d9;
-}
-
-.singular .entry-title {
-    color: maroon;
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 50px;
-    padding-left: 10px;
-}
-.singular .entry-header {
-	background: #f0f0f0 url('images/title-tri.png') no-repeat right top;	
-	height: 62px;
-}
-.singular .entry-header .entry-meta {
-	padding-left: 10px;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-blockquote.pull {
-	font-size: 21px;
-	font-weight: bold;
-	line-height: 1.6125em;
-	margin: 0 0 1.625em;
-	text-align: center;
-}
-.singular blockquote.pull {
-	margin: 0 -22.25% 1.625em;
-}
-.pull.alignleft {
-	margin: 0 1.625em 0 0;
-	text-align: right;
-	width: 33%;
-}
-.singular .pull.alignleft {
-	margin: 0 1.625em 0 -22.25%;
-}
-.pull.alignright {
-	margin: 0 0 0 1.625em;
-	text-align: left;
-	width: 33%;
-}
-.singular .pull.alignright {
-	margin: 0 -22.25% 0 1.625em;
-}
-.singular blockquote.pull.alignleft,
-.singular blockquote.pull.alignright {
-	width: 33%;
-}
-.singular .entry-meta .edit-link a {
-	bottom: auto;
-	left: 50px;
-	right: auto;
-	top: 80px;
-}
-
 
 /* =Aside
 ----------------------------------------------- */
