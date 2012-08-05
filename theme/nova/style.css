@@ -122,11 +122,9 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 #full .entry-header { text-align: center; }
 /* Singular */
 .singular #primary { height: inherit; width: 750px; }
-.singular #content,
-.left-sidebar.singular #content { position: relative; }
+.singular #content { position: relative; }
 .singular .entry-header,
-.singular .entry-content,
-.singular footer.entry-meta { width: inherit; color: black; padding: 10px; }
+.singular .entry-content { width: inherit; color: black; padding: 10px; }
 /* Attachments */
 .singular .image-attachment .entry-content { margin: 0 auto; width: auto; }
 .singular .image-attachment .entry-description { margin: 0 auto; width: 68.9%; }
@@ -239,56 +237,39 @@ a:focus, a:active, a:hover { text-decoration: underline;}
     margin: 0 25px 25px 0;
     position: relative;
 }
-
-.blog .sticky .entry-header .entry-meta {
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-	clip: rect(1px, 1px, 1px, 1px);
-	position: absolute !important;
-}
-
-.blog-title{
-    font-size: 25px;
-    font-weight: bold;
-    height: 50px;
-    line-height: 50px;
-    padding-left: 25px;
-    width: 700px;
-}
 .entry-header{
 	background: #f0f0f0 url('images/entry-header.png') no-repeat right top;
-	width: 705px;
+	color: #000;
 	padding: 0 10px 0;
+	width: 705px;
 }
-
 .entry-title{
 	background: url('images/entry-title-stripes.png') repeat-x center bottom;
 	width: inherit;
 }
-
 .entry-title a{
-    color: #a80000;
-    font-size: 22px;
-    font-weight: bold;
-    height: 30px;
-    line-height: 30px;
-    padding: 10px;
+    color: #000;
+    font-size: 30px;
     text-decoration: none;
-    width: 100%;
+	font-variant: small-caps;
+	font-weight: normal;
+	font-style: normal;
 }
 .entry-title a:hover,
 .entry-title a:focus,
 .entry-title a:active {
-	color: #000;
+	color: #a80000;
 }
-.entry-meta {
+.entry-header .entry-meta {
     clear: both;
-    font-size: 10px;
-    line-height: 20px;
+    font-size: 12px;
+    padding-top: 5px;
 }
 .entry-meta a {
 	color: #a80000;
 	font-weight: bold;
 }
+footer.entry-meta{ color: black; padding: 0 10px 0; width: inherit; }
 .single-author .entry-meta .by-author {
 	font-weight: bold;
 }
@@ -603,104 +584,6 @@ embed, iframe, object { max-width: 100%; }
 	height: 250px;
 }
 
-/* Intro */
-article.intro {
-	background: #f9f9f9;
-	border-bottom: none;
-	margin: -1.855em -8.9% 1.625em;
-	padding: 0 8.9%;
-}
-article.intro .entry-title {
-	display: none;
-}
-article.intro .entry-content {
-	color: #111;
-	font-size: 16px;
-	padding: 1.625em 0 0.625em;
-}
-article.intro .edit-link a {
-	background: #aaa;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	color: #fff;
-	font-size: 12px;
-	padding: 0 8px;
-	top: 30px;
-	right: 20px;
-	text-decoration: none;
-}
-article.intro .edit-link a:hover,
-article.intro .edit-link a:focus,
-article.intro .edit-link a:active {
-	background: #777;
-}
-
-/* Recent Posts */
-section.recent-posts {
-	padding: 0 0 1.625em;
-}
-section.recent-posts .hentry {
-	border: none;
-	margin: 0;
-}
-section.recent-posts .other-recent-posts {
-	border-bottom: 1px solid #ddd;
-	list-style: none;
-	margin: 0;
-}
-section.recent-posts .other-recent-posts li {
-	padding: 0.3125em 0;
-	position: relative;
-}
-section.recent-posts .other-recent-posts .entry-title {
-	border-top: 1px solid #ddd;
-	font-size: 17px;
-}
-section.recent-posts .other-recent-posts a[rel="bookmark"] {
-	color: #373737;
-	float: left;
-	max-width: 84%;
-}
-section.recent-posts .other-recent-posts a[rel="bookmark"]:after {
-	content: '-';
-	color: transparent;
-	font-size: 11px;
-}
-section.recent-posts .other-recent-posts a[rel="bookmark"]:hover {
-}
-section.recent-posts .other-recent-posts .comments-link a,
-section.recent-posts .other-recent-posts .comments-link > span {
-	border-bottom: 2px solid #999;
-	bottom: -2px;
-	color: #444;
-	display: block;
-	font-size: 10px;
-	font-weight: 500;
-	line-height: 2.76333em;
-	padding: 0.3125em 0 0.3125em 1em;
-	position: absolute;
-	right: 0;
-	text-align: right;
-	text-transform: uppercase;
-	z-index: 1;
-}
-section.recent-posts .other-recent-posts .comments-link > span {
-	border-color: #bbb;
-	color: #888;
-}
-section.recent-posts .other-recent-posts .comments-link a:hover {
-	color: #1982d1;
-	border-color: #1982d1;
-}
-section.recent-posts .other-recent-posts li:after {
-	clear: both;
-	content: '.';
-	display: block;
-	height: 0;
-	visibility: hidden;
-}
-
-
 /* =Attachments
 ----------------------------------------------- */
 
@@ -961,6 +844,10 @@ section.ephemera .entry-title a span {color: #29628d;}
 /* TubePress Video */
 #tubepress {height: 170px;}
 
+/* AddThis Widget */
+#addthis{
+	padding-bottom: 10px;
+}
 /* =Videos
 ----------------------------------------------- */
 dl.tubepress_meta_group {
