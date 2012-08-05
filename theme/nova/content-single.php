@@ -10,8 +10,6 @@
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<header class="entry-header">
 			<h1 class="entry-title"><?php the_title(); ?></h1>
-			<?php if ( 'post' == get_post_type() ) : ?>
-			<?php endif; ?>
 			<div class="entry-meta">
 				<?php nova_posted_on(); ?> in <?php the_category(', ') ?>
 			</div><!-- .entry-meta -->

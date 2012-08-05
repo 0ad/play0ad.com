@@ -119,7 +119,7 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 #secondary { float: right; height: inherit; width: 250px; }
 #full { float: left; width: 1000px; }
 #full .hentry { margin: 0 0 25px; }
-#full .entry-title { background-image: url("images/entry-title-full.png"); text-align: center; }
+#full .entry-header { text-align: center; }
 /* Singular */
 .singular #primary { height: inherit; width: 750px; }
 .singular #content,
@@ -133,7 +133,7 @@ a:focus, a:active, a:hover { text-decoration: underline;}
   
 /* =Front Page
 ------------ */
-#carousel {background-color: #222; clear: both; border-width: 1px; border-color: black; border-style: solid; margin-bottom: 25px; padding: 9px 4px 9px; }
+#carousel {background-color: #222; clear: both; border-width: 1px; border-color: black; border-style: solid; margin-bottom: 25px; padding: 9px 4px 9px; width: 715px; }
 
 /* =Global Menu
 --------------- */
@@ -178,15 +178,18 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 }
 #menu-main > #menu-item-202 > ul{
 	width: 280px;
-	margin-left: -130px;
+	left: -130px;
 }
 #menu-main > #menu-item-202 > ul li{
 	width: 280px;
 }
 #menu-main > #menu-item-202 > ul li:hover{
-	background: url(images/menu/child-hover-long.png);
-	display: block;
 	width: 280px;
+	background: url(images/menu/child-hover-long.png);
+	
+	display: block;
+	
+	text-align: center;
 }
 
 /* Search Form */
@@ -258,12 +261,11 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 }
 
 .entry-title{
-	
-	width: 100%;
+	background: url('images/entry-title-stripes.png') repeat-x center bottom;
+	width: inherit;
 }
 
 .entry-title a{
-	background: #f0f0f0 url('images/entry-title-stripes.png') repeat-x center bottom;   
     color: #a80000;
     font-size: 22px;
     font-weight: bold;
@@ -335,16 +337,6 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 	border-left: solid;
 	border-right: solid;
 	border-width: 1px;
-}
-.comment-content ul,
-.comment-content ol {
-	margin-bottom: 1.625em;
-}
-.comment-content ul ul,
-.comment-content ol ol,
-.comment-content ul ol,
-.comment-content ol ul {
-	margin-bottom: 0;
 }
 dl.gallery-item {
 	margin: 0;
@@ -493,17 +485,6 @@ a:active img[class*="wp-image-"],
 /* Make sure embeds and iframes fit their containers */
 embed, iframe, object { max-width: 100%; }
 
-/* Password Protected Posts */
-.post-password-required .entry-header .comments-link {
-	margin: 1.625em 0 0;
-}
-.post-password-required input[type=password] {
-	margin: 0.8125em 0;
-}
-.post-password-required input[type=password]:focus {
-	background: #f7f7f7;
-}
-
 /* Author Info */
 #author-info {
 	font-size: 12px;
@@ -545,89 +526,14 @@ embed, iframe, object { max-width: 100%; }
 	margin: 5px 0 10px;
 }
 
-/* =Aside
------------------------------------------------ */
-
-.format-aside .entry-title,
-.format-aside .entry-header .comments-link {
-	display: none;
-}
-.singular .format-aside .entry-title {
-	display: block;
-}
-.format-aside .entry-content {
-	padding: 0;
-}
-.singular .format-aside .entry-content {
-	padding: 1.625em 0 0;
-}
-
-
-/* =Link
------------------------------------------------ */
-
-.format-link .entry-title,
-.format-link .entry-header .comments-link {
-	display: none;
-}
-.singular .format-link .entry-title {
-	display: block;
-}
-.format-link .entry-content {
-	padding: 0;
-}
-.singular .format-link .entry-content {
-	padding: 1.625em 0 0;
-}
-
 
 /* =Gallery
 ----------------------------------------------- */
-
 .format-gallery .gallery-thumb {
 	float: left;
 	display: block;
 	margin: .375em 1.625em 0 0;
 }
-
-
-/* =Status
------------------------------------------------ */
-
-.format-status .entry-title,
-.format-status .entry-header .comments-link {
-	display: none;
-}
-.singular .format-status .entry-title {
-	display: block;
-}
-.format-status .entry-content {
-	padding: 0;
-}
-.singular .format-status .entry-content {
-	padding: 1.625em 0 0;
-}
-.format-status img.avatar {
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	-webkit-box-shadow: 0 1px 2px #ccc;
-	-moz-box-shadow: 0 1px 2px #ccc;
-	box-shadow: 0 1px 2px #ccc;
-	float: left;
-	margin: 4px 10px 2px 0;
-	padding: 0;
-}
-
-
-/* =Quote
------------------------------------------------ */
-
-.format-quote blockquote {
-	color: #555;
-	font-size: 17px;
-	margin: 0;
-}
-
 
 /* =Image
 ----------------------------------------------- */

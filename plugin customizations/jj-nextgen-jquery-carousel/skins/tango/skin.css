@@ -8,7 +8,7 @@
 .jcarousel-skin-tango .jcarousel-item-horizontal{height:97px;padding-right: 5px;width:173px}
 .jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-item-horizontal{margin-left:0;margin-right:0}
 .jcarousel-skin-tango .jcarousel-item-placeholder{background:#fff;color:#000}
-.jcarousel-skin-tango .jcarousel-next-horizontal{background: #333 url(next-horizontal.png) no-repeat 0 0;background-position:center center;cursor:pointer;height:98px;opacity:0.9;position:absolute;right:0;top:0;width:25px}
-.jcarousel-skin-tango .jcarousel-prev-horizontal{background: #333 url(prev-horizontal.png) no-repeat 0 0;background-position:center center;cursor:pointer;height:98px;left:0;opacity:0.9;position:absolute;top:0;width:25px}
+.jcarousel-skin-tango .jcarousel-next-horizontal{background: #222 url(next-horizontal.png) no-repeat 0 0;background-position:center center;cursor:pointer;height:98px;opacity:0.9;position:absolute;right:0;top:0;width:25px}
+.jcarousel-skin-tango .jcarousel-prev-horizontal{background: #222 url(prev-horizontal.png) no-repeat 0 0;background-position:center center;cursor:pointer;height:98px;left:0;opacity:0.9;position:absolute;top:0;width:25px}
 ul.ul_jj_carousel{list-style-type:none;margin:0;padding:0}
 ul.ul_jj_carousel li.li_jj_carousel{margin:0;padding:0}
