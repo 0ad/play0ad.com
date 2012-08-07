@@ -35,31 +35,28 @@
 <body <?php body_class(); ?>>
 <!--[if lt IE 8]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 <div id="page" class="hfeed">
+	<div id="global-bar">
+		<nav id="global" role="navigation">
+			<?php wp_nav_menu( array('menu' => 'GLOBAL', 'container' => '' , 'menu_class' => 'GLOBAL', 'menu_id' =>'' )); ?>
+		</nav>
+	</div>
 	<header id="branding" role="banner">
-			<div id="global-bar">
-				<nav id="global" role="navigation">
-					<?php wp_nav_menu( array('menu' => 'GLOBAL', 'container' => '' , 'menu_class' => 'GLOBAL', 'menu_id' =>'' )); ?>
-				</nav>
-			</div>
-			
-			<hgroup>
-				<div id="logo"></div>
-				<div id="site-description">A free, open-source game of ancient warfare</div>
-				<div id="wfg-logo"></div>
-				<a href="download"> 
-					<div id="download-button">
-						<div id="download-title">Download</div>
-						<div id="download-description"><?php bloginfo('description'); ?></div>
-					</div><!-- Download Button -->
-				</a><!-- DOWNLOAD ANCHOR -->
-			</hgroup>
-                         
-			<nav id="access" role="navigation">
-				<h3 class="assistive-text"><?php _e( 'Main menu', 'nova' ); ?></h3>
-				<?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff. */ ?>
-				<div class="skip-link"><a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to primary content', 'nova' ); ?>"><?php _e( 'Skip to primary content', 'nova' ); ?></a></div>
-				<div class="skip-link"><a class="assistive-text" href="#secondary" title="<?php esc_attr_e( 'Skip to secondary content', 'nova' ); ?>"><?php _e( 'Skip to secondary content', 'nova' ); ?></a></div>
-				<?php wp_nav_menu( array( 'menu' => 'MAIN' ) ); ?>
-			</nav><!-- #access -->
+		<hgroup>
+			<div id="logo"></div>
+			<div id="site-description">A free, open-source game of ancient warfare</div>
+			<div id="wfg-logo"></div>
+			<a href="download"> 
+				<div id="download-button">
+					<div id="download-title">Download</div>
+					<div id="download-description"><?php bloginfo('description'); ?></div>
+				</div><!-- Download Button -->
+			</a><!-- DOWNLOAD ANCHOR -->
+		</hgroup>
+       	<div id="navbar">
+       		<a href="<?php bloginfo('url'); ?>"><div id="home-btn">Home</div></a>
+       		<nav id="access" role="navigation">
+       			<?php wp_nav_menu( array( 'menu' => 'MAIN' ) ); ?>
+       		</nav><!-- #access --> 
+       	</div>				
 	</header><!-- #branding -->
 	<div id="main">

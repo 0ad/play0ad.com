@@ -119,8 +119,7 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 #secondary { float: right; height: inherit; width: 250px; }
 #full { float: left; width: 1025px; }
 #full .entry-header { text-align: center; }
-#full .entry-tri { margin-left: 900px;
-}
+#full .entry-tri { margin-left: 921px; }
 .singular #primary { height: inherit; width: 750px; }
 .singular #content { position: relative; }
 .entry-header, .entry-content, .blog .entry-header, .blog .entry-content, .error404 .entry-header, .error404 .entry-content, .no-results .entry-header, .no-results .entry-content, .singular .entry-header, .singular .entry-content  { width: inherit; color: black; padding: 10px 20px 10px; }
@@ -145,7 +144,7 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 
 /* =Header
 ---------- */
-#branding { font: 15px 'Gentium Basic', serif; margin-bottom: 25px; position: relative; }
+#branding { font: 15px 'Gentium Basic', serif; margin:0 auto 25px auto; position: relative; width: 1000px; }
 #site-description { color: #fff; margin: 100px 0 0 140px; position: absolute; }
 #logo { background: url('images/0ad-logo.png') no-repeat left top; height: 173px; margin: -23px -23px 0; pointer-events: none; position: absolute; width: 353px; z-index: 999; }
 #download-button { background: rgba(0, 0, 0, .5) url("images/global.png") no-repeat 185px -55px; color: #eee; height: 75px; margin: 30px 0 0 480px; position: absolute; width: 250px; }
@@ -154,11 +153,10 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 #download-description { font-size: 15px; line-height: 15px; padding: 5px 0 0 15px;}
 #wfg-logo { background-image: url("images/wfg-logo.png"); background-position: center center; float: right; height: 63px; margin: 36px 32px 0 0; width: 96px; }
 
-/* =Main Menu
-------------- */
-#menu-main > li#menu-item-202{ background: none; color: #000; text-align: right; width: 250px;}
-#menu-main > #menu-item-202:hover{background: none; text-align: right; }
-#access{background:url(images/access-bg.png) center center;border-bottom:1px solid #E7BF47;border-top:1px solid #000;clear:both;display:block;font-weight:700;height:30px;margin-left:auto;margin-right:auto;width:1000px}
+/* Main Menu */
+#navbar{ background:url(images/access-bg.png) center center; border-bottom:1px solid #E7BF47;border-top:1px solid #000; font-weight:700;height:30px;}
+#home-btn{ background: none; color: #000; float: left; height: 20px; line-height: 20px; padding: 5px 20px 5px 5px;text-align: right; width: 225px;}
+#access{display:block;float: right; width:750px}
 #access ul{font-size:15px;list-style:none;margin:0}
 #access li{ background: url(images/access-li.png) no-repeat 0 0; color:#EEE;display:block;float:left;height:20px;line-height: 20px;position:relative;text-align:center;width:150px;padding:5px 0;}
 #access a{text-decoration:none;color:#FFF}
@@ -169,8 +167,6 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 #access li:hover > a,#access a:focus{background: url(images/access-li.png) no-repeat -160px 0;color:#000;display:block;float:left;height:20px;line-height: 20px;margin-top:-5px;position:relative;text-align:center;width:150px;padding:5px 0}
 #access ul li:hover > ul{display:block}
 #access .current-menu-item > a,#access .current-menu-ancestor > a,#access .current_page_item > a,#access .current_page_ancestor > a{font-weight:700}
-
-
 
 /* Search Form */
 #branding #searchform{background:#fff;float:right;height:30px;margin:20px 50px 0 0;width:150px}
@@ -602,7 +598,7 @@ embed, iframe, object { max-width: 100%; }
 	padding: 0 0 1.625em;
 }
 #nav-above {
-	display: none;
+	display: block;
 }
 .paged #nav-above {
 	display: block;
@@ -820,12 +816,12 @@ dl.tubepress_meta_group {
 
 /* =Footer
 ---------- */
-#colophon{background-color:#000;clear:both}
-#supplementary{color:#FFF;height:auto;margin:0 auto;overflow:hidden;width:1000px}
+#colophon{background: #000; clear:both}
+#supplementary{background: url('images/fstripes.png') repeat-x left top;color:#d7d7d7;height:auto;margin:0 auto;padding-top:15px;width:1000px}
 /* Widget Areas */
 #supplementary .widget{ clear:none; color:#FFF; float:left; padding:10px; width:180px }
 #supplementary ul{ font-size:10px; line-height:15px; list-style:none outside none; text-align:left }
-#supplementary a{ color:#FFD700 }
+#supplementary a{ color:#d2ad00 }
 #supplementary a:focus, a:active, a:hover { color: maroon; }
 /* Site Generator Line */
 #site-generator { background-color:#480001; color:#555; font-size:10px; font-variant:small-caps; line-height:15px; text-align:center; border-color:#e8be48; border-style:solid none none; border-width:1px; padding:5px }
