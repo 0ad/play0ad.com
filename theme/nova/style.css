@@ -150,7 +150,7 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 #logo { background: url('images/0ad-logo.png') no-repeat left top; height: 173px; margin: -23px -23px 0; pointer-events: none; position: absolute; width: 353px; z-index: 999; }
 #download-button { background: rgba(0, 0, 0, .5) url("images/global.png") no-repeat 185px -55px; color: #eee; height: 75px; margin: 30px 0 0 480px; position: absolute; width: 250px; }
 #download-button:hover { background: rgba(0, 0, 0, .3) url("images/global.png") no-repeat 185px -55px; color: #eee; }
-#download-title { font-size: 35px; font-weight: bold; font-variant: small-caps; letter-spacing: 2px; line-height: 35px; padding: 10px 0 0 15px; }
+#download-title { font-size: 35px; font-variant: small-caps; line-height: 35px; padding: 10px 0 0 15px; }
 #download-description { font-size: 15px; line-height: 15px; padding: 5px 0 0 15px;}
 #wfg-logo { background-image: url("images/wfg-logo.png"); background-position: center center; float: right; height: 63px; margin: 36px 32px 0 0; width: 96px; }
 
