@@ -9,16 +9,17 @@
 
 get_header(); ?>
 
-	<div id="primary">
+	<div id="full">
 		<div id="content" role="main">
 
 			<article id="post-0" class="post error404 not-found">
 				<header class="entry-header">
-					<h1 class="entry-title"><?php _e( 'This is somewhat embarrassing, isn&rsquo;t it?', 'nova' ); ?></h1>
+					<div class="entry-tri"></div>
+					<h1 class="entry-title"><?php _e( 'Nothing to see here folks.', 'nova' ); ?></h1>
 					<div class="entry-meta">
 						<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching, or one of the links below, can help.', 'nova' ); ?></p>
 					</div><!-- .entry-meta -->
-				</header>
+				</header><!-- .entry-header -->
 
 				<div class="entry-content">
 					<?php get_search_form(); ?>
@@ -44,6 +45,6 @@ get_header(); ?>
 			</article><!-- #post-0 -->
 
 		</div><!-- #content -->
-	</div><!-- #primary -->
+	</div><!-- #full -->
 
 <?php get_footer(); ?>

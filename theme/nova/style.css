@@ -32,7 +32,7 @@ div:after {
 	height: 0;
 	clear: both;
 }
-
+/*Chrome Frame to the rescue!*/.chromeframe { margin: 0.2em 0; background: #ccc; color: #000; padding: 0.2em 0; z-index: 1000; }
 
 /* ------- */    
 /* =Global
@@ -117,20 +117,14 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 #content { width: 100%; }
 #content ul { list-style: square outside none; text-align: left; margin-left: 20px; }
 #secondary { float: right; height: inherit; width: 250px; }
-#full { float: left; width: 1000px; }
-#full .hentry { margin: 0 0 25px; }
+#full { float: left; width: 1025px; }
 #full .entry-header { text-align: center; }
-/* Singular */
+#full .entry-tri { margin-left: 900px;
+}
 .singular #primary { height: inherit; width: 750px; }
 .singular #content { position: relative; }
-.hentry .entry-header,
-.hentry .entry-content,
-.singular .entry-header,
-.singular .entry-content,
-.no-results .entry-header,
-.no-results .entry-content,
-.error404 .entry-header,
-.error404 .entry-content { width: inherit; color: black; padding: 10px 20px 10px; }
+.entry-header, .entry-content, .blog .entry-header, .blog .entry-content, .error404 .entry-header, .error404 .entry-content, .no-results .entry-header, .no-results .entry-content, .singular .entry-header, .singular .entry-content  { width: inherit; color: black; padding: 10px 20px 10px; }
+
 /* Attachments */
 .singular .image-attachment .entry-content { margin: 0 auto; width: auto; }
 .singular .image-attachment .entry-description { margin: 0 auto; width: 68.9%; }
@@ -347,7 +341,7 @@ dl.gallery-item {
 .archive-pg{
 	float: left;
 	padding: 2.5px;
-	width: 230px;
+	width: 223px;
 }
 /* Images */
 .entry-content img,
@@ -829,8 +823,7 @@ dl.tubepress_meta_group {
 #colophon{background-color:#000;clear:both}
 #supplementary{color:#FFF;height:auto;margin:0 auto;overflow:hidden;width:1000px}
 /* Widget Areas */
-#supplementary aside{ float:left; width:180px; height:130px; padding:10px }
-#supplementary .widget{ clear:none; color:#FFF }
+#supplementary .widget{ clear:none; color:#FFF; float:left; padding:10px; width:180px }
 #supplementary ul{ font-size:10px; line-height:15px; list-style:none outside none; text-align:left }
 #supplementary a{ color:#FFD700 }
 #supplementary a:focus, a:active, a:hover { color: maroon; }
