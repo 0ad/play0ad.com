@@ -14,12 +14,11 @@ get_header(); ?>
 			<div id="content" role="main">				
 				<article class="hentry">
 					<header class="entry-header">
+						<div class="entry-tri"></div>
 						<h1 class="entry-title"><?php the_title(); ?></h1>
-					</header>
-					<div class="entry-content"> 
-						
+					</header><!-- .entry-header -->
+					<div class="entry-content"> 	
 						<?php the_post(); the_content();  ?>
-						
 						<hr>
 						<div class="archive-pg">
 							<h3>Latest Posts</h3>   

@@ -93,7 +93,7 @@ input[type=text] {
 	padding: 3px;
 }
 input#s {
-	background: url(images/search.png) no-repeat 5px 6px;
+	background: url(images/global.png) no-repeat -5px -144px;
 	font-size: 14px;
 	height: 22px;
 	line-height: 1.2em;
@@ -123,8 +123,14 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 /* Singular */
 .singular #primary { height: inherit; width: 750px; }
 .singular #content { position: relative; }
+.hentry .entry-header,
+.hentry .entry-content,
 .singular .entry-header,
-.singular .entry-content { width: inherit; color: black; padding: 10px 20px 10px; }
+.singular .entry-content,
+.no-results .entry-header,
+.no-results .entry-content,
+.error404 .entry-header,
+.error404 .entry-content { width: inherit; color: black; padding: 10px 20px 10px; }
 /* Attachments */
 .singular .image-attachment .entry-content { margin: 0 auto; width: auto; }
 .singular .image-attachment .entry-description { margin: 0 auto; width: 68.9%; }
@@ -137,7 +143,7 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 --------------- */
 #global-bar{background-color:#480000;border-bottom:1px solid #e8be48;clear:both;display:block;height:30px;width:100%}
 #global{margin:0 auto;width:1000px}
-#global ul{background:#2b0000 url(images/menu/top-nav.png) no-repeat left top;float:right;height:25px;list-style:none outside none;width:auto}
+#global ul{background:#2b0000 url(images/global.png) no-repeat -10px -10px; float:right;height:25px;list-style:none outside none;width:auto}
 #global li:first-child{border-left:none;padding-left:30px}
 #global li{border-left:1px solid #fff;display:block;float:left;height:15px;margin:5px;padding: 0 10px 0 20px;position:relative;text-align:center;width:auto}
 #global a{color:#FFF;font:normal 12px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;vertical-align:text-top}
@@ -146,26 +152,27 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 /* =Header
 ---------- */
 #branding { font: 15px 'Gentium Basic', serif; margin-bottom: 25px; position: relative; }
-#site-description { color: #e0dfdf; margin: 100px 0 0 140px; position: absolute; }
-#branding img { margin: -23px -23px 0; pointer-events: none; position: absolute; z-index: 999; }
-#download-button { background-image: url("images/download-button.png"); background-position: center top; height: 75px; margin: 30px 0 0 480px; position: absolute; width: 250px; }
-#download-description { color: #e0dfdf; margin: 80px 0 0 500px; position: absolute; }
+#site-description { color: #fff; margin: 100px 0 0 140px; position: absolute; }
+#logo { background: url('images/0ad-logo.png') no-repeat left top; height: 173px; margin: -23px -23px 0; pointer-events: none; position: absolute; width: 353px; z-index: 999; }
+#download-button { background: rgba(0, 0, 0, .5) url("images/global.png") no-repeat 185px -55px; color: #eee; height: 75px; margin: 30px 0 0 480px; position: absolute; width: 250px; }
+#download-button:hover { background: rgba(0, 0, 0, .3) url("images/global.png") no-repeat 185px -55px; color: #eee; }
+#download-title { font-size: 35px; font-variant: small-caps; letter-spacing: 2px; line-height: 35px; padding: 10px 0 0 15px; }
+#download-description { font-size: 15px; line-height: 15px; padding: 5px 0 0 15px;}
 #wfg-logo { background-image: url("images/wfg-logo.png"); background-position: center center; float: right; height: 63px; margin: 36px 32px 0 0; width: 96px; }
 
 /* =Main Menu
 ------------- */
 #menu-main > li#menu-item-202{ background: none; color: #000; text-align: right; width: 250px;}
 #menu-main > #menu-item-202:hover{background: none; text-align: right; }
-#access{background:url(images/menu/bg.png) center center;border-bottom:1px solid #E7BF47;border-top:1px solid #000;clear:both;display:block;font-weight:700;height:30px;margin-left:auto;margin-right:auto;width:1000px}
+#access{background:url(images/access-bg.png) center center;border-bottom:1px solid #E7BF47;border-top:1px solid #000;clear:both;display:block;font-weight:700;height:30px;margin-left:auto;margin-right:auto;width:1000px}
 #access ul{font-size:15px;list-style:none;margin:0}
-#access li{background-image:url(images/menu/normal.png);color:#EEE;display:block;float:left;height:20px;line-height:20px;position:relative;text-align:center;width:150px;padding:5px 0}
+#access li{ background: url(images/access-li.png) no-repeat 0 0; color:#EEE;display:block;float:left;height:20px;line-height: 20px;position:relative;text-align:center;width:150px;padding:5px 0;}
 #access a{text-decoration:none;color:#FFF}
-#access ul ul{background:none;display:none;float:left;position:relative;top:0;width:150px;z-index:99999}
-#access ul ul ul{left:100%;top:0}
-#access ul ul li{background-color:#000;background-image:none;font-size:10px;font-weight:400;height:20px;line-height:20px;opacity:0.9;width:150px}
+#access ul ul{background:none;display:none;float:left;position:relative;top:0;width:150px;z-index:998}
+#access ul ul li{background-color:#000;background:rgba(0, 0, 0, 0.9);font-size:10px;font-weight:400;height:20px;line-height:20px;width:150px}
 #access ul ul a{color:#FFF}
-#access li:hover > a,#access ul ul :hover > a,#access a:focus{display:block;background:url(images/menu/child-hover.png) no-repeat center center;opacity:1.0}
-#access li:hover > a,#access a:focus{background-image:url(images/menu/hover.png);color:#000;display:block;float:left;height:20px;line-height:20px;margin-top:-5px;position:relative;text-align:center;width:150px;padding:5px 0}
+#access li:hover > a,#access ul ul :hover > a,#access a:focus{background:url(images/access-li.png) no-repeat -320px 0;display:block;}
+#access li:hover > a,#access a:focus{background: url(images/access-li.png) no-repeat -160px 0;color:#000;display:block;float:left;height:20px;line-height: 20px;margin-top:-5px;position:relative;text-align:center;width:150px;padding:5px 0}
 #access ul li:hover > ul{display:block}
 #access .current-menu-item > a,#access .current-menu-ancestor > a,#access .current_page_item > a,#access .current_page_ancestor > a{font-weight:700}
 
@@ -185,7 +192,6 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 
 /* =Content
 ----------------------------------------------- */
-
 #main {
     clear: both;
     height: auto;
@@ -217,10 +223,19 @@ a:focus, a:active, a:hover { text-decoration: underline;}
     position: relative;
 }
 .entry-header{
-	background: #f0f0f0 url('images/entry-header.png') no-repeat right top;
+	background: #f0f0f0;
 	color: #000;
 	padding: 0 10px 0;
 	width: 705px;
+}
+.entry-tri{
+	display: block;
+	background: url('images/entry-header.png');
+	height: 62px;
+	width: 62px;
+	position: absolute;
+	z-index: 97;
+	margin: -13px 0 0 646px;
 }
 .entry-title{
 	background: url('images/entry-title-stripes.png') repeat-x center bottom;
@@ -790,6 +805,14 @@ section.ephemera .entry-title a span {color: #29628d;}
 
 /* TubePress Video */
 #tubepress {height: 170px;}
+
+#devarea{
+	background: url('images/devarea.gif') no-repeat left top;
+	height: 106px;
+	width: 230px;
+	margin: 0;
+	padding: 0;
+}
 
 /* AddThis Widget */
 #addthis{

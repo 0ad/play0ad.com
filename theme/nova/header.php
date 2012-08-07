@@ -54,12 +54,13 @@
 			</div>
 			
 			<hgroup>
-				<img src="http://www.wildfiregames.com/0adwebdev/theme-dev/wp-content/themes/nova/images/0ad-logo.png" alt="" />
+				<div id="logo"></div>
 				<div id="site-description">A free, open-source game of ancient warfare</div>
 				<div id="wfg-logo"></div>
-				<a href="download">
-					<div id="download-description"><?php bloginfo('description'); ?></div> 
+				<a href="download"> 
 					<div id="download-button">
+						<div id="download-title">Download</div>
+						<div id="download-description"><?php bloginfo('description'); ?></div>
 					</div><!-- Download Button -->
 				</a><!-- DOWNLOAD ANCHOR -->
 			</hgroup>
