@@ -4,11 +4,13 @@ Theme URI: http://wildfiregames.com/0adwebdev/theme-dev/
 Author: Geek377, gerbilOFdoom, bstempi
 Author URI: http://wildfiregames.com
 Description: Based off of WordPress 2011 theme; customized for use with Wildfire Games 0 AD
-Version: 0.4
+Version: 0.5
 License: GNU General Public License
 License URI: http://www.gnu.org/copyleft/gpl.html
 */
 
+@font-face { font-family: 'Gentium Basic'; font-style: normal; font-weight: 400; src: local('Gentium Basic'), local('GentiumBasic'), url(http://themes.googleusercontent.com/static/fonts/gentiumbasic/v4/KCktj43blvLkhOTolFn-MeN7FQiou3Mwp-a3oMNL1kc.woff) format('woff'); }
+@font-face { font-family: 'Gentium Basic'; font-style: normal; font-weight: 700; src: local('Gentium Basic Bold'), local('GentiumBasic-Bold'), url(http://themes.googleusercontent.com/static/fonts/gentiumbasic/v4/2qL6yulgGf0wwgOp-UqGyFCTXa1e2Oq_mdf0AjQDfqE.woff) format('woff'); }
 /* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
 --------------------------------------------------------------------------------------------------------------- */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { border: 0; font-family: inherit;	font-size: 100%; font-style: inherit; font-weight: inherit; margin: 0; outline: 0; padding: 0; vertical-align: baseline;}
@@ -23,20 +25,13 @@ blockquote, q { quotes: "" ""; }
 a img { border: 0; }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
+
 /* ======================================= THEME BEGIN ======================================= */
-
 /* =Clearing divs so they can contain floated elements */
-div:after {
-	content: "";
-	display: block;
-	height: 0;
-	clear: both;
-}
-/*Chrome Frame to the rescue!*/.chromeframe { margin: 0.2em 0; background: #ccc; color: #000; padding: 0.2em 0; z-index: 1000; }
-
-/* ------- */    
-/* =Global
----------- */
+div:after { content: ""; display: block; height: 0; clear: both; }
+/*Chrome Frame to the rescue!*/
+.chromeframe { margin: 0.2em 0; background: #eee; color: #000; padding: 0.2em 0; z-index: 1000; }
+/* =Global */
 body, input, textarea { color: #373737; font: 15px/1.67 "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 300; }
 body { background-color: black; background-image: url("images/bg.png"); background-position: center top; background-repeat: repeat-y; }
 /* Headings */
@@ -46,7 +41,7 @@ h3 { line-height: 25px; font-size: 20px; }
 h4 { line-height: 25px; font-size: 18px; }
 hr { background-color: #ccc; border: 0; height: 1px; margin-bottom: 24px; }
 /* Text elements */
-p { line-height: 25px; }
+p {}
 ul, ol {}
 ul { font-size: 15px; line-height: 1.5; list-style: square; text-align: left; }
 ol { list-style-type: decimal; margin-left: 25px;}
@@ -144,7 +139,7 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 
 /* =Header
 ---------- */
-#branding { font: 15px 'Gentium Basic', serif; margin:0 auto 25px auto; position: relative; width: 1000px; }
+#branding { font: 15px 'Gentium Basic', serif; margin:0 auto; position: relative; width: 1000px; }
 #site-description { color: #fff; margin: 100px 0 0 140px; position: absolute; }
 #logo { background: url('images/0ad-logo.png') no-repeat left top; height: 173px; margin: -23px -23px 0; pointer-events: none; position: absolute; width: 353px; z-index: 999; }
 #download-button { background: rgba(0, 0, 0, .5) url("images/global.png") no-repeat 185px -55px; color: #eee; height: 75px; margin: 30px 0 0 480px; position: absolute; width: 250px; }
@@ -155,7 +150,7 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 
 /* Main Menu */
 #navbar{ background:url(images/access-bg.png) center center; border-bottom:1px solid #E7BF47;border-top:1px solid #000; font-weight:700;height:30px;}
-#home-btn{ background: none; color: #000; float: left; height: 20px; line-height: 20px; padding: 5px 20px 5px 5px;text-align: right; width: 225px;}
+#home-btn{ background: none; color: #000; float: left; height: 20px; line-height: 20px; padding: 5px;text-align: center; width: 240px;}
 #access{display:block;float: right; width:750px}
 #access ul{font-size:15px;list-style:none;margin:0}
 #access li{ background: url(images/access-li.png) no-repeat 0 0; color:#EEE;display:block;float:left;height:20px;line-height: 20px;position:relative;text-align:center;width:150px;padding:5px 0;}
@@ -185,8 +180,7 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 #main {
     clear: both;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 25px auto;
     width: 1000px;
 }
 .page-title {
@@ -262,16 +256,6 @@ footer.entry-meta{ color: black; padding: 0 10px 0; width: inherit; }
 	background-image: url('images/entry-content-left.png'), url('images/entry-content-right.png') ;
 	background-position: left top, right top;
 	background-repeat: no-repeat;
-}
-.entry-content h1,
-.entry-content h2{
-	font-weight: 700;
-}
-.entry-content h3{
-	font-size: 15px;
-	letter-spacing: 0.1em;
-	line-height: 25px;
-	text-transform: uppercase;
 }
 .entry-content table{
 	border-bottom: 1px solid #ddd;
@@ -789,7 +773,7 @@ section.ephemera .entry-title a span {color: #29628d;}
 }
 
 /* PayPal badge */
-.payPalBadge {height: 30px;margin-left: auto;margin-right: auto;width: 62px;}
+.payPalBadge { height: 30px; margin: 0 26.5px; width: 62px;}
 
 /* Flattr badge -  make this and paypal side by side on top, with pledgie alone below them */
 
@@ -819,7 +803,7 @@ dl.tubepress_meta_group {
 #colophon{background: #000; clear:both}
 #supplementary{background: url('images/fstripes.png') repeat-x left top;color:#d7d7d7;height:auto;margin:0 auto;padding-top:15px;width:1000px}
 /* Widget Areas */
-#supplementary .widget{ clear:none; color:#FFF; float:left; padding:10px; width:180px }
+#supplementary .widget{ clear:none; color:#FFF; float:left; padding:10px; width:300px }
 #supplementary ul{ font-size:10px; line-height:15px; list-style:none outside none; text-align:left }
 #supplementary a{ color:#d2ad00 }
 #supplementary a:focus, a:active, a:hover { color: maroon; }
@@ -831,18 +815,12 @@ dl.tubepress_meta_group {
 --------- */
 @media print {
 body{background:none!important;font-size:10pt}
-footer.entry-meta a[rel=bookmark]:link:after,footer.entry-meta a[rel=bookmark]:visited:after{content:" [" attr(href) "] "}
 #page{clear:both!important;display:block!important;float:none!important;max-width:100%;position:relative!important}
-#branding{border-top:none!important;padding:0}
-#branding hgroup{margin-left:250px}
+#global-bar, #branding, #carousel, #secondary, #colophon {display:none}
 #main{border-top:none;box-shadow:none}
 #primary{float:left;margin:0;width:100%}
 #content{margin:0;width:auto}
 .singular .entry-header .entry-meta{position:static}
 .singular .hentry{padding:0}
-.singular #author-info{background:none;border-bottom:none;border-top:none;margin:2.2em 0 0;padding:0}
-#site-title a,.entry-title,.singular .entry-title{font-size:21pt}
-#site-description,.entry-meta{font-size:10pt}
-#branding #searchform,#branding img,#access,.entry-meta .edit-link a,#content nav,.page-link,#respond,.widget-area,#colophon{display:none}
 .singular #content,.singular .entry-header,.singular .entry-content,.singular footer.entry-meta{margin:0;width:100%}
 }
