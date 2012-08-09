@@ -31,6 +31,7 @@
 
 <body <?php body_class(); ?>>
 <!--[if lt IE 8]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+<noscript><div id="nojs">Please enable JavaScript to view this page properly.</div></noscript>
 <div id="page" class="hfeed">
 	<div id="global-bar">
 		<nav id="global" role="navigation">

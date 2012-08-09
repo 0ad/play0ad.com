@@ -30,7 +30,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* =Clearing divs so they can contain floated elements */
 div:after { content: ""; display: block; height: 0; clear: both; }
 /*Chrome Frame to the rescue!*/
-.chromeframe { margin: 0.2em 0; background: #eee; color: #000; padding: 0.2em 0; z-index: 1000; }
+.chromeframe { margin:0; background: #333; color: #ccc; font-weight: 700; padding: 0.2em; text-align: center; z-index: 1001; }
+#nojs{ margin:0; background: #333; color: #ccc; font-weight: 700; padding: 0.2em; text-align: center; z-index: 1000; }
 /* =Global */
 body, input, textarea { color: #373737; font: 15px/1.67 "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 300; }
 body { background-color: black; background-image: url("images/bg.png"); background-position: center top; background-repeat: repeat-y; }
@@ -125,7 +126,7 @@ a:focus, a:active, a:hover { text-decoration: underline;}
   
 /* =Front Page
 ------------ */
-#carousel {background-color: #222; clear: both; border-width: 1px; border-color: black; border-style: solid; margin-bottom: 25px; padding: 9px 4px 9px; width: 715px; }
+#carousel {background-color: #222; clear: both; border: 1px solid #000; height: 98px; margin-bottom: 25px; padding: 9px 4px 9px; width: 715px; }
 
 /* =Global Menu
 --------------- */
@@ -635,6 +636,7 @@ embed, iframe, object { max-width: 100%; }
     border-color: black;
     border-style: solid;
 }
+#secondary .widget:last-child {margin-bottom: 0;}
 #secondary .widget-title {
 	font-size: 20px;
 	font-weight: bold;
