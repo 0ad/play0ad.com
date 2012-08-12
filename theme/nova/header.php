@@ -15,7 +15,7 @@
 <!--[if (gt IE 9)|!(IE)]><html dir="ltr" lang="en-US" class="no-js"><![endif]-->
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1,requiresActiveX=true">
 	<meta http-equiv="imagetoolbar" content="false">
 	<meta name="viewport" content="width=device-width" />
 	<title><?php bloginfo('name'); ?> | A free, open-source game of ancient warfare</title>
@@ -35,7 +35,7 @@
 <div id="page" class="hfeed">
 	<div id="global-bar">
 		<nav id="global" role="navigation">
-			<?php wp_nav_menu( array('menu' => 'GLOBAL')); ?>
+			<?php wp_nav_menu( array('theme_location' => 'global')); ?>
 		</nav>
 	</div>
 	<header id="branding" role="banner">
@@ -53,7 +53,7 @@
        	<div id="navbar">
        		<a href="<?php bloginfo('url'); ?>"><div id="home-btn">Home</div></a>
        		<nav id="access" role="navigation">
-       			<?php wp_nav_menu( array( 'menu' => 'MAIN')); ?>
+       			<?php wp_nav_menu( array('theme_location' => 'primary')); ?>
        		</nav><!-- #access --> 
        	</div>				
 	</header><!-- #branding -->

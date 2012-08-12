@@ -9,12 +9,13 @@
 ?>
 	</div><!-- #main -->
 	<footer id="colophon" role="contentinfo">
-		<div id="supplementary">
+		<div id="footer">
 			<?php dynamic_sidebar( 'sidebar-3' ); ?>
 		</div>
-		<div id="site-generator">
-			<?php do_action( 'nova_credits' ); ?>
-			<a href="<?php echo esc_url( __( 'http://wildfiregames.com', 'nova' ) ); ?>" rel="generator"><?php printf( __( '&copy; 2012 Wildfire Games | CC-BY-SA ', 'nova' ) ); ?></a>
+		<div id="credits-bar">
+			<nav id="credits">
+				<?php wp_nav_menu( array('theme_location' => 'footer')); ?>
+			</nav>
 		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
