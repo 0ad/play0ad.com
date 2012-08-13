@@ -533,10 +533,6 @@ div.wpui-post-thumbnail img {
 /*	overflow : hidden;*/
 	width: 100%;
 	height : 100%;
-/*	-moz-border-radius     : 0px !important;
-	-webkit-border-radius  : 0px !important;
-	-o-border-radius       : 0px !important;
-	border-radius          : 0px !important;*/
 }
 
 .ui-tabs-vertical .ui-tabs-nav {
@@ -547,10 +543,6 @@ div.wpui-post-thumbnail img {
 /*	overflow: hidden;*/
 	position: relative;
 	padding : 0px !important;
-	-moz-border-radius     : 0px !important;
-	-webkit-border-radius  : 0px !important;
-	-o-border-radius       : 0px !important;
-	border-radius          : 0px !important;
 }
 
 .wpui-styles .ui-tabs-vertical .ui-tabs-nav li {
@@ -568,10 +560,6 @@ div.wpui-post-thumbnail img {
 .ui-tabs-vertical .ui-tabs-nav li {
 	float: left;
 	width: 100%;
-	-moz-border-radius     : 0px !important;
-	-webkit-border-radius  : 0px !important;
-	-o-border-radius       : 0px !important;
-	border-radius          : 0px !important;
 	margin : 0px;
 }
 
@@ -598,10 +586,6 @@ div.wpui-post-thumbnail img {
 	float: left;
 	position: relative;
 	overflow : hidden;
-	-moz-border-radius     : 0px !important;
-	-webkit-border-radius  : 0px !important;
-	-o-border-radius       : 0px !important;
-	border-radius          : 0px !important;
 }
 
 
@@ -615,42 +599,42 @@ div.wpui-post-thumbnail img {
 
 .wpui-styles .ui-corner-top,
 .wpui-styles li.ui-corner-top a {
-	-moz-border-radius     : 3px 3px 0 0;
-	-webkit-border-radius  : 3px 3px 0 0;
-	-o-border-radius       : 3px 3px 0 0;
-	border-radius          : 3px 3px 0 0;
+	-moz-border-radius     : 0;
+	-webkit-border-radius  : 0;
+	-o-border-radius       : 0;
+	border-radius          : 0;
 }
 
 .wpui-styles .ui-corner-left,
 .wpui-styles li.ui-corner-left a {
-	-moz-border-radius     : 3px 0 0 3px;
-	-webkit-border-radius  : 3px 0 0 3px;
-	-o-border-radius       : 3px 0 0 3px;
-	border-radius          : 3px 0 0 3px;
+	-moz-border-radius     : 0;
+	-webkit-border-radius  : 0;
+	-o-border-radius       : 0;
+	border-radius          : 0;
 }
 
 .wpui-styles .ui-corner-bottom,
 .wpui-styles li.ui-corner-bottom a {
-	-moz-border-radius     : 0 0 3px 3px;
-	-webkit-border-radius  : 0 0 3px 3px;
-	-o-border-radius       : 0 0 3px 3px;
-	border-radius          : 0 0 3px 3px;
+	-moz-border-radius     : 0;
+	-webkit-border-radius  : 0;
+	-o-border-radius       : 0;
+	border-radius          : 0;
 }
 
 .wpui-styles .ui-corner-right,
 .wpui-styles li.ui-corner-right a {
-	-moz-border-radius     : 0 3px 3px 0;
-	-webkit-border-radius  : 0 3px 3px 0;
-	-o-border-radius       : 0 3px 3px 0;
-	border-radius          : 0 3px 3px 0;
+	-moz-border-radius     : 0;
+	-webkit-border-radius  : 0;
+	-o-border-radius       : 0;
+	border-radius          : 0;
 }
 
 .wpui-styles .ui-corner-all,
 .wpui-styles li.ui-corner-all a {
-	-moz-border-radius     : 3px;
-	-webkit-border-radius  : 3px;
-	-o-border-radius       : 3px;
-	border-radius          : 3px;
+	-moz-border-radius     : 0;
+	-webkit-border-radius  : 0;
+	-o-border-radius       : 0;
+	border-radius          : 0;
 }
 
 /*.wpui-styles ul.ui-tabs-nav li {

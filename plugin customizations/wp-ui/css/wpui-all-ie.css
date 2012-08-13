@@ -1,0 +1,30 @@
+.wpui-light .ui-tabs {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorStr='#D1D1D1');
+}
+
+.wpui-light .ui-tabs-panel {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEEEEE', endColorStr='#D1D1D1');
+	
+}
+
+.wpui-light .ui-collapsible-header,
+.wpui-light .ui-accordion .ui-accordion-header,
+.wpui-light ul.ui-tabs-nav {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEEEEE', endColorStr='#D1D1D1');
+}
+
+
+.wpui-light ul.ui-tabs-nav li,
+.wpui-light ul.ui-tabs-nav li:hover,
+.wpui-light .ui-collapsible-header:hover,
+.wpui-light .ui-accordion .ui-accordion-header:hover,
+.wpui-light .ui-accordion .ui-accordion-header.ui-state-active,
+.wpui-light  .ui-collapsible-header.ui-state-active,
+.wpui-light .ui-tabs-panel .tab-top-nav a,
+.wpui-light .ui-tabs-panel .tab-bottom-nav a {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#AAAAAA', endColorStr='#DADADA');
+}
+
+.wpui-light ul.ui-tabs-nav li.ui-state-active {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F2F2F2', endColorStr='#EEEEEE');
+}

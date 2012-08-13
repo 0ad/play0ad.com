@@ -151,7 +151,8 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 
 /* Main Menu */
 #navbar{ background:url(images/access-bg.png) center center; border-bottom:1px solid #E7BF47;border-top:1px solid #000; font-weight:700;height:30px;}
-#home-btn{ background: none; color: #000; float: left; height: 20px; line-height: 20px; padding: 5px;text-align: center; width: 240px;}
+#home-btn{ background:url(images/home-btn.png) center center; color: #000; float: left; height: 20px; line-height: 20px; padding: 5px;text-align: center; width: 240px;}
+#home-btn:hover{background:none;color: #fff}
 #access{display:block;float: right; width:750px}
 #access ul{font-size:15px;list-style:none;margin:0}
 #access li{ background: url(images/access-li.png) no-repeat 0 0; color:#EEE;display:block;float:left;height:20px;line-height: 20px;position:relative;text-align:center;width:150px;padding:5px 0;}
@@ -162,7 +163,8 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 #access li:hover > a,#access ul ul :hover > a,#access a:focus{background:url(images/access-li.png) no-repeat -320px 0;display:block;}
 #access li:hover > a,#access a:focus{background: url(images/access-li.png) no-repeat -160px 0;color:#000;display:block;float:left;height:20px;line-height: 20px;margin-top:-5px;position:relative;text-align:center;width:150px;padding:5px 0}
 #access ul li:hover > ul{display:block}
-#access .current-menu-item > a,#access .current-menu-ancestor > a,#access .current_page_item > a,#access .current_page_ancestor > a{font-weight:700}
+#access .current-menu-item > a, #access .current-menu-ancestor > a,#access .current_page_item > a,#access .current_page_ancestor > a{color: #000;}
+#access .current-menu-item , #access .current-menu-ancestor,#access .current_page_item,#access .current_page_ancestor{background:url(images/access-li.png) no-repeat -160px 0;}
 
 /* Search Form */
 #branding #searchform{background:#fff;float:right;height:30px;margin:20px 50px 0 0;width:150px}
