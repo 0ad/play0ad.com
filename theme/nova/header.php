@@ -25,7 +25,7 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<link rel="dns-prefetch" href="s.ytimg.com">
 	<link rel="dns-prefetch" href="ajax.googleapis.com">
-	<script src="/js/modernizr.js"></script>
+	<script src="<?php bloginfo( 'template_url' ); ?>/js/modernizr.js"></script>
 	<?php wp_head(); ?>
 </head>
 
