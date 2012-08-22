@@ -43,7 +43,7 @@
 			<div id="logo"></div>
 			<div id="site-description">A free, open-source game of ancient warfare</div>
 			<div id="wfg-logo"></div>
-			<a href="download"> 
+			<a href="<?php echo site_url('/download'); ?>">
 				<div id="download-button">
 					<div id="download-title">Download</div>
 					<div id="download-description"><?php bloginfo('description'); ?></div>
