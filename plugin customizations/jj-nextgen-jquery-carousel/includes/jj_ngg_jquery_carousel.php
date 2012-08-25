@@ -197,7 +197,7 @@ class JJ_NGG_JQuery_Carousel extends WP_Widget
           $width_d = " width=\"" . $width . "\"";
           $height_d = " height=\"" . $height . "\"";  
         }     
-        $output .= "<a class=\"thickbox\" rel=\"". $result->galleryid ."\" alt=\"". $image_alt ."\" href=\"" . $image->imageURL . "\"><img src=\"" . $image->imageURL . "\" " . $image_description . $width_d . $height_d . " border=\"0\" /></a>";
+        $output .= "<a class=\"thickbox\" rel=\"". $result->galleryid ."\" alt=\"". $image_alt ."\" href=\"" . $image->imageURL . "\"><img src=\"" . $image->thumbURL . "\" " . $image_description . $width_d . $height_d . " border=\"0\" /></a>";
         
         if($use_url)
         {
