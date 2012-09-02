@@ -116,6 +116,7 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 #full { float: left; width: 1025px; }
 #full .entry-header { text-align: center; }
 #full .entry-tri { margin-left: 921px; }
+.archive .entry-tri { margin: -3px 0 0 657px; }
 .singular #primary { height: inherit; width: 750px; }
 .singular #content { position: relative; }
 .entry-header, .entry-content, .blog .entry-header, .blog .entry-content, .error404 .entry-header, .error404 .entry-content, .no-results .entry-header, .no-results .entry-content, .singular .entry-header, .singular .entry-content  { width: inherit; color: black; padding: 10px 20px 10px; }
@@ -124,49 +125,51 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 .singular .image-attachment .entry-content { margin: 0 auto; width: auto; }
 .singular .image-attachment .entry-description { margin: 0 auto; width: 68.9%; }
   
-/* =Front Page
------------- */
+/* Front Page */
 #carousel {background-color: #222; clear: both; border: 1px solid #000; height: 98px; margin-bottom: 25px; padding: 9px 4px 9px; width: 715px; }
 
-/* =Global Menu
---------------- */
-#global-bar{background-color:#480000;border-bottom:1px solid #e8be48;clear:both;display:block;height:30px;margin: 0 auto;position: relative;width:100%}
-#global{margin:0 auto;width:1000px}
-#global ul{background:#2b0000 url(images/global.png) no-repeat -10px -10px; float:right;height:25px;list-style:none outside none;width:auto}
-#global li:first-child{border-left:none;padding-left:30px}
-#global li{border-left:1px solid #fff;display:block;float:left;height:15px;margin:5px;padding: 0 10px 0 20px;position:relative;text-align:center;width:auto}
-#global a{color:#FFF;font:normal 12px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;vertical-align:text-top}
-#global a:focus,#global a:hover{color:#cbcbcb;text-decoration:none}
-
-/* =Header
----------- */
+/* Header */
 #branding { font: 15px 'Gentium Basic', serif; margin:0 auto; position: relative; width: 1000px; }
 #site-description { color: #fff; margin: 100px 0 0 140px; position: absolute; }
 #logo { background: url('images/0ad-logo.png') no-repeat left top; height: 173px; margin: -23px -23px 0; pointer-events: none; position: absolute; width: 353px; z-index: 999; }
 #download-button { background: rgba(0, 0, 0, .5) url("images/global.png") no-repeat 185px -55px; color: #eee; height: 75px; margin: 30px 0 0 480px; position: absolute; width: 250px; }
 #download-button:hover { background: rgba(0, 0, 0, .3) url("images/global.png") no-repeat 185px -55px; color: #eee; }
+#download-button a{ color: inherit; text-decoration: none; }
 #download-title { font-size: 35px; font-variant: small-caps; line-height: 35px; padding: 10px 0 0 15px; }
 #download-description { font-size: 15px; line-height: 15px; padding: 5px 0 0 15px;}
 #wfg-logo { background-image: url("images/wfg-logo.png"); background-position: center center; float: right; height: 63px; margin: 36px 32px 0 0; width: 96px; }
 
-/* Main Menu */
-#navbar{ background:url(images/access-bg.png) center center; border-bottom:1px solid #E7BF47;border-top:1px solid #000; font-weight:700;height:30px;}
-#home-btn{ background:url(images/home-btn.png) center center; color: #000; display:block; float: left; height: 20px; line-height: 20px; padding: 5px;text-align: center; width: 240px;}
-#home-btn li:hover{
-	display: block;
-}
-#access{display:block;float: right; width:750px}
-#access ul{font-size:15px;list-style:none;margin:0}
-#access li{ background: url(images/access-li.png) no-repeat 0 0; color:#EEE;display:block;float:left;height:20px;line-height: 20px;position:relative;text-align:center;width:150px;padding:5px 0;}
-#access a{text-decoration:none;color:#FFF}
-#access ul ul{background:none;display:none;float:left;position:relative;top:0;width:150px;z-index:998}
-#access ul ul li{background-color:#000;background:rgba(0, 0, 0, 0.9);font-size:10px;font-weight:400;height:20px;line-height:20px;width:150px}
-#access ul ul a{color:#FFF}
-#access li:hover > a,#access ul ul :hover > a,#access a:focus{background:url(images/access-li.png) no-repeat -320px 0;display:block;}
-#access li:hover > a,#access a:focus{background: url(images/access-li.png) no-repeat -160px 0;color:#000;display:block;float:left;height:20px;line-height: 20px;margin-top:-5px;position:relative;text-align:center;width:150px;padding:5px 0}
-#access ul li:hover > ul{display:block}
-#access .current-menu-item > a, #access .current-menu-ancestor > a,#access .current_page_item > a,#access .current_page_ancestor > a{color: #000;}
-#access .current-menu-item , #access .current-menu-ancestor,#access .current_page_item,#access .current_page_ancestor{background:url(images/access-li.png) no-repeat -160px 0;}
+	/* Global Menu */
+	#global-bar{background-color:#480000;border-bottom:1px solid #e8be48;clear:both;display:block;height:30px;margin: 0 auto;position: relative;width:100%}
+	#global{margin:0 auto;width:1000px}
+	#global ul{background:#2b0000 url(images/global.png) no-repeat -10px -10px; float:right;height:25px;list-style:none outside none;width:auto}
+	#global li:first-child{border-left:none;padding-left:30px}
+	#global li{border-left:1px solid #fff;display:block;float:left;height:15px;margin:5px;padding: 0 10px 0 20px;position:relative;text-align:center;width:auto}
+	#global a{color:#FFF;font:normal 12px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;vertical-align:text-top}
+	#global a:focus,#global a:hover{color:#cbcbcb;text-decoration:none}
+
+	/* Main Menu */
+	#navbar{ background:url(images/access-bg.png) center center; border-bottom:1px solid #E7BF47;border-top:1px solid #000; font-weight:700;height:30px;}
+	
+	#home-btn{display:block;float: left; width:240px}
+	#home-btn li{ background: url(images/home-btn-normal.png) no-repeat center center; color:#EEE;display:block;float:left;height:20px;line-height: 20px;position:relative;text-align:center;width:240px;padding:5px;}
+	#home-btn a{text-decoration:none;color:#FFF}
+	#home-btn li:hover > a,#access a:focus{background: url(images/home-btn-hover.png) no-repeat center center;color:#000;display:block;height:30px;line-height: 30px; margin: -5px; position:relative;text-align:center;width:250px;}
+	#home-btn .current-menu-item > a, #home-btn .current-menu-ancestor > a, #home-btn .current_page_item > a, #home-btn .current_page_ancestor > a{color: #000;}
+	#home-btn .current-menu-item , #home-btn .current-menu-ancestor, #home-btn .current_page_item, #home-btn .current_page_ancestor{background:url(images/home-btn-hover.png);}
+	
+	#access{display:block;float: right; width:750px}
+	#access ul{font-size:15px;list-style:none;margin:0}
+	#access li{ background: url(images/access-li.png) no-repeat 0 0; color:#EEE;display:block;float:left;height:20px;line-height: 20px;position:relative;text-align:center;width:150px;padding:5px 0;}
+	#access a{text-decoration:none;color:#FFF}
+	#access ul ul{background:none;display:none;float:left;position:relative;top:0;width:150px;z-index:998}
+	#access ul ul li{background-color:#000;background:rgba(0, 0, 0, 0.9);font-size:10px;font-weight:400;height:20px;line-height:20px;width:150px}
+	#access ul ul a{color:#FFF}
+	#access li:hover > a,#access ul ul :hover > a,#access a:focus{background:url(images/access-li.png) no-repeat -320px 0;display:block;}
+	#access li:hover > a,#access a:focus{background: url(images/access-li.png) no-repeat -160px 0;color:#000;display:block;float:left;height:20px;line-height: 20px;margin-top:-5px;position:relative;text-align:center;width:150px;padding:5px 0}
+	#access ul li:hover > ul{display:block}
+	#access .current-menu-item > a, #access .current-menu-ancestor > a,#access .current_page_item > a,#access .current_page_ancestor > a{color: #000;}
+	#access .current-menu-item , #access .current-menu-ancestor,#access .current_page_item,#access .current_page_ancestor{background:url(images/access-li.png) no-repeat -160px 0;}
 
 /* Search Form */
 #branding #searchform{background:#fff;float:right;height:30px;margin:20px 50px 0 0;width:150px}
@@ -305,23 +308,6 @@ dl.gallery-item {
 }
 .page-link span {
 	margin-right: 6px;
-}
-.entry-meta .edit-link a {
-	background: #eee;
-	color: #000;
-	font-size: 12px;
-	line-height: 16px;
-	font-weight: 400;
-	text-decoration: none;
-	padding: 2px;
-}
-.entry-meta .edit-link a:hover {
-	background: #666;
-	color: #fff;
-}
-.entry-content .edit-link {
-	clear: both;
-	display: block;
 }
 .archive-pg{
 	float: left;

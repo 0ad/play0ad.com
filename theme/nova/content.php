@@ -30,8 +30,5 @@
 			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'nova' ) ); ?>
 			<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'nova' ) . '</span>', 'after' => '</div>' ) ); ?>
 		</div><!-- .entry-content -->
-
-		<footer class="entry-meta">
-			<?php edit_post_link( __( 'Edit', 'nova' ), '<span class="edit-link">', '</span>' ); ?>
-		</footer><!-- #entry-meta -->
+		
 	</article><!-- #post-<?php the_ID(); ?> -->
