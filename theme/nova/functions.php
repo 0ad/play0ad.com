@@ -101,6 +101,7 @@ function nova_setup() {
 	register_nav_menu( 'primary', __( 'Primary Menu', 'nova' ) );
 	register_nav_menu( 'global', __( 'Global Menu', 'nova' ) );
 	register_nav_menu( 'footer', __( 'Footer Menu', 'nova' ) );
+	register_nav_menu( 'home', __( 'Home Menu', 'nova' ) );
 
 	// Add support for a variety of post formats
 	add_theme_support( 'post-formats', array( 'gallery', 'image' ) );
@@ -393,9 +394,19 @@ function nova_widgets_init() {
 	) );
 	
 	register_sidebar( array(
-		'name' => __( 'Footer', 'nova' ),
+		'name' => __( 'Sitemap', 'nova' ),
 		'id' => 'sidebar-3',
 		'description' => __( 'Footer content goes here.', 'nova' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => "</aside>",
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+	
+	register_sidebar( array(
+		'name' => __( 'About WFG', 'nova' ),
+		'id' => 'sidebar-4',
+		'description' => __( 'This widget area is for the about box.', 'nova' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
 		'before_title' => '<h3 class="widget-title">',

@@ -51,7 +51,9 @@
 			</a><!-- DOWNLOAD ANCHOR -->
 		</hgroup>
        	<div id="navbar">
-       		<a href="<?php bloginfo('url'); ?>"><div id="home-btn">Home</div></a>
+       		<nav id="home-btn" role="navigation">
+       			<?php wp_nav_menu( array('theme_location' => 'home')); ?>
+       		</nav>
        		<nav id="access" role="navigation">
        			<?php wp_nav_menu( array('theme_location' => 'primary')); ?>
        		</nav><!-- #access --> 

@@ -151,8 +151,10 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 
 /* Main Menu */
 #navbar{ background:url(images/access-bg.png) center center; border-bottom:1px solid #E7BF47;border-top:1px solid #000; font-weight:700;height:30px;}
-#home-btn{ background:url(images/home-btn.png) center center; color: #000; float: left; height: 20px; line-height: 20px; padding: 5px;text-align: center; width: 240px;}
-#home-btn:hover{background:none;color: #fff}
+#home-btn{ background:url(images/home-btn.png) center center; color: #000; display:block; float: left; height: 20px; line-height: 20px; padding: 5px;text-align: center; width: 240px;}
+#home-btn li:hover{
+	display: block;
+}
 #access{display:block;float: right; width:750px}
 #access ul{font-size:15px;list-style:none;margin:0}
 #access li{ background: url(images/access-li.png) no-repeat 0 0; color:#EEE;display:block;float:left;height:20px;line-height: 20px;position:relative;text-align:center;width:150px;padding:5px 0;}
@@ -718,6 +720,7 @@ section.ephemera .entry-title a span {color: #29628d;}
 #addthis{
 	padding-bottom: 10px;
 }
+
 /* =Videos
 ----------------------------------------------- */
 dl.tubepress_meta_group {
@@ -729,12 +732,15 @@ dl.tubepress_meta_group {
 #colophon{background: #000; border-topclear:both}
 #footer{background: url('images/header.png');border-top:1px solid #E7BF47;color:#d7d7d7;height:auto;margin:0 auto;width:1000px}
 /* Widget Areas */
-#footer .widget{ background: rgba(0, 0, 0, .75); clear:none; color:#FFF; float:left; margin:10px; padding: 5px; width:370px }
-#footer .widget:first-child {width: 720px}
-#footer .widget:last-child {width: 220px}
-#footer ul{ font-size:10px; line-height:15px; list-style:none outside none; text-align:left }
-#footer a{ color:#d2ad00 }
+#footer #sitemap, #footer #about-box{ background: rgba(0, 0, 0, .75); clear:none; color:#FFF; float:left; margin:10px; width:730px }
+#footer #about-box { width: 230px;}
+#footer #sitemap .widget { background: none; float: left; margin-bottom: 5px; width: 162.5px; padding: 0; }
+#footer #about-box .widget { background: none; width: 200px; padding: 5px;}
+#footer .footer-title { font-variant: small-caps; text-align: center; }
+#footer ul{ font-size:12px; line-height:15px; list-style:none outside none; text-align:left }
+#footer a{ color: #f0f41b }
 #footer a:focus, a:active, a:hover { color: maroon; }
+
 /* Credits Menu */
 #credits-bar { background:#480000;border-top:1px solid #E8BE48;clear:both;display:block;height:30px;width:100%}
 #credits{margin: 0 auto;width:1000px;}
