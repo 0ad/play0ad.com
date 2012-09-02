@@ -734,7 +734,7 @@ dl.tubepress_meta_group {
 /* Widget Areas */
 #footer #sitemap, #footer #about-box{ background: rgba(0, 0, 0, .75); clear:none; color:#FFF; float:left; margin:10px; width:730px }
 #footer #about-box { width: 230px;}
-#footer #sitemap .widget { background: none; float: left; margin-bottom: 5px; width: 162.5px; padding: 0; }
+#footer #sitemap .widget { background: none; float: left; margin: 10px; width: 162.5px; }
 #footer #about-box .widget { background: none; width: 200px; padding: 5px;}
 #footer .footer-title { font-variant: small-caps; text-align: center; }
 #footer ul{ font-size:12px; line-height:15px; list-style:none outside none; text-align:left }

@@ -11,11 +11,9 @@
 	<footer id="colophon" role="contentinfo">
 		<div id="footer">
 			<div id="sitemap">
-				<h2 class="footer-title">Site Map</h2>
 				<?php dynamic_sidebar( 'sidebar-3' ); ?>
 			</div>
 			<div id="about-box">
-				<h2 class="footer-title">Get Connected</h2>
 				<?php dynamic_sidebar( 'sidebar-4' ); ?>
 			</div>
 		</div>
