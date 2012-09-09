@@ -4,7 +4,7 @@ Theme URI: http://wildfiregames.com/0adwebdev/theme-dev/
 Author: Geek377, gerbilOFdoom, bstempi
 Author URI: http://wildfiregames.com
 Description: Based off of WordPress 2011 theme; customized for use with Wildfire Games 0 AD
-Version: 0.5
+Version: 1.0 Beta
 License: GNU General Public License
 License URI: http://www.gnu.org/copyleft/gpl.html
 */
@@ -14,7 +14,7 @@ License URI: http://www.gnu.org/copyleft/gpl.html
 /* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
 --------------------------------------------------------------------------------------------------------------- */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { border: 0; font-family: inherit;	font-size: 100%; font-style: inherit; font-weight: inherit; margin: 0; outline: 0; padding: 0; vertical-align: baseline;}
-:focus {/* remember to define focus styles! */ outline: 0; }
+:focus { outline: 0; }
 body { background: #fff; line-height: 1; }
 ol, ul { list-style: none; }
 table {/* tables still need 'cellspacing="0"' in the markup */border-collapse: separate; border-spacing: 0; }
@@ -24,88 +24,74 @@ q:before, q:after { content: ""; }
 blockquote, q { quotes: "" ""; }
 a img { border: 0; }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
-
-
 /* ======================================= THEME BEGIN ======================================= */
-/* =Clearing divs so they can contain floated elements */
+
+
+/* Clearing divs so they can contain floated elements */
 div:after { content: ""; display: block; height: 0; clear: both; }
+
 /*Chrome Frame to the rescue!*/
 .chromeframe { margin:0; background: #333; color: #ccc; font-weight: 700; padding: 0.2em; text-align: center; z-index: 1001; }
 #nojs{ margin:0; background: #333; color: #ccc; font-weight: 700; padding: 0.2em; text-align: center; z-index: 1000; }
-/* =Global */
+
+/* Global Styles */
 body, input, textarea { color: #373737; font: 15px/1.67 "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 300; }
 body { background-color: black; background-image: url("images/bg.png"); background-position: center top; background-repeat: repeat-y; }
-/* Headings */
-h1,h2,h3,h4,h5,h6 { clear: both; font: bold 30px 'Gentium Basic', serif; line-height: 50px; }
-h2 { line-height: 50px; font-size: 25px; }
-h3 { line-height: 25px; font-size: 20px; }
-h4 { line-height: 25px; font-size: 18px; }
-hr { background-color: #ccc; border: 0; height: 1px; margin-bottom: 24px; }
-/* Text elements */
-p {}
-ul, ol {}
-ul { font-size: 15px; line-height: 1.5; list-style: square; text-align: left; }
-ol { list-style-type: decimal; margin-left: 25px;}
-ol ol {	list-style: upper-alpha; }
-ol ol ol { list-style: lower-roman; }
-ol ol ol ol { list-style: lower-alpha; }
-ul ul, ol ol, ul ol, ol ul { margin-bottom: 0; }
-dl { margin: 0 25px; }
-dt { font-weight: bold;}
-dd { margin-bottom: 25px; }
-strong { font-weight: bold; }
-cite, em, i { font-style: italic; }
-blockquote { font-family: Georgia, "Bitstream Charter", serif; font-style: italic; font-weight: normal; margin: 10px; }
-blockquote em, blockquote i, blockquote cite { font-style: normal; }
-blockquote cite { color: #666; font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 300; letter-spacing: 0.05em; text-transform: uppercase; }
-pre { background: #f4f4f4; font: 13px "Courier 10 Pitch", Courier, monospace; line-height: 1.5; margin-bottom: 25px; overflow: auto; padding: 10px 25px; }
-code, kbd { font: 13px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace; }
-abbr, acronym, dfn { border-bottom: 1px dotted #666; cursor: help; }
-address { display: block; margin: 0 0 25px; }
-ins { background: #fff9c0; text-decoration: none; }
-sup, sub { font-size: 10px; height: 0; line-height: 1; position: relative;	vertical-align: baseline; }
-sup { bottom: 1ex; }
-sub {top: .5ex;}
-/* Forms */
-input[type=text],
-input[type=password],
-textarea {
-	background: #fafafa;
-	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
-	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
-	box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
-	border: 1px solid #ddd;
-	color: #888;
-}
-input[type=text]:focus,
-textarea:focus {
-	color: #373737;
-}
-textarea {
-	padding-left: 3px;
-	width: 98%;
-}
-input[type=text] {
-	padding: 3px;
-}
-input#s {
-	background: url(images/global.png) no-repeat -5px -144px;
-	font-size: 14px;
-	height: 22px;
-	line-height: 1.2em;
-	padding: 5px 5px 5px 25px;
-}
-input#searchsubmit { display: none; }
-/* Links */
-a { color: gray; text-decoration: none; }
-a:focus, a:active, a:hover { text-decoration: underline;}
-/* Assistive text */
-.assistive-text { position: absolute !important; clip: rect(1px, 1px, 1px, 1px); }
-#access a.assistive-text:active,
-#access a.assistive-text:focus { background: #eee; border-bottom: 1px solid #ddd; color: #1982d1; clip: auto !important; font-size: 12px; position: absolute; text-decoration: underline; top: 0; left: 7.6%; }
+	
+	/* Headings */
+	h1,h2,h3,h4,h5,h6 { clear: both; font: bold 30px 'Gentium Basic', serif; line-height: 50px; }
+	h2 { line-height: 50px; font-size: 25px; }
+	h3 { line-height: 25px; font-size: 20px; }
+	h4 { line-height: 25px; font-size: 18px; }
+	hr { background-color: #ccc; border: 0; height: 1px; margin-bottom: 24px; }
+	
+	/* Text elements */
+	p {}
+	ul, ol {}
+	ul { font-size: 15px; line-height: 1.5; list-style: square; text-align: left; }
+	ol { list-style-type: decimal; margin-left: 25px;}
+	ol ol {	list-style: upper-alpha; }
+	ol ol ol { list-style: lower-roman; }
+	ol ol ol ol { list-style: lower-alpha; }
+	ul ul, ol ol, ul ol, ol ul { margin-bottom: 0; }
+	dl { margin: 0 25px; }
+	dt { font-weight: bold;}
+	dd { margin-bottom: 25px; }
+	strong { font-weight: bold; }
+	cite, em, i { font-style: italic; }
+	blockquote { font-family: Georgia, "Bitstream Charter", serif; font-style: italic; font-weight: normal; margin: 10px; }
+	blockquote em, blockquote i, blockquote cite { font-style: normal; }
+	blockquote cite { color: #666; font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 300; letter-spacing: 0.05em; text-transform: uppercase; }
+	pre { background: #f4f4f4; font: 13px "Courier 10 Pitch", Courier, monospace; line-height: 1.5; margin-bottom: 25px; overflow: auto; padding: 10px 25px; }
+	code, kbd { font: 13px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace; }
+	abbr, acronym, dfn { border-bottom: 1px dotted #666; cursor: help; }
+	address { display: block; margin: 0 0 25px; }
+	ins { background: #fff9c0; text-decoration: none; }
+	sup, sub { font-size: 10px; height: 0; line-height: 1; position: relative;	vertical-align: baseline; }
+	sup { bottom: 1ex; }
+	sub {top: .5ex;}
+	
+	/* Forms */
+	input[type=text],
+	input[type=password],
+	textarea { background: #fafafa; border: 1px solid #ddd; color: #888; }
+	input[type=text]:focus,
+	textarea:focus { color: #373737; }
+	textarea { padding-left: 3px; width: 98%; }
+	input[type=text] { padding: 3px; }
+	input#s { background: url(images/global.png) no-repeat -5px -144px; font-size: 14px; height: 22px; line-height: 1.2; padding: 5px 5px 5px 25px; }
+	input#searchsubmit { display: none; }
+	
+	/* Links */
+	a { color: gray; text-decoration: none; }
+	a:focus, a:active, a:hover { text-decoration: underline;}
+	
+	/* Assistive text */
+	.assistive-text { position: absolute !important; clip: rect(1px, 1px, 1px, 1px); }
+	#access a.assistive-text:active,
+	#access a.assistive-text:focus { background: #eee; border-bottom: 1px solid #ddd; color: #1982d1; clip: auto !important; font-size: 12px; position: absolute; text-decoration: underline; top: 0; left: 7.6%; }
    
-/* =Structure
-------------- */
+/* STRUCTURE */
 #page { margin: auto; width: 100%; }
 #branding hgroup { background-image: url("images/header.png"); background-position: center; border-bottom: 1px solid #8f7c52; height: 135px; margin-left: auto; margin-right: auto; width: 1000px; }
 #access div { margin: 0px; }
@@ -121,17 +107,20 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 .singular #content { position: relative; }
 .entry-header, .entry-content, .blog .entry-header, .blog .entry-content, .error404 .entry-header, .error404 .entry-content, .no-results .entry-header, .no-results .entry-content, .singular .entry-header, .singular .entry-content  { width: inherit; color: black; padding: 10px 20px 10px; }
 
-/* Attachments */
-.singular .image-attachment .entry-content { margin: 0 auto; width: auto; }
-.singular .image-attachment .entry-description { margin: 0 auto; width: 68.9%; }
+	/* Attachments */
+	.singular .image-attachment .entry-content { margin: 0 auto; width: auto; }
+	.singular .image-attachment .entry-description { margin: 0 auto; width: 68.9%; }
   
-/* Front Page */
-#carousel {background-color: #222; clear: both; border: 1px solid #000; height: 98px; margin-bottom: 25px; padding: 9px 4px 9px; width: 715px; }
+	/* Front Page */
+	#carousel {background-color: #222; clear: both; border: 1px solid #000; height: 98px; margin-bottom: 25px; padding: 9px 4px 9px; width: 715px; }
 
-/* Header */
+/* HEADER */
 #branding { font: 15px 'Gentium Basic', serif; margin:0 auto; position: relative; width: 1000px; }
+/* Tagline */
 #site-description { color: #fff; margin: 100px 0 0 140px; position: absolute; }
+/* Logo */
 #logo { background: url('images/0ad-logo.png') no-repeat left top; height: 173px; margin: -23px -23px 0; pointer-events: none; position: absolute; width: 353px; z-index: 999; }
+/* Download Button */
 #download-button { background: rgba(0, 0, 0, .5) url("images/global.png") no-repeat 185px -55px; color: #eee; height: 75px; margin: 30px 0 0 480px; position: absolute; width: 250px; }
 #download-button:hover { background: rgba(0, 0, 0, .3) url("images/global.png") no-repeat 185px -55px; color: #eee; }
 #download-button a{ color: inherit; text-decoration: none; }
@@ -140,51 +129,45 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 #wfg-logo { background-image: url("images/wfg-logo.png"); background-position: center center; float: right; height: 63px; margin: 36px 32px 0 0; width: 96px; }
 
 	/* Global Menu */
-	#global-bar{background-color:#480000;border-bottom:1px solid #e8be48;clear:both;display:block;height:30px;margin: 0 auto;position: relative;width:100%}
+	#global-bar{background-color:#480000;border-bottom:1px solid #e8be48;clear:both;display:block;height:30px;margin:0 auto;position:relative;width:100%}
 	#global{margin:0 auto;width:1000px}
-	#global ul{background:#2b0000 url(images/global.png) no-repeat -10px -10px; float:right;height:25px;list-style:none outside none;width:auto}
+	#global ul{background:#2b0000 url(images/global.png) no-repeat -10px -10px;float:right;height:25px;list-style:none outside none;width:auto}
 	#global li:first-child{border-left:none;padding-left:30px}
-	#global li{border-left:1px solid #fff;display:block;float:left;height:15px;margin:5px;padding: 0 10px 0 20px;position:relative;text-align:center;width:auto}
+	#global li{border-left:1px solid #fff;display:block;float:left;height:15px;margin:5px;padding:0 10px 0 20px;position:relative;text-align:center;width:auto}
 	#global a{color:#FFF;font:normal 12px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;vertical-align:text-top}
 	#global a:focus,#global a:hover{color:#cbcbcb;text-decoration:none}
-
+	
 	/* Main Menu */
-	#navbar{ background:url(images/access-bg.png) center center; border-bottom:1px solid #E7BF47;border-top:1px solid #000; font-weight:700;height:30px;}
-	
-	#home-btn{display:block;float: left; width:240px}
-	#home-btn li{ background: url(images/home-btn-normal.png) no-repeat center center; color:#EEE;display:block;float:left;height:20px;line-height: 20px;position:relative;text-align:center;width:240px;padding:5px;}
-	#home-btn a{text-decoration:none;color:#FFF}
-	#home-btn li:hover > a,#access a:focus{background: url(images/home-btn-hover.png) no-repeat center center;color:#000;display:block;height:30px;line-height: 30px; margin: -5px; position:relative;text-align:center;width:250px;}
-	#home-btn .current-menu-item > a, #home-btn .current-menu-ancestor > a, #home-btn .current_page_item > a, #home-btn .current_page_ancestor > a{color: #000;}
-	#home-btn .current-menu-item , #home-btn .current-menu-ancestor, #home-btn .current_page_item, #home-btn .current_page_ancestor{background:url(images/home-btn-hover.png);}
-	
-	#access{display:block;float: right; width:750px}
+	#navbar{background:url(images/access-bg.png) center center;border-bottom:1px solid #E7BF47;border-top:1px solid #000;font-weight:700;height:30px}
+	#home-btn{display:block;float:left;width:240px}
+	#home-btn li{background:url(images/home-btn-normal.png) no-repeat center center;color:#EEE;display:block;float:left;height:20px;line-height:20px;padding:5px;position:relative;text-align:center;width:240px}
+	#home-btn li:hover > a,#access a:focus{background:url(images/home-btn-hover.png) no-repeat center center;color:#000;display:block;height:30px;line-height:30px;margin:-5px;position:relative;text-align:center;width:250px}
+	#home-btn .current-menu-item,#home-btn .current-menu-ancestor,#home-btn .current_page_item,#home-btn .current_page_ancestor{background:url(images/home-btn-hover.png)}
+	#home-btn a,#access a{color:#FFF;text-decoration:none}
+	#home-btn .current-menu-item > a,#home-btn .current-menu-ancestor > a,#home-btn .current_page_item > a,#home-btn .current_page_ancestor > a,#access .current-menu-item > a,#access .current-menu-ancestor > a,#access .current_page_item > a,#access .current_page_ancestor > a{color:#000}
+	#access{display:block;float:right;width:750px}
 	#access ul{font-size:15px;list-style:none;margin:0}
-	#access li{ background: url(images/access-li.png) no-repeat 0 0; color:#EEE;display:block;float:left;height:20px;line-height: 20px;position:relative;text-align:center;width:150px;padding:5px 0;}
-	#access a{text-decoration:none;color:#FFF}
+	#access li{background:url(images/access-li.png) no-repeat 0 0;color:#EEE;display:block;float:left;height:20px;line-height:20px;padding:5px 0;position:relative;text-align:center;width:150px}
 	#access ul ul{background:none;display:none;float:left;position:relative;top:0;width:150px;z-index:998}
-	#access ul ul li{background-color:#000;background:rgba(0, 0, 0, 0.9);font-size:10px;font-weight:400;height:20px;line-height:20px;width:150px}
+	#access ul ul li{background:rgba(0,0,0,0.9);background-color:#000;font-size:10px;font-weight:400;height:20px;line-height:20px;width:150px}
 	#access ul ul a{color:#FFF}
-	#access li:hover > a,#access ul ul :hover > a,#access a:focus{background:url(images/access-li.png) no-repeat -320px 0;display:block;}
-	#access li:hover > a,#access a:focus{background: url(images/access-li.png) no-repeat -160px 0;color:#000;display:block;float:left;height:20px;line-height: 20px;margin-top:-5px;position:relative;text-align:center;width:150px;padding:5px 0}
+	#access li:hover > a,#access ul ul :hover > a,#access a:focus{background:url(images/access-li.png) no-repeat -320px 0;display:block}
+	#access li:hover > a,#access a:focus{background:url(images/access-li.png) no-repeat -160px 0;color:#000;display:block;float:left;height:20px;line-height:20px;margin-top:-5px;padding:5px 0;position:relative;text-align:center;width:150px}
 	#access ul li:hover > ul{display:block}
-	#access .current-menu-item > a, #access .current-menu-ancestor > a,#access .current_page_item > a,#access .current_page_ancestor > a{color: #000;}
-	#access .current-menu-item , #access .current-menu-ancestor,#access .current_page_item,#access .current_page_ancestor{background:url(images/access-li.png) no-repeat -160px 0;}
-
-/* Search Form */
-#branding #searchform{background:#fff;float:right;height:30px;margin:20px 50px 0 0;width:150px}
-#branding #searchform div{margin:0}
-#branding #s{border:none;color:#000;float:right;height:20px;line-height:20px;padding:5px;text-align:right;width:140px}
-#branding #searchsubmit{display:none}
-#branding .only-search #searchform{top:5px;z-index:1}
-#branding .only-search #s{background-color:#666;border-color:#000;color:#222}
-#branding .only-search #s,#branding .only-search #s:focus{width:85%}
-#branding .only-search #s:focus{background-color:#bbb}
-#branding .with-image #searchform{bottom:-27px;max-width:195px;top:auto}
-#branding .only-search + #access div{padding-right:205px}
-
-/* =Content
------------------------------------------------ */
+	#access .current-menu-item,#access .current-menu-ancestor,#access .current_page_item,#access .current_page_ancestor{background:url(images/access-li.png) no-repeat -160px 0}
+	
+	/* Search Form */
+	#branding #searchform{ background:#fff; float:right; height:30px; margin:20px 50px 0 0; width:150px }
+	#branding #searchform div{ margin:0 }
+	#branding #s{ border:none; color:#000; float:right; height:20px; line-height:20px; padding:5px; text-align:right; width:140px }
+	#branding #searchsubmit{ display:none }
+	#branding .only-search #searchform{ top:5px; z-index:1 }
+	#branding .only-search #s{ background-color:#666; border-color:#000; color:#222 }
+	#branding .only-search #s,#branding .only-search #s:focus{ width:85% }
+	#branding .only-search #s:focus{ background-color:#bbb }
+	#branding .with-image #searchform{ bottom:-27px; max-width:195px; top:auto }
+	#branding .only-search + #access div{ padding-right:205px }
+/* CONTENT */
 #main {
     clear: both;
     height: auto;
