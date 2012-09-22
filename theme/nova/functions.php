@@ -585,4 +585,18 @@ function nova_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'nova_body_classes' );
+
+/**
+ * Filters out specified styles from being used by Minify
+ *
+ * @since Nova Dev Stage
+ */
+ add_filter('bwp_minify_style_ignore', 'exclude_my_css');
+
+function exclude_my_css($excluded)
+{
+	$excluded = array('handle1', 'handle2');
+	return $excluded;
+}
+
 ?>
