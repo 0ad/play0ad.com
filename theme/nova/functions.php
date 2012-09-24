@@ -595,7 +595,7 @@ add_filter( 'body_class', 'nova_body_classes' );
 
 function exclude_my_css($excluded)
 {
-	$excluded = array('handle1', 'handle2');
+	$excluded = array('style.css');
 	return $excluded;
 }
 
