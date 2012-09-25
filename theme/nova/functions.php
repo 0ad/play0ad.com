@@ -588,15 +588,15 @@ add_filter( 'body_class', 'nova_body_classes' );
 
 /**
  * Filters out specified styles from being used by Minify
- *
+ * Disabled, most likely unnecessary after review. 
  * @since Nova Dev Stage
  */
- add_filter('bwp_minify_style_ignore', 'exclude_my_css');
+ /*add_filter('bwp_minify_style_ignore', 'exclude_my_css');
 
 function exclude_my_css($excluded)
 {
 	$excluded = array('style.css');
 	return $excluded;
-}
+}*/
 
 ?>
