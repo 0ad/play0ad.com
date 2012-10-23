@@ -88,7 +88,6 @@ div:after { content: ""; display: block; height: 0; clear: both; }
    
 /* STRUCTURE */
 	#page { margin: auto; width: 100%; }
-	#branding hgroup { background-image: url("images/header.png"); background-position: center; border-bottom: 1px solid #8f7c52; height: 135px; margin-left: auto; margin-right: auto; width: 1000px; }
 	#access div { margin: 0px; }
 	#primary { float: left; width: 750px; }
 	#content { width: 100%; }
@@ -107,20 +106,20 @@ div:after { content: ""; display: block; height: 0; clear: both; }
 	/* Front Page */
 	#carousel {background-color: #222; clear: both; border: 1px solid #000; height: 98px; margin-bottom: 25px; padding: 9px 4px 9px; width: 715px; }
 
+/* GLOBAL NAV */
+	#global-bar { background-color: #480000; border-bottom: 1px solid #e8be48; clear: both; display: block; height: 30px; margin: 0 auto; position: relative; width:100%; }
+	#global ul { background: #2b0000 url(images/global.png) no-repeat -10px -10px; float: right; height: 25px; list-style: none outside none; width: auto; }
+	#global li:first-child { border-left: none; padding-left: 30px; }
+	#global li { border-left: 1px solid #fff; display: block; float: left; height: 15px; margin: 5px; padding: 0 10px 0 20px; position: relative; text-align: center; width:auto; }
+	#global a { color: #FFF;font: normal 12px/1 "Helvetica Neue", Helvetica, Arial, sans-serif; vertical-align: text-top; }
+	#global a:focus,#global a:hover { color: #cbcbcb; text-decoration: none; }
+		
 /* HEADER */
-	#branding { font: 15px 'Gentium Basic', serif; margin:0 auto; position: relative; width: 1000px; }
-	/* Tagline */
+	#branding { background: url("images/header.png") no-repeat center center; border-bottom: 1px solid #8f7c52; font: 15px 'Gentium Basic', serif; height: 135px; margin:0 auto; position: relative; width: 1000px; }
 	#site-description { color: #fff; margin: 100px 0 0 140px; position: absolute; }
-	/* Logo */
 	#logo { background: url('images/0ad-logo.png') no-repeat left top; height: 173px; margin: -23px -23px 0; pointer-events: none; position: absolute; width: 353px; z-index: 999; }
-	/* Download Button */
-	#download-button { background: rgba(0, 0, 0, .5) url("images/global.png") no-repeat 185px -55px; color: #eee; height: 75px; margin: 30px 0 0 480px; position: absolute; width: 250px; }
-	#download-button:hover { background: rgba(0, 0, 0, .3) url("images/global.png") no-repeat 185px -55px; color: #eee; }
-	#download-button a{ color: inherit; text-decoration: none; }
-	#download-title { font-size: 35px; font-variant: small-caps; line-height: 35px; padding: 10px 0 0 15px; }
-	#download-description { font-size: 15px; line-height: 15px; padding: 5px 0 0 15px;}
-	/* WFG Logo */
 	#wfg-logo { background-image: url("images/wfg-logo.png"); background-position: center center; float: right; height: 63px; margin: 36px 32px 0 0; width: 96px; }
+<<<<<<< HEAD
 	/* Global Menu */
 	#global-bar{background-color:#480000;border-bottom:1px solid #e8be48;clear:both;display:block;height:30px;margin:0 auto;position:relative;width:100%}
 	#global ul{background:#2b0000 url(images/global.png) no-repeat -10px -10px;float:right;height:25px;list-style:none outside none;width:auto}
@@ -147,7 +146,60 @@ div:after { content: ""; display: block; height: 0; clear: both; }
 	#access li:hover > a,#access a:focus{background:url(images/access-li.png) no-repeat -160px 0;color:#000;display:block;float:left;height:20px;line-height:20px;margin-top:-5px;padding:5px 0;position:relative;text-align:center;width:150px}
 	#access ul li:hover > ul{display:block}
 	#access .current-menu-item,#access .current-menu-ancestor,#access .current_page_item,#access .current_page_ancestor{background:url(images/access-li.png) no-repeat -160px 0}
+=======
+	/* Download Button */
+		#download-button { background: rgba(0, 0, 0, .5) url("images/global.png") no-repeat 185px -55px; color: #eee; height: 75px; margin: 30px 0 0 480px; position: absolute; width: 250px; }
+		#download-button:hover { background: rgba(0, 0, 0, .3) url("images/global.png") no-repeat 185px -55px; color: #eee; }
+		#download-button a{ color: inherit; text-decoration: none; }
+		#download-title { font-size: 35px; font-variant: small-caps; line-height: 35px; padding: 10px 0 0 15px; }
+		#download-description { font-size: 15px; line-height: 15px; padding: 5px 0 0 15px;}
+>>>>>>> Modify front page, news page, and clean out menu code
 
+/* MAIN MENU */
+	#navbar { background: url("images/access-bg.png") center center; border-bottom: 1px solid #E7BF47; border-top: 1px solid #000; font-weight: 700; height: 30px; margin: 0 auto; width: 1000px; }
+	/* Home Button */
+		#home-btn { display: block; float: left; width: 250px; }
+		#home-btn ul {
+			list-style: none outside none;
+			margin: 0;
+		}
+		#home-btn li {
+		background:url(images/home-btn-normal.png) no-repeat center center;
+		display:block;
+		float:none;
+		height:20px;
+		padding:5px;
+		position:relative;
+		text-align: center;
+		width:inherit;
+		}
+		#home-btn li:hover {
+		background: #fff url() no-repeat center center;
+		}
+		
+		#home-btn .current-menu-item,
+		#home-btn .current-menu-ancestor,
+		#home-btn .current_page_item,
+		#home-btn .current_page_ancestor { background:url(images/home-btn-hover.png)}
+		
+		#home-btn li a {
+			color: #000; font: normal 15px/20px 'Gentium Basic', serif; font-variant: small-caps; text-decoration: none;
+		}
+		
+	/* Access */
+		#access{display:block;float:right;width:750px}
+		#access ul{list-style:none;margin:0}
+		#access ul li { background: url("images/access-li.png") no-repeat 0 0; display: block; float: left; height: 30px; position: relative; text-align: center; width: 150px; }
+		
+		#access ul li > a { color:#fff; display:block; float:left; font:normal 20px/1 "Gentium Basic", serif; font-variant:small-caps; height:20px; line-height:20px; padding:5px; position:relative; text-align:center; text-decoration:none; width:inherit }
+		#access li:hover > a { background:url(images/access-li.png) no-repeat -160px 0; color:#000 }
+		#access ul li:hover > ul { display: inline-block } /*Display the child menu on parent hover*/
+		#access ul ul { background:none; display:none; float:left; position:relative; top:0; width:150px; z-index:998 }
+		#access ul ul li { background:rgba(0,0,0,0.9); width:150px }
+		#access ul ul a { color:#fff }
+		
+		#access .current-menu-item,#access .current-menu-ancestor,#access .current_page_item,#access .current_page_ancestor { background:url(images/access-li.png) no-repeat -160px 0 }
+		
 /* CONTENT */
 	#main{clear:both;height:auto;margin:25px auto;width:1000px}
 	#content .hentry,#content .hentry:last-child,#content .no-results,#content .error404{background-color:#d9d9d9;margin:0 25px 25px 0;position:relative}
@@ -155,7 +207,7 @@ div:after { content: ""; display: block; height: 0; clear: both; }
 	.page-title{color:#FFF;/*font-size:15px;*/font-weight:500;line-height:1.67;margin:0 0 10px;/*text-align:center;*/text-transform:uppercase}
 	.page-title a{font-size:15px;font-weight:700;letter-spacing:0;text-transform:none}
 	/* Entry */
-	.entry-header{background:#f0f0f0;color:#000;padding:0 10px;width:705px}
+	.entry-header{background:#f0f0f0;color:#000;padding:0 10px;width:inherit}
 	.entry-tri{background:url(images/entry-header.png);display:block;height:62px;margin:-13px 0 0 646px;position:absolute;width:62px;z-index:97}
 	.entry-title{background:url(images/entry-title-stripes.png) repeat-x center bottom;width:inherit}
 	.entry-title a{color:#000;font-size:30px;font-style:normal;font-variant:small-caps;font-weight:400;text-decoration:none}

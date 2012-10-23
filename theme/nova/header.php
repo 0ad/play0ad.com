@@ -39,24 +39,22 @@
 		</nav>
 	</div>
 	<header id="branding" role="banner">
-		<hgroup>
-			<div id="logo"></div>
-			<div id="site-description">A free, open-source game of ancient warfare</div>
-			<div id="wfg-logo"></div>
-			<a href="<?php echo site_url('/download'); ?>">
-				<div id="download-button">
-					<div id="download-title">Download</div>
-					<div id="download-description"><?php bloginfo('description'); ?></div>
-				</div><!-- Download Button -->
-			</a><!-- DOWNLOAD ANCHOR -->
-		</hgroup>
-       	<div id="navbar">
-       		<nav id="home-btn" role="navigation">
-       			<?php wp_nav_menu( array('theme_location' => 'home')); ?>
-       		</nav>
-       		<nav id="access" role="navigation">
-       			<?php wp_nav_menu( array('theme_location' => 'primary')); ?>
-       		</nav><!-- #access --> 
-       	</div>				
-	</header><!-- #branding -->
+		<div id="logo"></div>
+		<div id="site-description">A free, open-source game of ancient warfare</div>
+		<div id="wfg-logo"></div>
+		<a href="<?php echo site_url('/download'); ?>">
+			<div id="download-button">
+				<div id="download-title">Download</div>
+				<div id="download-description"><?php bloginfo('description'); ?></div>
+			</div><!-- Download Button -->
+		</a><!-- DOWNLOAD ANCHOR -->
+	</header>
+   	<div id="navbar">
+    	<nav id="home-btn" role="navigation">
+       		<?php wp_nav_menu( array('theme_location' => 'home')); ?>
+       	</nav>
+       	<nav id="access" role="navigation">
+       		<?php wp_nav_menu( array('theme_location' => 'primary')); ?>
+       	</nav><!-- #access --> 
+    </div>
 	<div id="main">
