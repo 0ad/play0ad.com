@@ -37,18 +37,35 @@ get_header(); ?>
 
 			<?php else : ?>
 
-				<article id="post-0" class="post no-results not-found">
+				<article id="post-0" class="post error404 not-found">
 					<header class="entry-header">
 						<div class="entry-tri"></div>
-						<h1 class="entry-title"><?php _e( 'Nothing Found', 'nova' ); ?></h1>
+						<h1 class="entry-title"><?php _e( 'Nothing to see here folks.', 'nova' ); ?></h1>
 						<div class="entry-meta">
-							<p><?php _e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'nova' ); ?></p>
+							<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching, or one of the links below, can help.', 'nova' ); ?></p>
 						</div><!-- .entry-meta -->
 					</header><!-- .entry-header -->
-
+				
 					<div class="entry-content">
-						<p></p>
 						<?php get_search_form(); ?>
+				
+						<?php the_widget( 'WP_Widget_Recent_Posts', array( 'number' => 10 ), array( 'widget_id' => '404' ) ); ?>
+				
+						<div class="widget">
+							<h2 class="widgettitle"><?php _e( 'Most Used Categories', 'nova' ); ?></h2>
+							<ul>
+								<?php wp_list_categories( array( 'orderby' => 'count', 'order' => 'DESC', 'show_count' => 1, 'title_li' => '', 'number' => 10 ) ); ?>
+							</ul>
+						</div>
+				
+						<?php
+						/* translators: %1$s: smilie */
+							$archive_content = '<p>' . sprintf( __( 'Try looking in the monthly archives.', 'nova' ), convert_smilies( ':)' ) ) . '</p>';
+							the_widget( 'WP_Widget_Archives', array('count' => 0 , 'dropdown' => 1 ), array( 'after_title' => '</h2>'.$archive_content ) );
+							?>
+				
+							<?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
+				
 					</div><!-- .entry-content -->
 				</article><!-- #post-0 -->
 

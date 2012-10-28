@@ -115,11 +115,10 @@ div:after { content: ""; display: block; height: 0; clear: both; }
 	#global a:focus,#global a:hover { color: #cbcbcb; text-decoration: none; }
 		
 /* HEADER */
-	#branding { background: url("images/header.png") no-repeat center center; border-bottom: 1px solid #8f7c52; font: 15px 'Gentium Basic', serif; height: 135px; margin:0 auto; position: relative; width: 1000px; }
+	#branding { background: url("images/branding.png") no-repeat center center; border-bottom: 1px solid #8f7c52; font: 15px 'Gentium Basic', serif; height: 135px; margin:0 auto; position: relative; width: 1000px; }
 	#site-description { color: #fff; margin: 100px 0 0 140px; position: absolute; }
 	#logo { background: url('images/0ad-logo.png') no-repeat left top; height: 173px; margin: -23px -23px 0; pointer-events: none; position: absolute; width: 353px; z-index: 999; }
 	#wfg-logo { background-image: url("images/wfg-logo.png"); background-position: center center; float: right; height: 63px; margin: 36px 32px 0 0; width: 96px; }
-<<<<<<< HEAD
 	/* Global Menu */
 	#global-bar{background-color:#480000;border-bottom:1px solid #e8be48;clear:both;display:block;height:30px;margin:0 auto;position:relative;width:100%}
 	#global ul{background:#2b0000 url(images/global.png) no-repeat -10px -10px;float:right;height:25px;list-style:none outside none;width:auto}
@@ -146,14 +145,12 @@ div:after { content: ""; display: block; height: 0; clear: both; }
 	#access li:hover > a,#access a:focus{background:url(images/access-li.png) no-repeat -160px 0;color:#000;display:block;float:left;height:20px;line-height:20px;margin-top:-5px;padding:5px 0;position:relative;text-align:center;width:150px}
 	#access ul li:hover > ul{display:block}
 	#access .current-menu-item,#access .current-menu-ancestor,#access .current_page_item,#access .current_page_ancestor{background:url(images/access-li.png) no-repeat -160px 0}
-=======
 	/* Download Button */
 		#download-button { background: rgba(0, 0, 0, .5) url("images/global.png") no-repeat 185px -55px; color: #eee; height: 75px; margin: 30px 0 0 480px; position: absolute; width: 250px; }
 		#download-button:hover { background: rgba(0, 0, 0, .3) url("images/global.png") no-repeat 185px -55px; color: #eee; }
 		#download-button a{ color: inherit; text-decoration: none; }
 		#download-title { font-size: 35px; font-variant: small-caps; line-height: 35px; padding: 10px 0 0 15px; }
 		#download-description { font-size: 15px; line-height: 15px; padding: 5px 0 0 15px;}
->>>>>>> Modify front page, news page, and clean out menu code
 
 /* MAIN MENU */
 	#navbar { background: url("images/access-bg.png") center center; border-bottom: 1px solid #E7BF47; border-top: 1px solid #000; font-weight: 700; height: 30px; margin: 0 auto; width: 1000px; }
@@ -220,7 +217,7 @@ div:after { content: ""; display: block; height: 0; clear: both; }
 	.entry-content table{border-bottom:1px solid #ddd;margin:0 0 25px;width:100%}
 	.entry-content th{color:#666;font-size:10px;font-weight:500;letter-spacing:.1em;line-height:2.6;text-transform:uppercase}
 	.entry-content td{border-top:1px solid #ddd;padding:6px 10px 6px 0}
-	.entry-content #s{border:1px solid;width:100%}
+	.entry-content #s{border:1px solid;width:80%}
 	dl.gallery-item{margin:0}
 	/* Page Links */
 	.page-link{clear:both;display:block;margin:0 0 1.625em}
@@ -228,7 +225,7 @@ div:after { content: ""; display: block; height: 0; clear: both; }
 	.page-link a:hover{background:#888;color:#fff;font-weight:700}
 	.page-link span{margin-right:6px}
 	/* Archive Page Columns */
-	.archive-pg{float:left;padding:2.5px;width:223px}
+	.archive-pg{ float: left; padding: 1.5%; width: 30%; }
 	.entry-content img,.widget img{max-width:97.5%}
 	img[class*=align],img[class*=wp-image-],img[class*=attachment-]{height:auto}
 	img.size-full,img.size-large{height:auto;max-width:97.5%;width:auto}
@@ -330,7 +327,7 @@ div:after { content: ""; display: block; height: 0; clear: both; }
 	#addthis{padding-bottom:10px}
 
 /* FOOTER */
-	#colophon{background: url('images/header.png') repeat center center; clear:both; border-top:1px solid #E7BF47;}
+	#colophon{background: url('images/dark-tiles.png') repeat center center; clear:both; border-top:1px solid #E7BF47;}
 	#footer{background: none; color:#d7d7d7;height:auto;margin:10px auto; width:1000px}
 	/* Widget Areas */
 	#footer #sitemap { background: rgba(0, 0, 0, .75); clear:none; color:#FFF; float:left; width:740px }
