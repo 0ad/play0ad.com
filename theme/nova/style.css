@@ -138,7 +138,7 @@ div:after { content: ""; display: block; height: 0; clear: both; }
 		#access{display:block;float:right;width:750px}
 		#access ul{list-style:none;margin:0}
 		#access ul li { background: url("images/access-li.png") no-repeat 0 0; display: block; float: left; height: 30px; position: relative; text-align: center; width: 150px; }
-		#access ul li > a { color:#fff; display:block; float:left; font:normal 20px/1 "Gentium Basic", serif; height:20px; line-height:20px; padding:5px; position:relative; text-align:center; text-decoration:none; width:inherit }
+		#access ul li > a { color:#fff; display:block; float:left; font:normal 16px/20px "Gentium Basic", serif; height:20px; line-height:20px; padding:5px; position:relative; text-align:center; text-decoration:none; width:inherit }
 		#access ul li:hover > a { background:url(images/access-li.png) no-repeat -320px 0; color:#000 }
 		#access ul li:hover > ul { display: inline-block } /*Display the child menu on parent hover*/
 		#access ul ul { background:none; display:none; float:left; position:relative; top:0; width:150px; z-index:998 }
