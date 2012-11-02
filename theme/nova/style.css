@@ -132,7 +132,7 @@ div:after { content: ""; display: block; height: 0; clear: both; }
 		#home-btn { display: block; float: left; width: 250px; }
 		#home-btn ul { list-style: none outside none; margin: 0; }
 		#home-btn ul li { background: url(images/home-btn-normal.png) no-repeat; display: block; float: left; height: 30px; position: relative; text-align: center; width: 250px; }
-		#home-btn ul li > a { color:#fff; display:block; float:left; font:normal 20px/1 "Gentium Basic", serif; font-variant:small-caps; height:20px; line-height:20px; padding:5px; position:relative; text-align:center; text-decoration:none; width:inherit }
+		#home-btn ul li > a { color:#fff; display:block; float:left; font:normal 16px/20px "Gentium Basic", serif; height:20px; line-height:20px; padding:5px; position:relative; text-align:center; text-decoration:none; width:inherit }
 		#home-btn ul li:hover > a { background:url(images/home-btn-hover.png) no-repeat; color:#000 }
 	/* Access */
 		#access{display:block;float:right;width:750px}
