@@ -7,16 +7,18 @@
   	Site: 0 A.D.
   	Twitter: @play0ad
   	URL: http:///wildfiregames.com/0ad
-
-/* THANKS */
+	MEMBERS:
 	Aviv Sharon (@AvivSharon)
 	Brian Stempin (@bstempi)
 	Geek377 (@Geek377)
 	GerbilOFDoom (thedestroyer@swdroids.com)
+	Ludovic Celle (????)
 	Michael Hafer (michael@wildfiregames.com)
-	Pureon (pureon@wildfiregames.com)  
-
+	Pureon (pureon@wildfiregames.com) 
+	
+/* THANKS */
+	
 /* SITE */
   	Standards: HTML5, CSS3
   	Components: jQuery, Wordpress 3.4
-  	Software: GitHub for Mac, Photoshop, Espresso, 
+  	Software: GitHub for Mac, Photoshop, Espresso,
