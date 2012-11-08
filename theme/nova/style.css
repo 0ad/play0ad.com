@@ -120,11 +120,11 @@ div:after { content: ""; display: block; height: 0; clear: both; }
 	#logo { background: url('images/0ad-logo.png') no-repeat left top; height: 173px; margin: -23px -23px 0; pointer-events: none; position: absolute; width: 353px; z-index: 999; }
 	#wfg-logo { background-image: url("images/wfg-logo.png"); background-position: center center; float: right; height: 63px; margin: 36px 32px 0 0; width: 96px; }
 	/* Download Button */
-		#download-button { background: rgba(0, 0, 0, .5) url("images/global.png") no-repeat 185px -55px; color: #eee; height: 75px; margin: 30px 0 0 480px; position: absolute; width: 250px; }
-		#download-button:hover { background: rgba(0, 0, 0, .3) url("images/global.png") no-repeat 185px -55px; color: #eee; }
-		#download-button a{ color: inherit; text-decoration: none; }
-		#download-title { font-size: 35px; font-variant: small-caps; line-height: 35px; padding: 10px 0 0 15px; }
-		#download-description { font-size: 15px; line-height: 15px; padding: 5px 0 0 15px;}
+		#dl-button { background: rgba(0, 0, 0, .5) url("images/global.png") no-repeat 185px -55px; color: #eee; height: 75px; margin: 30px 0 0 480px; position: absolute; width: 250px; }
+		#dl-button:hover { background: rgba(0, 0, 0, .3) url("images/global.png") no-repeat 185px -55px; color: #eee; }
+		#dl-button a{ color: inherit; text-decoration: none; }
+		#dl-title { font-size: 35px; font-variant: small-caps; line-height: 35px; padding: 10px 0 0 15px; }
+		#dl-description { font-size: 15px; line-height: 15px; padding: 5px 0 0 15px;}
 
 /* MAIN MENU */
 	#navbar { background: url("images/access-bg.png") center center; border-bottom: 1px solid #E7BF47; border-top: 1px solid #000; font-weight: 700; height: 30px; margin: 0 auto; width: 1000px; }
@@ -168,6 +168,12 @@ div:after { content: ""; display: block; height: 0; clear: both; }
 	.entry-content td{border-top:1px solid #ddd;padding:6px 10px 6px 0}
 	.entry-content #s{border:1px solid;width:80%}
 	dl.gallery-item{margin:0}
+	/* Download Page*/
+	#dl-banner{
+		width: 960px;
+		height: 480px;
+	}
+	
 	/* Page Links */
 	.page-link{clear:both;display:block;margin:0 0 1.625em}
 	.page-link a{background:#eee;color:#373737;margin:0;padding:2px 3px;text-decoration:none}
@@ -283,7 +289,7 @@ div:after { content: ""; display: block; height: 0; clear: both; }
 	#footer #about-box { background: rgba(0, 0, 0, .75); clear:none; color:#FFF; float: right; width: 250px;}
 	#footer #sitemap .widget { background: none; float: left; padding: 5px; width: 175px; }
 	#footer #about-box .widget { background: none; width: 240px; padding: 5px;}
-	#footer .widget-title { font-variant: small-caps; }
+	#footer .widget-title { font-variant: small-caps; line-height: 30px; }
 	#footer ul{ font-size:12px; line-height:15px; list-style:none outside none; text-align:left }
 	#footer a{ color: #f0f41b }
 	#footer a:focus, a:active, a:hover { color: maroon; }

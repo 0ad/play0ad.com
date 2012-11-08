@@ -43,9 +43,9 @@
 		<div id="site-description">A free, open-source game of ancient warfare</div>
 		<div id="wfg-logo"></div>
 		<a href="<?php echo site_url('/download'); ?>">
-			<div id="download-button">
-				<div id="download-title">Download</div>
-				<div id="download-description"><?php bloginfo('description'); ?></div>
+			<div id="dl-button">
+				<div id="dl-title">Download</div>
+				<div id="dl-description"><?php bloginfo('description'); ?></div>
 			</div><!-- Download Button -->
 		</a><!-- DOWNLOAD ANCHOR -->
 	</header>
