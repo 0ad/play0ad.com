@@ -35,7 +35,7 @@ div:after { content: ""; display: block; height: 0; clear: both; }
 
 /* Global Styles */
 	body, input, textarea { color: #373737; font: 15px/1.67 "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 300; }
-	body { background-color: black; background-image: url("images/bg.png"); background-position: center top; background-repeat: repeat-y; }
+	body { background-color: black; background-image: url("images/bg.jpeg"); background-position: center top; background-repeat: repeat-y; }
 	/* Headings */
 	h1,h2,h3,h4,h5,h6 { clear: both; font: bold 30px 'Gentium Basic', serif; line-height: 50px; }
 	h2 { line-height: 50px; font-size: 25px; }
