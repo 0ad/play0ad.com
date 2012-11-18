@@ -12,7 +12,7 @@ get_header(); ?>
 		<!-- #carousel -->
 		<div id="updates">
 			<?php
-			$args = array( 'numberposts' => 3, 'offset'=> 0, 'category' => 1,3,4 );
+			$args = array( 'numberposts' => 3, 'offset'=> 0, 'category' => -35 );
 			$postslist = get_posts( $args );
 					foreach ($postslist as $post) :  setup_postdata($post); ?>
 			<?php

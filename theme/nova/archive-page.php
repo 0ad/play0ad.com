@@ -37,7 +37,7 @@ get_header(); ?>
 						<div class="archive-pg">
 							<h3>Most Used Categories</h3>
 							<ul>  
-							<?php wp_list_categories( array( 'orderby' => 'count', 'order' => 'DESC', 'show_count' => 1, 'title_li' => '' ) ); ?>   
+							<?php wp_list_categories( array( 'orderby' => 'count', 'order' => 'DESC', 'show_count' => 1, 'title_li' => '', 'exclude' => 35 ) ); ?>   
 							</ul>
 						</div>
 						 
