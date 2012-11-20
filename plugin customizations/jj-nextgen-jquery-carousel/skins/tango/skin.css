@@ -3,8 +3,8 @@
 }
 .jcarousel-skin-tango .jcarousel-container{background:inherit;width:715px;}
 .jcarousel-skin-tango .jcarousel-direction-rtl{direction:rtl}
-.jcarousel-skin-tango .jcarousel-container-horizontal{height:auto;padding:0px;width:707px}
-.jcarousel-skin-tango .jcarousel-clip-horizontal{height:97px;margin:0;width:707px}
+.jcarousel-skin-tango .jcarousel-container-horizontal{height:auto;padding:0px;margin:0 auto;width:707px}
+.jcarousel-skin-tango .jcarousel-clip-horizontal{height:97px;width:707px}
 .jcarousel-skin-tango .jcarousel-item-horizontal{height:97px;padding-right: 5px;width:173px}
 .jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-item-horizontal{margin-left:0;margin-right:0}
 .jcarousel-skin-tango .jcarousel-item-placeholder{background:#fff;color:#000}
