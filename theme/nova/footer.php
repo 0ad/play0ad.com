@@ -10,15 +10,18 @@
 	</div><!-- #main -->
 	<footer id="colophon" role="contentinfo">
 		<div id="footer">
-			<div id="sitemap">
+			<div id="footer25">
 				<?php dynamic_sidebar( 'sidebar-3' ); ?>
 			</div>
-			<div id="about-box">
+			<div id="footer50">
 				<?php dynamic_sidebar( 'sidebar-4' ); ?>
 			</div>
+			<div id="footer25">
+				<?php dynamic_sidebar( 'sidebar-5' ); ?>
+			</div>
 		</div>
-		<div id="credits-bar">
-			<nav id="credits">
+		<div id="footerbar">
+			<nav id="footernav">
 				<?php wp_nav_menu( array('theme_location' => 'footer')); ?>
 			</nav>
 		</div>

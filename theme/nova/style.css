@@ -290,23 +290,23 @@ div:after { content: ""; display: block; height: 0; clear: both; }
 
 /* FOOTER */
 	#colophon{background: url('images/dark-tiles.png') repeat center center; clear:both; border-top:1px solid #E7BF47;}
-	#footer{background: none; color:#d7d7d7;height:auto;margin:10px auto; width:1000px}
+	#footer{ background: rgba(0, 0, 0, .75); color: #d7d7d7; height: auto; margin:10px auto; width: 1000px}
 	/* Widget Areas */
-	#footer #sitemap { background: rgba(0, 0, 0, .75); clear:none; color:#FFF; float:left; width:740px }
-	#footer #about-box { background: rgba(0, 0, 0, .75); clear:none; color:#FFF; float: right; width: 250px;}
-	#footer #sitemap .widget { background: none; float: left; padding: 5px; width: 175px; }
-	#footer #about-box .widget { background: none; width: 240px; padding: 5px;}
+	#footer #footer50 { clear:none; color:#FFF; float:left; margin: 0 10px; width:500px }
+	#footer #footer25 { clear:none; color:#FFF; float: left; width: 240px;}
+	#footer #footer50 .widget { background: none; float: left; padding: 5px; width: 115px; }
+	#footer #footer25 .widget { background: none; width: 180px; padding: 5px;}
 	#footer .widget-title { font-variant: small-caps; line-height: 30px; }
 	#footer ul{ font-size:12px; line-height:15px; list-style:none outside none; text-align:left }
 	#footer a{ color: #f0f41b }
 	#footer a:focus, a:active, a:hover { color: maroon; }
 	/* Credits Menu */
-	#credits-bar { background:#480000;border-top:1px solid #E8BE48;clear:both;display:block;height:30px;width:100%}
-	#credits ul{background: #2b0000 url(images/credits.png) no-repeat right top; float:left;height:25px;list-style:none outside none;margin-top: 5px;width:auto}
-	#credits li:last-child{border-right:none;padding-right:30px}
-	#credits li{border-right:1px solid #fff;display:block;float:left;height:15px;margin:5px;padding: 0 20px 0 10px;position:relative;text-align:center;width:auto}
-	#credits a{color:#FFF;font:normal 12px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;vertical-align:text-top}
-	#credits a:focus,#credits a:hover{color:#cbcbcb;text-decoration:none}
+	#footerbar { background:#480000;border-top:1px solid #E8BE48;clear:both;display:block;height:30px;width:100%}
+	#footernav ul{background: #2b0000 url(images/footernav.png) no-repeat right top; float:left;height:25px;list-style:none outside none;margin-top: 5px;width:auto}
+	#footernav li:last-child{border-right:none;padding-right:30px}
+	#footernav li{border-right:1px solid #fff;display:block;float:left;height:15px;margin:5px;padding: 0 20px 0 10px;position:relative;text-align:center;width:auto}
+	#footernav a{color:#FFF;font:normal 12px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;vertical-align:text-top}
+	#footernav a:focus,#footernav a:hover{color:#cbcbcb;text-decoration:none}
 
 /* PRINT STYLES */
 @media print {
