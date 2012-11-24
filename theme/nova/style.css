@@ -176,8 +176,9 @@ div:after { content: ""; display: block; height: 0; clear: both; }
 		margin: 0 auto;
 		background: url('../../gallery/download-banners/dl1.jpg') no-repeat; /*Add the image rotater script*/
 	}
-	#dl-page-button { background: rgba(0, 0, 0, .75); color: #eee; font-weight: 700; margin: 96px 0 0 480px; padding: 10px; position: absolute; }
-	#dl-page-button:hover { background: rgba(0, 0, 0, .9); color: #fff; }
+	#dl-page-button { background: rgba(0, 0, 0, .75); color: #eee; font-variant: small-caps; font-weight: 700; margin: 96px 0 0 480px; padding: 10px; position: absolute; text-decoration: none; }
+	#dl-page-button:hover { background: rgba(0, 0, 0, .9); color: #fff; text-decoration: none; }
+	#dl-page-button a {	color: #eee; font-variant: small-caps; text-align: center; text-decoration: none; }
 	
 	
 	/* Page Links */

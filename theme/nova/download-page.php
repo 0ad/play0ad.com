@@ -31,19 +31,19 @@ get_header(); ?>
 							
 								if (OSName.indexOf("Windows") !== -1)
 								{
-									document.getElementById("dl-page-button").innerHTML= 'Download for Windows';
+									document.getElementById("dl-page-button").innerHTML= 'Download for Windows <br><a href="http://trac.wildfiregames.com/wiki/LatestRelease">Other versions</a>';
 									document.getElementById("dl-page-button").href = '#';
 								}
 							
 								if (OSName.indexOf("MacOS") !== -1)
 								{
-									document.getElementById("dl-page-button").innerHTML = 'Download for Mac OS X';
+									document.getElementById("dl-page-button").innerHTML = 'Download for Mac OS X <br><a href="http://trac.wildfiregames.com/wiki/LatestRelease">Other versions</a>';
 									document.getElementById("dl-page-button").href ='#';
 								}
 							
 								if (OSName.indexOf("Linux") !== -1)
 								{
-									document.getElementById("dl-page-button").innerHTML = 'Download for Linux';
+									document.getElementById("dl-page-button").innerHTML = 'Download for Linux <br><a href="http://trac.wildfiregames.com/wiki/LatestRelease">Other versions</a>';
 									document.getElementById("dl-page-button").href = '#';
 								}
 							</script>
