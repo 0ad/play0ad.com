@@ -20,12 +20,34 @@ get_header(); ?>
 					<div class="entry-content">
 					
 						<div id="dl-banner">
-							<div id="dl-page-button">
-								<h1 id="dl-title">Download</h1>
-								<div id="dl-description">
-									<?php bloginfo('description'); ?> <div id="dl-tag"></div><a href="http://trac.wildfiregames.com/wiki/LatestRelease">Other versions...</a>
-								</div>
-							</div><!-- Download Button -->
+							<a id="dl-page-button" href="#"></a><!-- Used by embedded Javascript -->
+							
+							<script type="text/javascript">
+								var OSName = "Unknown OS";
+							
+								if (navigator.platform.indexOf("Win") !== -1) { OSName = "Windows"; }
+								if (navigator.platform.indexOf("Mac") !== -1) { OSName = "MacOS"; }
+								if (navigator.platform.indexOf("Linux") !== -1) { OSName = "Linux"; }
+							
+								if (OSName.indexOf("Windows") !== -1)
+								{
+									document.getElementById("dl-page-button").innerHTML= 'Download for Windows';
+									document.getElementById("dl-page-button").href = '#';
+								}
+							
+								if (OSName.indexOf("MacOS") !== -1)
+								{
+									document.getElementById("dl-page-button").innerHTML = 'Download for Mac OS X';
+									document.getElementById("dl-page-button").href ='#';
+								}
+							
+								if (OSName.indexOf("Linux") !== -1)
+								{
+									document.getElementById("dl-page-button").innerHTML = 'Download for Linux';
+									document.getElementById("dl-page-button").href = '#';
+								}
+							</script>
+							
 						</div><!-- Download Banner -->
 						 	
 						<?php the_post(); the_content();  ?>
