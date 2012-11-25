@@ -21,14 +21,14 @@
 		
 
 		<?php if ( is_search() ) : // Only display Excerpts for Search ?>
-		<div class="entry-summary">
+		<div class="entry-content">
 			<?php the_excerpt(); ?>
 		</div><!-- .entry-summary -->
-		<?php endif; ?>
-			
+		<?php else : ?>
 		<div class="entry-content">
 			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'nova' ) ); ?>
 			<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'nova' ) . '</span>', 'after' => '</div>' ) ); ?>
 		</div><!-- .entry-content -->
+		<?php endif; ?>
 		
 	</article><!-- #post-<?php the_ID(); ?> -->
