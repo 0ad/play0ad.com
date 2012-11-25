@@ -169,12 +169,7 @@ div:after { content: ""; display: block; height: 0; clear: both; }
 	.entry-content,.entry-summary{background-image:url(images/entry-content-left.png), url(images/entry-content-right.png);background-position:left top, right top;background-repeat:no-repeat}
 	dl.gallery-item{margin:0}
 	/* Download Page*/
-	#dl-banner{
-		width: 960px;
-		height: 480px;
-		margin: 0 auto;
-		background: url('../../gallery/download-banners/dl1.jpg') no-repeat; /*Add the image rotater script*/
-	}
+	#dl-banner{ height: 480px; margin: 0 auto; width: 960px; }
 	#dl-page-button { background: rgba(0, 0, 0, .75); color: #eee; font-variant: small-caps; font-weight: 700; margin: 96px 0 0 480px; padding: 10px; position: absolute; text-decoration: none; }
 	#dl-page-button:hover { background: rgba(0, 0, 0, .9); color: #fff; text-decoration: none; }
 	#dl-page-button a {	color: #eee; font-variant: small-caps; text-align: center; text-decoration: none; }

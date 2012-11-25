@@ -19,7 +19,7 @@ get_header(); ?>
 					</header><!-- .entry-header -->
 					<div class="entry-content">
 					
-						<div id="dl-banner">
+						<div id="dl-banner" style="background: url('../wp-content/gallery/download-banners/dl1.jpg') no-repeat;">
 							<a id="dl-page-button" href="#"></a><!-- Used by embedded Javascript -->
 							
 							<script type="text/javascript">
@@ -31,20 +31,20 @@ get_header(); ?>
 							
 								if (OSName.indexOf("Windows") !== -1)
 								{
-									document.getElementById("dl-page-button").innerHTML= 'Download for Windows <br><a href="http://trac.wildfiregames.com/wiki/LatestRelease">Other versions</a>';
+									document.getElementById("dl-page-button").innerHTML= 'Download for Windows';
 									document.getElementById("dl-page-button").href = '#';
 								}
 							
 								if (OSName.indexOf("MacOS") !== -1)
 								{
-									document.getElementById("dl-page-button").innerHTML = 'Download for Mac OS X <br><a href="http://trac.wildfiregames.com/wiki/LatestRelease">Other versions</a>';
-									document.getElementById("dl-page-button").href ='#';
+									document.getElementById("dl-page-button").innerHTML = 'Download for Mac OS X';
+									document.getElementById("dl-page-button").href ='mac';
 								}
 							
 								if (OSName.indexOf("Linux") !== -1)
 								{
-									document.getElementById("dl-page-button").innerHTML = 'Download for Linux <br><a href="http://trac.wildfiregames.com/wiki/LatestRelease">Other versions</a>';
-									document.getElementById("dl-page-button").href = '#';
+									document.getElementById("dl-page-button").innerHTML = 'Download for Linux';
+									document.getElementById("dl-page-button").href = 'linux';
 								}
 							</script>
 							
