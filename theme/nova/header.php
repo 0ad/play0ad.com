@@ -39,9 +39,10 @@
 		</nav>
 	</div>
 	<header id="branding" role="banner">
-		<div id="logo"></div>
+		<a id="logo-circle" href="<?php echo home_url(); ?>"></a>
+		<a id="logo-name" href="<?php echo home_url(); ?>"></a>
 		<div id="site-description">A free, open-source game of ancient warfare</div>
-		<div id="wfg-logo"></div>
+		<a id="wfg-logo" href="http://wildfiregames.com"></a>
 		<a href="<?php echo site_url('/download'); ?>">
 			<div id="dl-button">
 				<div id="dl-title">Download</div>

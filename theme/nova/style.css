@@ -116,7 +116,8 @@ div:after { content: ""; display: block; height: 0; clear: both; }
 /* HEADER BLOCK*/
 	#branding { background: url("images/branding.png") no-repeat center center; border-bottom: 1px solid #8f7c52; font: 15px 'Gentium Basic', serif; height: 135px; margin:0 auto; position: relative; width: 1000px; }
 	#site-description { color: #fff; margin: 100px 0 0 140px; position: absolute; }
-	#logo { background: url('images/0ad-logo.png') no-repeat left top; height: 173px; margin: -23px -23px 0; pointer-events: none; position: absolute; width: 353px; z-index: 999; }
+	#logo-circle { background: url('images/logo-circle.png') no-repeat left top; height: 173px; margin: -23px 0 0 -23px; position: absolute; width: 167px; z-index: 999; }
+	#logo-name { background: url('images/logo-name.png') no-repeat left top; height: 80px; margin: 25px 0 0 145px; position: absolute; width: 186px; z-index: 999; }
 	#wfg-logo { background-image: url("images/wfg-logo.png"); background-position: center center; float: right; height: 63px; margin: 36px 32px 0 0; width: 96px; }
 	/* Download Button */
 		#dl-button { background: rgba(0, 0, 0, .5) url("images/global.png") no-repeat 185px -55px; color: #eee; height: 75px; margin: 30px 0 0 480px; position: absolute; width: 250px; }
@@ -287,9 +288,9 @@ div:after { content: ""; display: block; height: 0; clear: both; }
 	#footer{ background: rgba(0, 0, 0, .75); color: #d7d7d7; height: auto; margin:10px auto; width: 1000px}
 	/* Widget Areas */
 	#footer #footer50 { clear:none; color:#FFF; float:left; margin: 0 10px; width:500px }
-	#footer #footer25 { clear:none; color:#FFF; float: left; width: 240px;}
+	#footer #footer25 { clear:none; color:#FFF; float: left; width: 230px;}
 	#footer #footer50 .widget { background: none; float: left; padding: 5px; width: 115px; }
-	#footer #footer25 .widget { background: none; width: 180px; padding: 5px;}
+	#footer #footer25 .widget { background: none; padding: 10px;}
 	#footer .widget-title { font-variant: small-caps; line-height: 30px; }
 	#footer ul{ font-size:12px; line-height:15px; list-style:none outside none; text-align:left }
 	#footer a{ color: #EEE8AA; font-weight: 700; }
