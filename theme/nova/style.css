@@ -164,7 +164,7 @@ div:after { content: ""; display: block; height: 0; clear: both; }
 		/* Tables */
 		.entry-content table{border-bottom:1px solid #ddd;margin:0 0 25px;width:100%}
 		.entry-content th{color:#666;font-size:10px;font-weight:500;letter-spacing:.1em;line-height:2.6;text-transform:uppercase}
-		.entry-content td{border-top:1px solid #ddd;padding:6px 10px 6px 0}
+		.entry-content td{border-top:1px solid #ddd;padding:5px}
 		.entry-content #s{border:1px solid;width:80%}
 		.single-author .entry-meta .by-author{font-weight:700}
 	.entry-content,.entry-summary{background-image:url(images/entry-content-left.png), url(images/entry-content-right.png);background-position:left top, right top;background-repeat:no-repeat}
