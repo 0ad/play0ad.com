@@ -155,10 +155,11 @@ div:after { content: ""; display: block; height: 0; clear: both; }
 	/* Entry */
 		.entry-header { background:#f0f0f0; color:#000; width:inherit; padding:0 10px }
 		.entry-tri{background: url(images/entry-header.png); display: block; height: 62px; margin: -13px 0 0 646px; position: absolute; width: 62px; z-index: 997; }
-		.entry-title { background:url(images/entry-title-stripes.png) repeat-x center bottom; width:inherit }
-		.entry-title a { color:#000; font-size:30px; font-style:normal; font-variant:small-caps; font-weight:400; text-decoration:none }
+		.entry-title { background: url(images/entry-title-stripes.png) repeat-x center bottom; width: inherit }
+		.entry-title a { color:#000; font-size:30px; font-style:normal; font-weight:700; text-decoration:none }
 		.entry-title a:hover,.entry-title a:focus,.entry-title a:active { color:#a80000 }
 		.entry-header .entry-meta { clear:both; font-size:12px;	padding-top:5px }
+		.entry-content p { margin: 10px 0; }
 		.entry-meta a { color:#a80000; font-weight:700 }
 		footer.entry-meta { color:#000; width:inherit; padding:0 10px }
 		/* Tables */
@@ -243,11 +244,11 @@ div:after { content: ""; display: block; height: 0; clear: both; }
 /* WIDGETS */
 	.widget-area{font-size:12px}
 	#secondary .widget{background-color:#222;border-color:#000;border-style:solid;border-width:1px;clear:both;color:#FFF;margin-bottom:25px;padding:9px;width:230px}
-	#secondary .widget:last-child{margin-bottom:0}
-	#secondary .widget-title{font-size:20px;font-weight:700;line-height:25px;text-transform:uppercase}
-	#secondary .widget ul{font-size:15px;list-style:none}
-	#secondary .widget ul ul{margin-left:1.5em}
-	#secondary .widget ul li{color:#777;font-size:13px}
+	#secondary .widget:last-child{ margin-bottom: 0 }
+	#secondary .widget-title { border-bottom: 1px solid #FFF; font-size:20px; font-weight:700; line-height:25px; text-transform: uppercase }
+	#secondary .widget ul { font-size: 15px; list-style: none }
+	#secondary .widget ul ul { margin-left: 1.5em }
+	#secondary .widget ul li { color: #777; font-size: 13px }
 	#secondary .widget a{color:#FFF;font-weight:700;text-decoration:none}
 	#secondary .widget a:hover,#secondary .widget a:focus,#secondary .widget a:active{text-decoration:underline}
 	/* Search Widget */
@@ -287,10 +288,11 @@ div:after { content: ""; display: block; height: 0; clear: both; }
 	#colophon{background: url('images/dark-tiles.png') repeat center center; clear:both; border-top:1px solid #E7BF47;}
 	#footer{ background: rgba(0, 0, 0, .75); color: #d7d7d7; height: auto; margin:10px auto; width: 1000px}
 	/* Widget Areas */
-	#footer #footer50 { clear:none; color:#FFF; float:left; margin: 0 10px; width:500px }
-	#footer #footer25 { clear:none; color:#FFF; float: left; width: 230px;}
-	#footer #footer50 .widget { background: none; float: left; padding: 5px; width: 115px; }
-	#footer #footer25 .widget { background: none; padding: 10px;}
+	#footer #sitemap { clear:none; color:#FFF; float:left; width: 750px }
+	#footer #sitemap .widget { background: none; float: left; padding: 10px; width: 130px; }
+	#footer #donate { clear:none; color:#FFF; float: left; width: 250px;}
+	#footer #donate .widget { background: none; padding: 10px;}
+	
 	#footer .widget-title { font-variant: small-caps; line-height: 30px; }
 	#footer ul{ font-size:12px; line-height:15px; list-style:none outside none; text-align:left }
 	#footer a{ color: #EEE8AA; font-weight: 700; }

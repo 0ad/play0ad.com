@@ -10,14 +10,11 @@
 	</div><!-- #main -->
 	<footer id="colophon" role="contentinfo">
 		<div id="footer">
-			<div id="footer25">
-				<?php dynamic_sidebar( 'sidebar-3' ); ?>
+			<div id="donate">
+				<?php dynamic_sidebar( 'footer-1' ); ?>
 			</div>
-			<div id="footer50">
-				<?php dynamic_sidebar( 'sidebar-4' ); ?>
-			</div>
-			<div id="footer25">
-				<?php dynamic_sidebar( 'sidebar-5' ); ?>
+			<div id="sitemap">
+				<?php dynamic_sidebar( 'footer-2' ); ?>
 			</div>
 		</div>
 		<div id="footerbar">

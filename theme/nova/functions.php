@@ -382,20 +382,10 @@ function nova_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
-
-	register_sidebar( array(
-		'name' => __( 'Universal', 'nova' ),
-		'id' => 'sidebar-2',
-		'description' => __( 'Appears on all pages.', 'nova' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget' => "</aside>",
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
 	
 	register_sidebar( array(
 		'name' => __( 'Support WFG', 'nova' ),
-		'id' => 'sidebar-3',
+		'id' => 'footer-1',
 		'description' => __( 'This widget area is for the donation widget.', 'nova' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
@@ -405,7 +395,7 @@ function nova_widgets_init() {
 	
 	register_sidebar( array(
 		'name' => __( 'Sitemap', 'nova' ),
-		'id' => 'sidebar-4',
+		'id' => 'footer-2',
 		'description' => __( 'Footer sitemap goes here.', 'nova' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
@@ -413,15 +403,6 @@ function nova_widgets_init() {
 		'after_title' => '</h3>',
 	) );
 	
-	register_sidebar( array(
-		'name' => __( 'Stay Connected', 'nova' ),
-		'id' => 'sidebar-5',
-		'description' => __( 'This widget area is for the social networks.', 'nova' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget' => "</aside>",
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
 }
 add_action( 'widgets_init', 'nova_widgets_init' );
 

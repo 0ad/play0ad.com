@@ -25,4 +25,5 @@ get_header(); ?>
 	<?php dynamic_sidebar( 'sidebar-2' ); ?>
 </div>
 
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
