@@ -1,14 +1,77 @@
-#about_jcarousel_container{
-	width: 715px;
+#about_jcarousel_container {
+width:705px;
 }
-.jcarousel-skin-tango .jcarousel-container{background:inherit;width:715px;}
-.jcarousel-skin-tango .jcarousel-direction-rtl{direction:rtl}
-.jcarousel-skin-tango .jcarousel-container-horizontal{height:auto;padding:0px;margin:0 auto;width:707px}
-.jcarousel-skin-tango .jcarousel-clip-horizontal{height:97px;width:707px}
-.jcarousel-skin-tango .jcarousel-item-horizontal{height:97px;padding-right: 5px;width:173px}
-.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-item-horizontal{margin-left:0;margin-right:0}
-.jcarousel-skin-tango .jcarousel-item-placeholder{background:#fff;color:#000}
-.jcarousel-skin-tango .jcarousel-next-horizontal{background: rgba(0, 0, 0, 0.7) url(buttons.png) no-repeat -47.5px 29px;cursor:pointer;height:98px;opacity:0.9;position:absolute;right:0;top:0;width:25px}
-.jcarousel-skin-tango .jcarousel-prev-horizontal{background: rgba(0, 0, 0, 0.7) url(buttons.png) no-repeat -7.5px 29px;cursor:pointer;height:98px;left:0;opacity:0.9;position:absolute;top:0;width:25px}
-ul.ul_jj_carousel{list-style-type:none;margin:0;padding:0}
-ul.ul_jj_carousel li.li_jj_carousel{margin:0;padding:0}
+
+.jcarousel-skin-tango .jcarousel-container {
+margin: 0;
+padding: 0;
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl {
+direction:rtl;
+}
+
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+margin: 0;
+padding: 0;
+}
+
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+height:127px;
+width:705px;
+}
+
+.jcarousel-skin-tango .jcarousel-item {
+float: left
+height:127px;
+list-style: none;
+margin-right:15px;
+width:225px;
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-item-horizontal {
+float: left
+height:127px;
+list-style: none;
+margin-right:15px;
+width:225px;
+}
+
+.jcarousel-skin-tango .jcarousel-item-placeholder {
+float: left
+height:127px;
+list-style: none;
+margin-right:15px;
+width:225px;
+}
+
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+background:rgba(0,0,0,0.7) url(buttons.png) no-repeat -47.5px 29px;
+cursor:pointer;
+height:127px;
+position:absolute;
+right:0;
+top:0;
+width:25px;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal {
+background:rgba(0,0,0,0.7) url(buttons.png) no-repeat -7.5px 29px;
+cursor:pointer;
+height:127px;
+left:0;
+position:absolute;
+top:0;
+width:25px;
+}
+
+ul.ul_jj_carousel {
+list-style-type:none;
+margin:0;
+padding:0;
+}
+
+ul.ul_jj_carousel li.li_jj_carousel {
+margin:0;
+padding:0;
+}

@@ -103,7 +103,7 @@ div:after { content: ""; display: block; height: 0; clear: both; }
 	.singular .image-attachment .entry-content { margin: 0 auto; width: auto; }
 	.singular .image-attachment .entry-description { margin: 0 auto; width: 68.9%; }
 	/* Front Page */
-	#carousel {background-color: #222; clear: both; border: 1px solid #000; height: 98px; margin-bottom: 25px; padding: 9px 4px 9px; width: 715px; }
+	#carousel {background-color: #222; clear: both; border: 1px solid #000; margin-bottom: 25px; padding: 9px; width: 705px; }
 
 /* GLOBAL NAV */
 	#global-bar { background-color: #480000; border-bottom: 1px solid #e8be48; clear: both; display: block; height: 30px; margin: 0 auto; position: relative; width:100%; }
