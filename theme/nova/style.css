@@ -116,9 +116,9 @@ div:after { content: ""; display: block; height: 0; clear: both; }
 /* HEADER BLOCK*/
 	#branding { background: url("images/branding.png") no-repeat center center; border-bottom: 1px solid #8f7c52; font: 15px 'Gentium Basic', serif; height: 135px; margin:0 auto; position: relative; width: 1000px; }
 	#site-description { color: #fff; margin: 100px 0 0 140px; position: absolute; }
-	#logo-circle { background: url('images/logo-circle.png') no-repeat left top; height: 173px; margin: -23px 0 0 -23px; position: absolute; width: 167px; z-index: 999; }
-	#logo-name { background: url('images/logo-name.png') no-repeat left top; height: 80px; margin: 25px 0 0 145px; position: absolute; width: 186px; z-index: 999; }
-	#wfg-logo { background-image: url("images/wfg-logo.png"); background-position: center center; float: right; height: 63px; margin: 36px 32px 0 0; width: 96px; }
+	#logo-circle { background: url('images/logo.png') no-repeat 0px 0px; height: 173px; margin: -23px 0 0 -23px; position: absolute; width: 167px; z-index: 999; }
+	#logo-name { background: url('images/logo.png') no-repeat 0px -183px; height: 80px; margin: 25px 0 0 145px; position: absolute; width: 186px; z-index: 999; }
+	#wfg-logo { background: url('images/logo.png') no-repeat 0px -273px; float: right; height: 63px; margin: 36px 32px 0 0; width: 96px; }
 	/* Download Button */
 		#dl-button { background: rgba(0, 0, 0, .5) url("images/global.png") no-repeat 185px -55px; color: #eee; height: 75px; margin: 30px 0 0 480px; position: absolute; width: 250px; }
 		#dl-button:hover { background: rgba(0, 0, 0, .3) url("images/global.png") no-repeat 185px -55px; color: #eee; }
@@ -131,20 +131,22 @@ div:after { content: ""; display: block; height: 0; clear: both; }
 	/* Home Button */
 		#home-btn { display: block; float: left; width: 250px; }
 		#home-btn ul { list-style: none outside none; margin: 0; }
-		#home-btn ul li { background: url(images/home-btn-normal.png) no-repeat; display: block; float: left; height: 30px; position: relative; text-align: center; width: 250px; }
-		#home-btn ul li > a { color:#000; display:block; float:left; font:normal 16px/20px "Gentium Basic", serif; height:20px; line-height:20px; padding:5px 0px 5px; position:relative; text-align:center; text-decoration:none; width:inherit }
-		#home-btn ul li:hover > a { background:url(images/home-btn-hover.png) no-repeat;}
+		#home-btn ul li { background: url(images/home-btn.png) no-repeat 0px -80px; display: block; float: left; height: 30px; position: relative; text-align: center; width: 250px; }
+		#home-btn ul li > a { color:#fff; display:block; float:left; font:normal 16px/20px "Gentium Basic", serif; height:20px; line-height:20px; padding:5px 0px 5px; position:relative; text-align:center; text-decoration:none; width:inherit }
+		#home-btn ul li:hover > a { background:url(images/home-btn.png) no-repeat 0px -40px; color: #000; }
+		/*Active background: background:url(images/home-btn.png) no-repeat 0px 0px;*/
 	/* Access */
 		#access{display:block;float:right;width:750px}
 		#access ul{list-style:none;margin:0}
-		#access ul li { background: url("images/access-li.png") no-repeat 0 0; display: block; float: left; height: 30px; position: relative; text-align: center; width: 150px; }
+		#access ul li { background: url("images/access-li.png") no-repeat 0px -120px; display: block; float: left; height: 30px; position: relative; text-align: center; width: 150px; }
 		#access ul li > a { color:#fff; display:block; float:left; font:normal 16px/20px "Gentium Basic", serif; height:20px; line-height:20px; padding:5px 0px 5px; position:relative; text-align:center; text-decoration:none; width:inherit }
-		#access ul li:hover > a { background:url(images/access-li.png) no-repeat -320px 0; color:#000 }
+		#access ul li:hover > a { background:url(images/access-li.png) no-repeat 0px -80px; color:#000 }
 		#access ul li:hover > ul { display: inline-block } /*Display the child menu on parent hover*/
-		#access ul ul { background:none; display:none; float:left; position:relative; top:0; width:150px; z-index:998 }
-		#access ul ul li { background:rgba(0,0,0,0.9); font-size: 15px; width:150px }
-		#access ul ul li:hover > a { background:url(images/access-li.png) no-repeat -160px 0; color:#000; }
+		#access ul ul { background: none; display: none; float: left; position: relative; top: 0; width: 150px; z-index: 998; }
+		#access ul ul li { background: rgba(0,0,0,0.9); font-size: 15px; width: 150px; }
+		#access ul ul li:hover > a { background: url(images/access-li.png) no-repeat 0px -40px; color:#000; }
 		#access ul ul a { color:#fff }
+		/*Active background: background: url(images/access-li.png) no-repeat 0px 0px;*/
 		
 /* CONTENT */
 	#main{clear:both;height:auto;margin:25px auto;width:1000px}

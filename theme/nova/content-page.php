@@ -12,6 +12,9 @@
 	<header class="entry-header">
 		<div class="entry-tri"></div>
 		<h1 class="entry-title"><?php the_title(); ?></h1>
+		<div class="entry-meta">
+			<?php if(function_exists('bcn_display')) {bcn_display(); }?>
+		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
