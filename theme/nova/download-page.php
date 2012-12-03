@@ -15,40 +15,9 @@ get_header(); ?>
 				<article class="hentry">
 					<header class="entry-header">
 						<div class="entry-tri"></div>
-						<h1 class="entry-title"><?php the_title(); ?></h1>
+						<h1 class="entry-title"><?php the_title(); ?> <?php bloginfo('description'); ?></h1>
 					</header><!-- .entry-header -->
 					<div class="entry-content">
-					
-						<div id="dl-banner" style="background: url('../wp-content/gallery/download-banners/dl1.jpg') no-repeat;">
-							<a id="dl-page-button" href="#"></a><!-- Used by embedded Javascript -->
-							
-							<script type="text/javascript">
-								var OSName = "Unknown OS";
-							
-								if (navigator.platform.indexOf("Win") !== -1) { OSName = "Windows"; }
-								if (navigator.platform.indexOf("Mac") !== -1) { OSName = "MacOS"; }
-								if (navigator.platform.indexOf("Linux") !== -1) { OSName = "Linux"; }
-							
-								if (OSName.indexOf("Windows") !== -1)
-								{
-									document.getElementById("dl-page-button").innerHTML= 'Download for Windows';
-									document.getElementById("dl-page-button").href = '#';
-								}
-							
-								if (OSName.indexOf("MacOS") !== -1)
-								{
-									document.getElementById("dl-page-button").innerHTML = 'Download for Mac OS X';
-									document.getElementById("dl-page-button").href ='mac';
-								}
-							
-								if (OSName.indexOf("Linux") !== -1)
-								{
-									document.getElementById("dl-page-button").innerHTML = 'Download for Linux';
-									document.getElementById("dl-page-button").href = 'linux';
-								}
-							</script>
-							
-						</div><!-- Download Banner -->
 						 	
 						<?php the_post(); the_content();  ?>
 						
