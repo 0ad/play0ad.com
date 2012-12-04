@@ -133,7 +133,8 @@ div:after { content: ""; display: block; height: 0; clear: both; }
 		#home-btn ul { list-style: none outside none; margin: 0; }
 		#home-btn ul li { background: url(images/menu-home.png) no-repeat 0px -80px; display: block; float: left; height: 30px; position: relative; text-align: center; width: 250px; }
 		#home-btn ul li > a { color:#fff; display:block; float:left; font:normal 16px/20px "Gentium Basic", serif; height:20px; line-height:20px; padding:5px 0px 5px; position:relative; text-align:center; text-decoration:none; width:inherit }
-		#home-btn ul li:hover > a { background:url(images/menu-home.png) no-repeat 0px -40px; color: #000; }
+		#home-btn ul li:hover > a { background: url(images/menu-home.png) no-repeat 0px -40px; color: #000; }
+		#home-btn .current-menu-item > a { background: url(images/menu-home.png) no-repeat 0px 0px; color: #000; }
 		/*Active background: background:url(images/home-btn.png) no-repeat 0px 0px;*/
 	/* Access */
 		#access{display:block;float:right;width:750px}
@@ -146,6 +147,7 @@ div:after { content: ""; display: block; height: 0; clear: both; }
 		#access ul ul li { background: rgba(0,0,0,0.9); font-size: 15px; width: 150px; }
 		#access ul ul li:hover > a { background: url(images/menu-access.png) no-repeat 0px -40px; color:#000; }
 		#access ul ul a { color:#fff }
+		#access .current-menu-ancestor > a { background: url(images/menu-access.png) no-repeat 0px 0px; color: #000; }
 		/*Active background: background: url(images/access-li.png) no-repeat 0px 0px;*/
 		
 /* CONTENT */
