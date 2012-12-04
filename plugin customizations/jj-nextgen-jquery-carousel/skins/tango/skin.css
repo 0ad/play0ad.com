@@ -46,7 +46,7 @@ width:225px;
 }
 
 .jcarousel-skin-tango .jcarousel-next-horizontal {
-background:rgba(0,0,0,0.7) url(buttons.png) no-repeat -47.5px 29px;
+background:rgba(0,0,0,0.7) url(buttons.png) no-repeat -47.5px 45px;
 cursor:pointer;
 height:127px;
 position:absolute;
@@ -56,7 +56,7 @@ width:25px;
 }
 
 .jcarousel-skin-tango .jcarousel-prev-horizontal {
-background:rgba(0,0,0,0.7) url(buttons.png) no-repeat -7.5px 29px;
+background:rgba(0,0,0,0.7) url(buttons.png) no-repeat -7.5px 45px;
 cursor:pointer;
 height:127px;
 left:0;
