@@ -177,9 +177,8 @@ div:after { content: ""; display: block; height: 0; clear: both; }
 	/* Download Page*/
 	#dl-banner { height: 480px; margin: 0 auto; width: 960px; }
 	#dl-page-button { position: absolute; margin-left: 550px; margin-top: 96px; }
-	.dl-button-appearance { background: rgba(0,0,0, .75) url(images/icon-dl.png) no-repeat 5px 5px;  border: 1px solid #000; color: #eee; display: block; font: bold 25px/30px "Helvetica Neue", sans-serif; font-variant: small-caps;  min-height: 50px; padding: 5px 10px 10px 80px; text-decoration: none; width: 300px; }
-	.dl-button-appearance:hover { background: rgba(0, 0, 0, .9)  url(images/icon-dl.png) no-repeat 5px 5px; border: 1px solid #fff; color: #fff; text-decoration: none; }
-
+	.dl-button-appearance { background: rgba(0,0,0, .75) url(images/icons.png) no-repeat 5px 5px;  border-color: #CCA655 #864A1E #864A1E #CCA655; border-style: solid; border-width: 2px; color: #eee; display: block; font: bold 25px/30px "Helvetica Neue", sans-serif; font-variant: small-caps;  min-height: 50px; padding: 5px 10px 10px 80px; text-decoration: none; width: 300px; }	
+	.dl-button-appearance:active, .dl-button-appearance:hover { background: url("images/icons.png") no-repeat scroll 4px 5px rgba(0, 0, 0, 0.9); border-color: #864A1E #CCA655 #CCA655 #864A1E; border-style: solid; border-width: 2px; color: #FFFFFF; padding-left: 79px; text-decoration: none; }
 	#dl-info { background: rgba(0,0,0, .75) url(images/icon-attention.png) no-repeat 5px 5px; margin-top: 192px; width: 300px; }
 	/* #dl-info ul { text-indent: 1em  } */
 	.dl-page { background: rgba(0, 0, 0, .75); color: #eee; margin-left: 550px; padding: 10px 10px 10px 80px; position: absolute; text-decoration: none; }
