@@ -741,7 +741,7 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 		border-width: 2px;
 		color: #eee;
 		display: block;
-		font: bold 25px/30px "Helvetica Neue", sans-serif;
+		font: small-caps bold 24px/30px "Helvetica Neue", sans-serif;
 		font-variant: small-caps;
 		min-height: 50px;
 		padding: 5px 10px 10px 80px;
@@ -749,8 +749,9 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 		width: 300px;
 	}
 	
-	.dl-button-appearance:active,.dl-button-appearance:hover {
-		background:url(images/icons.png) no-repeat scroll 4px 5px rgba(0,0,0,0.9);
+	.dl-button-appearance:active,
+	.dl-button-appearance:hover {
+		background:url(images/icons.png) no-repeat 4px 5px rgba(0,0,0,0.9);
 		border-color: #864A1E #CCA655 #CCA655 #864A1E;
 		border-style: solid;
 		border-width: 2px;
@@ -760,7 +761,7 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 	}
 	
 	#dl-info {
-		background: rgba(0,0,0,.75) url(images/icon-attention.png) no-repeat 5px 5px;
+		background: url(images/icons.png) no-repeat 5px -130px rgba(0,0,0,.75);
 		margin-top: 192px;
 		width: 300px;
 	}
