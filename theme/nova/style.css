@@ -9,8 +9,19 @@ License: GNU General Public License
 License URI: http://www.gnu.org/copyleft/gpl.html
 */
 
-@font-face { font-family: 'Gentium Basic'; font-style: normal; font-weight: 400; src: local('Gentium Basic'), local('GentiumBasic'), url(http://themes.googleusercontent.com/static/fonts/gentiumbasic/v4/KCktj43blvLkhOTolFn-MeN7FQiou3Mwp-a3oMNL1kc.woff) format('woff'); }
-@font-face { font-family: 'Gentium Basic'; font-style: normal; font-weight: 700; src: local('Gentium Basic Bold'), local('GentiumBasic-Bold'), url(http://themes.googleusercontent.com/static/fonts/gentiumbasic/v4/2qL6yulgGf0wwgOp-UqGyFCTXa1e2Oq_mdf0AjQDfqE.woff) format('woff'); }
+@font-face {
+	font-family: "'Gentium Basic'";
+	font-style: normal;
+	font-weight: 400;
+	src: local('Gentium Basic'),local('GentiumBasic'), url(http://themes.googleusercontent.com/static/fonts/gentiumbasic/v4/KCktj43blvLkhOTolFn-MeN7FQiou3Mwp-a3oMNL1kc.woff) format('woff');
+}
+
+@font-face {
+	font-family: "'Gentium Basic'";
+	font-style: normal;
+	font-weight: 700;
+	src: local('Gentium Basic Bold'), local('GentiumBasic-Bold'), url(http://themes.googleusercontent.com/static/fonts/gentiumbasic/v4/2qL6yulgGf0wwgOp-UqGyFCTXa1e2Oq_mdf0AjQDfqE.woff) format('woff');
+}
 
 /* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
 --------------------------------------------------------------------------------------------------------------- */
@@ -299,7 +310,7 @@ a:focus, a:active, a:hover { text-decoration: underline;}
 
 .entry-content,.entry-summary {
 	background-image:url(images/entry-content-left.png), url(images/entry-content-right.png);
-	background-position:left top, ight top;
+	background-position:left top, right top;
 	background-repeat:no-repeat;
 	color:#000;
 	padding:10px 20px;
