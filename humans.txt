@@ -11,7 +11,7 @@
 /* CONTRIBUTORS */
 	Aviv Sharon (@AvivSharon)
 	Brian Stempin (@bstempi)
-	Geek377 (@Geek377)
+	Adarash Mishra (github.com/MishFTW) 
 	Bryson "gerbilOFdoom" Zimmerman (thedestroyer@swdroids.com)
 	Ludovic Celle (ludovic.celle@gmail.com)
 	Michael Hafer (michael@wildfiregames.com)
